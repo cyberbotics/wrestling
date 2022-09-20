@@ -1,7 +1,10 @@
-#VRML_SIM R2022a utf8
+#VRML_SIM R2022b utf8
 # license: Apache License 2.0
 # license url: http://www.apache.org/licenses/LICENSE-2.0
 # A wrestling ring for the NAO robots
+
+EXTERNPROTO "webots://projects/appearances/protos/ScuffedPlastic.proto"
+EXTERNPROTO "webots://projects/appearances/protos/WornBurlap.proto"
 
 PROTO WrestlingRing [
   field SFVec3f translation 0 0 0.25
