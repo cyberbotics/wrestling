@@ -13,11 +13,18 @@ EXTERNPROTO "../protos/WrestlingReferee.proto"
 EXTERNPROTO "../protos/WrestlingRing.proto"
 
 WorldInfo {
+  info [
+    "Competitors should program a humanoid robot to takle its opponent and knock it to the ground or outside of the ring."
+    "All shots are allowed."
+  ]
+  title "Humanoid Robot Wrestling Competition"
   basicTimeStep 20
 }
 Viewpoint {
-  orientation 0.19395034953274587 -0.2510628871822727 -0.9483410191465027 5.30845198427805
-  position -2.2633733941207494 -2.8537717674851377 1.4739654417068169
+  orientation 0.19498090561580528 -0.2764227505822969 -0.9410488347613836 5.405573313424377
+  position -3.0494663943147273 -3.12082712312562 1.607529864231621
+  follow "wreslter red"
+  followType "Pan and Tilt Shot"
   ambientOcclusionRadius 0.2
   bloomThreshold 5
 }
