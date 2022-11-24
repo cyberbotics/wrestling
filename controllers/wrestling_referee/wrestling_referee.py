@@ -35,6 +35,7 @@ class Referee (Supervisor):
             self.max[i] = self.robot[i].getPosition()
         self.coverage = [0] * 2
         self.koCount = [0] * 2
+        # linear motors on the side of the ring to display the coverage visually
         self.indicator = [0] * 2
         self.indicator[0] = self.getDevice("red indicator")
         self.indicator[1] = self.getDevice("blue indicator")
@@ -64,25 +65,25 @@ class Referee (Supervisor):
                 box = [0] * 3
                 for i in range(2):
                     position = self.robot[i].getPosition()
-                    if abs(position[0]) > 1 or abs(position[1]) > 1:  # outside of the ring
-                        continue
-                    coverage = 0
-                    for j in range(3):
-                        if position[j] < self.min[i][j]:
-                            self.min[i][j] = position[j]
-                        elif position[j] > self.max[i][j]:
-                            self.max[i][j] = position[j]
-                        box[j] = self.max[i][j] - self.min[i][j]
-                        coverage += box[j] * box[j]
-                    coverage = math.sqrt(coverage)
-                    self.coverage[i] = coverage
-                    self.indicator[i].setPosition(self.coverage[i] / 7)
-                if position[1] < 0.75:  # low position threshold
-                    self.koCount[i] = self.koCount[i] + 200
-                    if self.koCount[i] > 10000:  # 10 seconds
-                        ko = i
-                else:
-                    self.koCount[i] = 0
+                    if abs(position[0]) < 1 and abs(position[1]) < 1:  # inside the ring
+                        coverage = 0
+                        for j in range(3):
+                            if position[j] < self.min[i][j]:
+                                self.min[i][j] = position[j]
+                            elif position[j] > self.max[i][j]:
+                                self.max[i][j] = position[j]
+                            box[j] = self.max[i][j] - self.min[i][j]
+                            coverage += box[j] * box[j]
+                        coverage = math.sqrt(coverage)
+                        self.coverage[i] = coverage
+                        self.indicator[i].setPosition(self.coverage[i] / 7)
+                    if position[2] < 0.75:  # low position threshold
+                        self.koCount[i] = self.koCount[i] + 200
+                        if self.koCount[i] > 10000:  # 10 seconds
+                            ko = i
+                    else:
+                        self.koCount[i] = 0
+                    #print(f"robot {i}, position: {position}, koCount: {self.koCount[i]}")
                 if self.koCount[0] > self.koCount[1]:
                     print("\fred KO: %d" % (10 - self.koCount[0] // 1000))
                 elif self.koCount[1] > self.koCount[0]:
@@ -96,12 +97,14 @@ class Referee (Supervisor):
         elif ko == 1:
             print("Wrestler blue is KO. Wrestler red wins!")
         elif self.coverage[0] >= self.coverage[1]:  # in case of coverage equality, red wins
-            print("Wresler red wins: %s >= %s" % (self.coverage[0], self.coverage[1]))
+            print("Wrestler red wins: %s >= %s" % (self.coverage[0], self.coverage[1]))
         else:
-            print("Wresler blue wins: %s > %s" % (self.coverage[1], self.coverage[0]))
+            print("Wrestler blue wins: %s > %s" % (self.coverage[1], self.coverage[0]))
 
 
 # create the referee instance and run main loop
 referee = Referee()
 referee.init()
 referee.run()
+print(f"red coverage: {referee.coverage[0]}, blue coverage: {referee.coverage[1]}")
+referee.simulationSetMode(referee.SIMULATION_MODE_PAUSE)

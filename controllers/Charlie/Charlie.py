@@ -29,7 +29,7 @@ class Wrestler (Robot):
         self.cameraTop.enable(4 * self.timeStep)
         self.cameraBottom.enable(4 * self.timeStep)
 
-        # there are 7 controlable LEDs on the NAO robot, but we will use only the ones in the eyes
+        # there are 7 controllable LEDs on the NAO robot, but we will use only the ones in the eyes
         self.leds = []
         self.leds.append(self.getDevice('Face/Led/Right'))
         self.leds.append(self.getDevice('Face/Led/Left'))
@@ -57,7 +57,7 @@ class Wrestler (Robot):
             if t == 22:
                 self.forwards.stop()
                 self.turnLeft60.play()
-                self.RShoulderPitch.setPosition(0)  # upercut
+                self.RShoulderPitch.setPosition(0)  # uppercut
             elif t == 25:
                 self.turnLeft60.stop()
                 self.forwards.play()  # push
