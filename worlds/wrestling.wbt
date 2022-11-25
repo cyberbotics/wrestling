@@ -122,7 +122,7 @@ DEF WRESTLER_RED Nao {
   hidden rotation_38 0 1 0 0.9599999999327467
   translation -0.88 0 0.834
   name "wreslter red"
-  controller "Bob"
+  controller "Test"
 }
 DEF WRESTLER_BLUE Nao {
   hidden rotation_22 0 0.9999999999999999 0 0.9599999997926552
