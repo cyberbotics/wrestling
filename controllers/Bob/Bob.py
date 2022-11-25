@@ -44,21 +44,18 @@ class Wrestler (Robot):
 
 
     def run(self):
-        self.RShoulderPitch.setPosition(0)  # arms down
+        self.RShoulderPitch.setPosition(0)  # arms in front, zombie mode
         self.LShoulderPitch.setPosition(0)
 
         self.loop.setLoop(True)
-        self.start.play()
+        self.loop.play()
 
         self.leds[0].set(0xff0000)  # set eyes to red, kill mode activated
         self.leds[1].set(0xff0000)
 
         while self.step(self.timeStep) != -1:
             t = self.getTime()
-            if t == 1:
-                self.start.stop()
-                self.loop.play()
-            if t == 28:
+            if t == 27:
                 self.LShoulderPitch.setPosition(-1.57)  # victory
                 self.RShoulderPitch.setPosition(-1.57)
                 self.leds[0].set(0x00ff00)  # set eyes to green
