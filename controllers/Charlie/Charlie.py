@@ -39,8 +39,8 @@ class Wrestler (Robot):
         self.LShoulderPitch = self.getDevice("LShoulderPitch")
 
         # load motion files
-        self.forwards = Motion('motions/Forwards50.motion')
-        self.turnLeft60 = Motion('motions/TurnLeft60.motion')
+        self.forwards = Motion('../motions/Forwards50.motion')
+        self.turnLeft60 = Motion('../motions/TurnLeft60.motion')
 
     def run(self):
         self.RShoulderPitch.setPosition(1.57)  # arms down

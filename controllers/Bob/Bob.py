@@ -39,7 +39,7 @@ class Wrestler (Robot):
         self.LShoulderPitch = self.getDevice("LShoulderPitch")
 
         # load motion files
-        self.loop = Motion('motions/loop.motion')
+        self.loop = Motion('../motions/ForwardLoop.motion')
 
 
     def run(self):
