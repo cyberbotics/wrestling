@@ -171,7 +171,6 @@ class Wrestler (Robot):
             self.LKneePitch.setPosition(0)
             self.LAnklePitch.setPosition(0)
             # one hand back on the ground
-            self.LShoulderPitch.setPosition(1.9)
             self.LShoulderRoll.setPosition(0.5)
             self.LElbowRoll.setPosition(-0.34)
             # other hand to help leaning forward
@@ -191,8 +190,9 @@ class Wrestler (Robot):
             self.LAnklePitch.setPosition(0.9)
         elif time - self.startTime < 4.5:
             # pull back right leg to put the weight on it
+            self.RHipPitch.setPosition(0.1)
             self.RKneePitch.setPosition(2)
-            self.RAnklePitch.setPosition(0.34)
+            self.RAnklePitch.setPosition(-0.89)
             self.RElbowRoll.setPosition(1.52)
             pass
         #elif time - self.startTime < 4.0:
