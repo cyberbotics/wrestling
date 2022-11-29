@@ -154,12 +154,12 @@ class Wrestler (Robot):
             self.LAnklePitch.setPosition(0.106)
         elif time - self.startTime < 1.5:
             # arms behind the back
-            self.RShoulderPitch.setPosition(2.08)
             self.RShoulderRoll.setPosition(-0.13)
+            self.RShoulderPitch.setPosition(2.08)
             self.RElbowRoll.setPosition(1.5)
             self.RElbowYaw.setPosition(-0.2)
-            self.LShoulderPitch.setPosition(2.08)
             self.LShoulderRoll.setPosition(0.13)
+            self.LShoulderPitch.setPosition(2.08)
             self.LElbowRoll.setPosition(-1.5)
             self.LElbowYaw.setPosition(0.2)
         elif time - self.startTime < 2.0:
@@ -180,21 +180,21 @@ class Wrestler (Robot):
             self.LHipPitch.setPosition(-1.3)
             self.LKneePitch.setPosition(0)
             self.LAnklePitch.setPosition(0)
+            # other hand to help leaning forward
+            self.RShoulderRoll.setPosition(-1.23)
+            self.RShoulderPitch.setPosition(0)
+            self.RElbowRoll.setPosition(0.65)
             # one hand back on the ground
             self.LShoulderRoll.setPosition(0.5)
             self.LElbowRoll.setPosition(-0.34)
-            # other hand to help leaning forward
-            self.RShoulderPitch.setPosition(0)
-            self.RShoulderRoll.setPosition(-1.23)
-            self.RElbowRoll.setPosition(0.65)
         elif time - self.startTime < 4:
             # pull back right leg to put the weight on it
             self.RHipPitch.setPosition(0.1)
             self.RKneePitch.setPosition(2)
             self.RAnklePitch.setPosition(-1.18)
             # left leg straight and pushing back to help leaning forward
-            self.LHipPitch.setPosition(-1.29)
             self.LHipRoll.setPosition(0.77)
+            self.LHipPitch.setPosition(-1.29)
             self.LKneePitch.setPosition(0.7)
             self.LAnklePitch.setPosition(0.9)
             self.RShoulderRoll.setPosition(0)
@@ -202,10 +202,6 @@ class Wrestler (Robot):
         elif time - self.startTime < 4.5:
             # now weight is on right foot, tilt forward the body
             self.RHipPitch.setPosition(-0.3)
-            #self.LHipYawPitch.setPosition(-0.25)
-            #self.LKneePitch.setPosition(2.05)
-            #self.LAnklePitch.setPosition(-0.55)
-            #pass
         elif time - self.startTime < 5.0:
             # stand up
             self.RHipYawPitch.setPosition(0)
@@ -221,15 +217,15 @@ class Wrestler (Robot):
             self.LAnklePitch.setPosition(-0.524)
             self.LAnkleRoll.setPosition(0)
             # reset arms
-            self.RShoulderPitch.setPosition(0)
             self.RShoulderRoll.setPosition(0)
+            self.RShoulderPitch.setPosition(0)
             self.RElbowRoll.setPosition(0)
             self.RElbowYaw.setPosition(0)
-            self.LShoulderPitch.setPosition(0)
             self.LShoulderRoll.setPosition(0)
+            self.LShoulderPitch.setPosition(0)
             self.LElbowRoll.setPosition(0)
             self.LElbowYaw.setPosition(0)
-        elif time - self.startTime < 6.0:
+        #elif time - self.startTime < 6.0:
             self.state = State.IDLE
             self.startTime = None
 
