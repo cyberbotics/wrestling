@@ -90,9 +90,10 @@ class Wrestler (Robot):
             t = self.getTime()
             # pseudo moving average
             self.accelerometerAverage = [0.9 * x + 0.1 * y for x, y in zip(self.accelerometerAverage, self.accelerometer.getValues())]
-            if self.accelerometerAverage[0] < -5:
+            #print(self.accelerometerAverage)
+            if self.accelerometerAverage[0] < -7:
                 self.state = State.GET_UP_FRONT
-            if self.accelerometerAverage[0] > 5:
+            if self.accelerometerAverage[0] > 7:
                 self.state = State.GET_UP_BACK
             self.stateAction(t)
 
@@ -114,7 +115,16 @@ class Wrestler (Robot):
     def walk(self):
         self.forwards.play()
 
-    def getUpFront(self, t):
+    def getUpFront(self, time):
+        if self.startTime == None:
+            self.startTime = time 
+        elif self.standUpFromFront.isOver():
+            self.state = State.IDLE
+            self.startTime = None
+            # reset the isOver state
+            self.standUpFromFront.play()
+            self.standUpFromFront.stop()
+            return
         self.standUpFromFront.play()
     
     def getUpBack(self, time):
@@ -160,7 +170,7 @@ class Wrestler (Robot):
             self.LHipPitch.setPosition(-1.322)
             self.LKneePitch.setPosition(0.503)
             self.LAnklePitch.setPosition(0.9)
-        elif time - self.startTime < 3:
+        elif time - self.startTime < 2.75:
             # pull body to the front
             self.RHipYawPitch.setPosition(-1)
             self.RHipPitch.setPosition(-1.77)
@@ -177,41 +187,51 @@ class Wrestler (Robot):
             self.RShoulderPitch.setPosition(0)
             self.RShoulderRoll.setPosition(-1.23)
             self.RElbowRoll.setPosition(0.65)
-        elif time - self.startTime < 3.5:
-            # right arm to help leaning forward
-            self.RShoulderRoll.setPosition(0)
-            self.RElbowRoll.setPosition(1)
         elif time - self.startTime < 4:
-            # flex right knee to stabilize
-            self.RKneePitch.setPosition(1.6)
-            self.RAnklePitch.setPosition(0.9)
-            # left leg straight to help leaning forward
-            self.LKneePitch.setPosition(0.28)
-            self.LAnklePitch.setPosition(0.9)
-        elif time - self.startTime < 4.5:
             # pull back right leg to put the weight on it
             self.RHipPitch.setPosition(0.1)
             self.RKneePitch.setPosition(2)
-            self.RAnklePitch.setPosition(-0.89)
+            self.RAnklePitch.setPosition(-1.18)
+            # left leg straight and pushing back to help leaning forward
+            self.LHipPitch.setPosition(-1.29)
+            self.LHipRoll.setPosition(0.77)
+            self.LKneePitch.setPosition(0.7)
+            self.LAnklePitch.setPosition(0.9)
+            self.RShoulderRoll.setPosition(0)
             self.RElbowRoll.setPosition(1.52)
-            pass
-        #elif time - self.startTime < 4.0:
-        #    # stand up
-        #    self.RHipYawPitch.setPosition(0)
-        #    self.RHipRoll.setPosition(0)
-        #    self.RHipPitch.setPosition(-0.524)
-        #    self.RKneePitch.setPosition(1.047)
-        #    self.RAnklePitch.setPosition(-0.524)
-        #    self.RAnkleRoll.setPosition(0)
-        #    self.LHipYawPitch.setPosition(0)
-        #    self.LHipRoll.setPosition(0)
-        #    self.LHipPitch.setPosition(-0.524)
-        #    self.LKneePitch.setPosition(1.047)
-        #    self.LAnklePitch.setPosition(-0.524)
-        #    self.LAnkleRoll.setPosition(0)
-        #elif time - self.startTime < 5.0:
-        #    self.state = State.IDLE
-        #    self.startTime = None
+        elif time - self.startTime < 4.5:
+            # now weight is on right foot, tilt forward the body
+            self.RHipPitch.setPosition(-0.3)
+            #self.LHipYawPitch.setPosition(-0.25)
+            #self.LKneePitch.setPosition(2.05)
+            #self.LAnklePitch.setPosition(-0.55)
+            #pass
+        elif time - self.startTime < 5.0:
+            # stand up
+            self.RHipYawPitch.setPosition(0)
+            self.RHipRoll.setPosition(0)
+            self.RHipPitch.setPosition(-0.524)
+            self.RKneePitch.setPosition(1.047)
+            self.RAnklePitch.setPosition(-0.524)
+            self.RAnkleRoll.setPosition(0)
+            self.LHipYawPitch.setPosition(0)
+            self.LHipRoll.setPosition(0)
+            self.LHipPitch.setPosition(-0.524)
+            self.LKneePitch.setPosition(1.047)
+            self.LAnklePitch.setPosition(-0.524)
+            self.LAnkleRoll.setPosition(0)
+            # reset arms
+            self.RShoulderPitch.setPosition(0)
+            self.RShoulderRoll.setPosition(0)
+            self.RElbowRoll.setPosition(0)
+            self.RElbowYaw.setPosition(0)
+            self.LShoulderPitch.setPosition(0)
+            self.LShoulderRoll.setPosition(0)
+            self.LElbowRoll.setPosition(0)
+            self.LElbowYaw.setPosition(0)
+        elif time - self.startTime < 6.0:
+            self.state = State.IDLE
+            self.startTime = None
 
 # create the Robot instance and run main loop
 wrestler = Wrestler()
