@@ -4,6 +4,7 @@ The competition focuses on the development of advanced humanoid robot control so
 
 ## Important dates
 
+|                    |                                         |
 |--------------------|-----------------------------------------|
 | December 1st, 2022 | registration is open                    |
 | January 1st, 2023  | qualification matches are run every day |
