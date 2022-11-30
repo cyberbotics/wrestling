@@ -66,4 +66,4 @@ In order to achieve this, your GitHub repository should contain a Dockerfile spe
 
 ## More Information
 
-This [paper](Simulated_Humanoid_Robot_Wrestling_Competition.pdf) (PDF) provides additional information about this competition.
+This [paper](https://raw.githubusercontent.com/cyberbotics/wrestling/main/Simulated_Humanoid_Robot_Wrestling_Competition.pdf) (PDF) provides additional information about this competition.
