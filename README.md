@@ -23,7 +23,7 @@ The finals will take place during [ICRA 2023](https://www.icra2023.org) in Londo
 
 ## Prize
 
-The winning team will receive one Ethereum crypto-currency (currently priced around USD 1,260).
+The winning team will receive one Ethereum crypto-currency (priced around USD 1,260 on December 1st, 2022).
 
 ## Getting Started Now
 
