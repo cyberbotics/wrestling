@@ -1,4 +1,4 @@
-#VRML_SIM R2022b utf8
+#VRML_SIM R2023b utf8
 
 EXTERNPROTO "webots://projects/objects/floors/protos/Floor.proto"
 EXTERNPROTO "webots://projects/robots/softbank/nao/protos/Nao.proto"
@@ -21,8 +21,8 @@ WorldInfo {
   basicTimeStep 20
 }
 Viewpoint {
-  orientation 0.19498090561580528 -0.2764227505822969 -0.9410488347613836 5.405573313424377
-  position -3.0494663943147273 -3.12082712312562 1.607529864231621
+  orientation 0.33100892390480846 0.18484342354286779 -0.9253464221945922 2.3509552733012
+  position 1.1786726975879815 2.310763517190188 2.885982128659573
   follow "wreslter red"
   followType "None"
   ambientOcclusionRadius 0.2
@@ -112,47 +112,21 @@ RubberDuck {
   name "rubber duck 2"
 }
 DEF WRESTLER_RED Nao {
-  hidden rotation_22 0 1 0 0.9599999998412513
-  hidden rotation_23 0 1 0 0.9599999999311373
-  hidden rotation_24 0 1 0 0.959999999940659
-  hidden rotation_25 0 1 0 0.95999999984175
-  hidden rotation_26 0 1 0 0.9599999999313151
-  hidden rotation_27 0 1 0 0.9599999996892589
-  hidden rotation_29 0 -0.9999999999999999 0 0.9599999997674602
-  hidden rotation_34 0 0.9999999999999999 0 0.9599999998456352
-  hidden rotation_35 0 1 0 0.9599999999325587
-  hidden rotation_36 0 1 0 0.9599999999266986
-  hidden rotation_37 0 1 0 0.9599999998461386
-  hidden rotation_38 0 1 0 0.9599999999327467
-  hidden rotation_39 0 1 0 0.9599999995240459
-  hidden rotation_41 0 -1 0 0.9599999997381147
-  translation -0.44 0 0.604
+  translation -0.44 0.21 0.594
   rotation 0 1 0 -1.5707953071795862
   name "wreslter red"
   controller "Test"
+  selfCollision TRUE
 }
 DEF WRESTLER_BLUE Nao {
-  hidden rotation_22 0 0.9999999999999999 0 0.9599999997926552
-  hidden rotation_23 0 0.9999999999999999 0 0.9599999998227392
-  hidden rotation_24 0 1 0 0.9599999999618253
-  hidden rotation_25 0 1 0 0.9599999997846899
-  hidden rotation_26 0 1 0 0.9599999998193598
-  hidden rotation_27 0 1 0 0.959999999961568
-  hidden rotation_29 0 -1 0 0.9599999999542804
-  hidden rotation_34 0 1 0 0.9599999994205487
-  hidden rotation_35 0 1 0 0.9599999996903811
-  hidden rotation_36 0 1 0 0.9599999999561826
-  hidden rotation_37 0 1 0 0.9599999994120483
-  hidden rotation_38 0 1 0 0.9599999996899291
-  hidden rotation_39 0 1 0 0.9599999999561316
-  hidden rotation_41 0 -1 0 0.9599999999235308
-  translation 0.88 0 0.834
-  rotation 0 0 1 3.1415853071795863
+  translation -0.349682 -0.429946 0.574
+  rotation 2.653589999981315e-06 0.9999999999929585 2.653589999981315e-06 -1.5707953071795862
   name "wrestler blue"
   customColor [
     0 0.3333 1
   ]
   controller "Alice"
+  selfCollision TRUE
 }
 WrestlingReferee {
 }

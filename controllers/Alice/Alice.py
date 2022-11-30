@@ -20,9 +20,9 @@ from controller import Robot, Motion
 
 class Wrestler (Robot):
     def run(self):
-        handWave = Motion('../motions/HandWave.motion')  # look into this text file, it's easy to understand
-        handWave.setLoop(True)
-        handWave.play()
+        #handWave = Motion('../motions/GetUpBack.motion')  # look into this text file, it's easy to understand
+        #handWave.setLoop(True)
+        #handWave.play()
         timeStep = int(self.getBasicTimeStep())  # retrieves the WorldInfo.basicTimeTime (ms) from the world file
         while self.step(timeStep) != -1:  # runs the hand wave motion in a loop until Webots quits
             pass
