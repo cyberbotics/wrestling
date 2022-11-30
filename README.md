@@ -2,7 +2,7 @@
 
 The competition focuses on the development of advanced humanoid robot control software for a wrestling game. It relies on a calibrated simulation model of the NAO robot, running in the Webots simulator with realistic physics, sensor and actuator simulation. Being spectacular and fairly easy to get started with, this competition aims at gathering a large number of competitors, both on-site and remotely. The fully open-source competition software stack was designed to be re-used as a template for other simulation-based robot competitions.
 
-## Important dates
+## Important Dates
 
 | date               | description                             |
 |--------------------|-----------------------------------------|
@@ -15,6 +15,17 @@ The competition focuses on the development of advanced humanoid robot control so
 | June 1st, 2023     | semifinals                              |
 | June 2nd, 2023     | third place game and final              |
 
-# Prize
+The finals will take place during [ICRA 2023](https://www.icra2023.org) in London and will be broadcasted online in real time.
 
-- The winning team will received one Ethereum crypto-currency (currently priced around USD 1,260)
+## Prize
+
+The winning team will receive one Ethereum crypto-currency (currently priced around USD 1,260).
+
+## Getting Started Now
+
+To get started programming your wrestling robot, you will have to:
+
+1. Download and install [Webots R2023a](https://github.com/cyberbotics/webots/releases/tag/R2023a).
+2. Checkout this repository.
+3. Start programming the behavior of a robot by editing its [controller program](controllers/wrestler_red/wrestler_red.py).
+
