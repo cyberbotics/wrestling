@@ -28,7 +28,7 @@ The winning team will receive one Ethereum crypto-currency (currently priced aro
 To get started programming your wrestling robot, you will have to:
 
 1. Download and install [Webots R2023a](https://github.com/cyberbotics/webots/releases/tag/R2023a).
-2. [Fork](https://github.com/cyberbotics/wrestling/fork) this repository and clone it locally.
+2. Register to the competition by [forking](https://github.com/cyberbotics/wrestling/fork) this repository and clone it locally.
 3. Start programming the behavior of a robot by editing its [controller program](controllers/wrestler_red/wrestler_red.py).
 
 ## Rules
