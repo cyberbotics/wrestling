@@ -9,7 +9,7 @@ The competition focuses on the development of advanced humanoid robot control so
 | date               | description                             |
 |--------------------|-----------------------------------------|
 | December 1st, 2022 | registration is open                    |
-| January 1st, 2023  | qualification matches are run every day |
+| January 9th, 2023  | qualification matches are run every day |
 | May 22nd, 2023     | selection of the best 32 teams          |
 | May 29th, 2023     | 1/16 finals                             |
 | May 30th, 2023     | 1/8 finals                              |
@@ -45,3 +45,8 @@ The *coverage* reflects how far a robot has moved inside the ring. It is compute
 ```python
 coverage = X_max + Y_max - X_min - Y_min
 ```
+
+## Upcoming Workflow
+
+Starting from January 9th, 2023, games will run every day and a leaderboard will be updated accordingly.
+We will soon publish a series of robot controllers that can serve as examples.
