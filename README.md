@@ -46,7 +46,22 @@ The *coverage* reflects how far a robot has moved inside the ring. It is compute
 coverage = X_max + Y_max - X_min - Y_min
 ```
 
+## Recommendation to Competitors
+
+The earlier you start working on the competition, the better.
+Starting early will allow you to compete with others from January 9th with an already pretty good robot controller.
+The ranking algorithm will allow a very good robot controller to climp-up to the top of the leader board in one day.
+However, in practice, it is recommended to enter the leader board rankings as early as possible.
+This will allow you to compare your robot controller to others and have time to improve its performance.
+
 ## Upcoming Workflow
 
 Starting from January 9th, 2023, games will run every day and a leaderboard will be updated accordingly.
 We will soon publish a series of robot controllers that can serve as examples.
+You will be able to store your robot controller program on a private GitHub repository to avoid disclosing it to others.
+It will be possible to program the robot in any language (C, C++, Python, Java, ROS 2, etc.) with any library or python module.
+In order to achieve this, your GitHub repository should contain a Dockerfile specifying on which environment your controller should run.
+
+## More Information
+
+This [paper]() (PDF) provides additional information about this competition.
