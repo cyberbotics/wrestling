@@ -15,7 +15,7 @@ EXTERNPROTO "../protos/Nao_improved.proto"
 
 WorldInfo {
   info [
-    "Competitors should program a humanoid robot to takle its opponent and knock it to the ground or outside of the ring."
+    "Competitors should program a humanoid robot to tackle its opponent and knock it to the ground or outside of the ring."
     "All shots are allowed."
   ]
   title "Humanoid Robot Wrestling Competition"

@@ -1,7 +1,6 @@
-#VRML_SIM R2023b utf8
+#VRML_SIM R2023a utf8
 
 EXTERNPROTO "webots://projects/objects/floors/protos/Floor.proto"
-EXTERNPROTO "webots://projects/robots/softbank/nao/protos/Nao.proto"
 EXTERNPROTO "webots://projects/appearances/protos/Parquetry.proto"
 EXTERNPROTO "webots://projects/objects/toys/protos/RubberDuck.proto"
 EXTERNPROTO "webots://projects/objects/stairs/protos/StraightStairs.proto"
@@ -11,10 +10,11 @@ EXTERNPROTO "webots://projects/appearances/protos/VarnishedPine.proto"
 EXTERNPROTO "../protos/WrestlingPole.proto"
 EXTERNPROTO "../protos/WrestlingReferee.proto"
 EXTERNPROTO "../protos/WrestlingRing.proto"
+EXTERNPROTO "../protos/Nao_improved.proto"
 
 WorldInfo {
   info [
-    "Competitors should program a humanoid robot to takle its opponent and knock it to the ground or outside of the ring."
+    "Competitors should program a humanoid robot to tackle its opponent and knock it to the ground or outside of the ring."
     "All shots are allowed."
   ]
   title "Humanoid Robot Wrestling Competition"
@@ -23,7 +23,7 @@ WorldInfo {
 Viewpoint {
   orientation 0.33100892390480846 0.18484342354286779 -0.9253464221945922 2.3509552733012
   position 1.1786726975879815 2.310763517190188 2.885982128659573
-  follow "wreslter red"
+  follow "wrestler red"
   followType "None"
   ambientOcclusionRadius 0.2
   bloomThreshold 5
@@ -111,14 +111,14 @@ RubberDuck {
   rotation 0 0 1 1.5707996938995747
   name "rubber duck 2"
 }
-DEF WRESTLER_RED Nao {
+DEF WRESTLER_RED Nao_improved {
   translation -0.44 0.21 0.594
   rotation 0 1 0 -1.5707953071795862
-  name "wreslter red"
+  name "wrestler red"
   controller "Test"
   selfCollision TRUE
 }
-DEF WRESTLER_BLUE Nao {
+DEF WRESTLER_BLUE Nao_improved {
   translation -0.349682 -0.429946 0.574
   rotation 2.653589999981315e-06 0.9999999999929585 2.653589999981315e-06 -1.5707953071795862
   name "wrestler blue"
