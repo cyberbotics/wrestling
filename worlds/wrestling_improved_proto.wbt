@@ -1,6 +1,7 @@
 #VRML_SIM R2023a utf8
 
 EXTERNPROTO "webots://projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "webots://projects/robots/softbank/nao/protos/Nao.proto"
 EXTERNPROTO "webots://projects/appearances/protos/Parquetry.proto"
 EXTERNPROTO "webots://projects/objects/toys/protos/RubberDuck.proto"
 EXTERNPROTO "webots://projects/objects/stairs/protos/StraightStairs.proto"
@@ -21,9 +22,8 @@ WorldInfo {
   basicTimeStep 20
 }
 Viewpoint {
-  orientation 0.33100892390480846 0.18484342354286779 -0.9253464221945922 2.3509552733012
-  position 1.1786726975879815 2.310763517190188 2.885982128659573
-  follow "wrestler red"
+  orientation 0.31643102399510425 -0.10802902979062705 -0.942444234836155 3.9478175119905234
+  position 1.2403358271400622 -1.2729710261500244 1.922384426864245
   followType "None"
   ambientOcclusionRadius 0.2
   bloomThreshold 5
@@ -111,14 +111,7 @@ RubberDuck {
   rotation 0 0 1 1.5707996938995747
   name "rubber duck 2"
 }
-DEF WRESTLER_RED Nao_improved {
-  translation -0.44 0.21 0.594
-  rotation 0 1 0 -1.5707953071795862
-  name "wrestler red"
-  controller "Test"
-  selfCollision TRUE
-}
-DEF WRESTLER_BLUE Nao_improved {
+DEF WRESTLER_BLUE Nao {
   translation -0.349682 -0.429946 0.574
   rotation 2.653589999981315e-06 0.9999999999929585 2.653589999981315e-06 -1.5707953071795862
   name "wrestler blue"
@@ -129,4 +122,16 @@ DEF WRESTLER_BLUE Nao_improved {
   selfCollision TRUE
 }
 WrestlingReferee {
+}
+Nao_improved {
+  translation 0 0 0.894
+  name "WRESTLER_GREEN"
+  customColor [
+    0 0.5 0
+  ]
+}
+Nao_improved {
+  translation 0.530001 0.64 0.904
+  rotation 0 0 1 3.14159
+  name "WRESTLER_RED"
 }

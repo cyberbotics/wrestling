@@ -43,7 +43,8 @@ class Referee (Supervisor):
 
     def displayTime(self, minutes, seconds):
         for j in range(3):
-            self.digit[j][self.currentDigit[j]].setPosition(1000)  # far away, not visible
+            self.digit[j][self.currentDigit[j]].setPosition(
+                1000)  # far away, not visible
         self.currentDigit[0] = minutes
         self.currentDigit[1] = seconds // 10
         self.currentDigit[2] = seconds % 10
@@ -89,7 +90,7 @@ class Referee (Supervisor):
                     print("\fred KO: %d" % (10 - self.koCount[0] // 1000))
                 elif self.koCount[1] > self.koCount[0]:
                     print("\fblue KO: %d" % (10 - self.koCount[1] // 1000))
-                #  print("\fred: %1.3f - blue: %1.3f" % (self.coverage[0], self.coverage[1]))
+                # print("\fred: %1.3f - blue: %1.3f" % (self.coverage[0], self.coverage[1]))
             if self.step(timeStep) == -1 or time > matchDuration or ko != -1:
                 break
             time += timeStep
@@ -110,3 +111,6 @@ class Referee (Supervisor):
 referee = Referee()
 referee.init()
 referee.run()
+print(
+    f"red coverage: {referee.coverage[0]}, blue coverage: {referee.coverage[1]}")
+# referee.simulationSetMode(referee.SIMULATION_MODE_PAUSE)
