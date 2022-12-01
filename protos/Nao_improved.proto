@@ -4289,8 +4289,8 @@ PROTO Nao_improved [
                             translation -0.009 0 -0.015
                             rotation 0.7745972141192264 -0.44721312362157567 0.44721312362157567 1.82348
                             children [
-                              Cylinder {
-                                height 0.07
+                              Capsule {
+                                height 0.01
                                 radius 0.03
                                 subdivision 16
                               }
