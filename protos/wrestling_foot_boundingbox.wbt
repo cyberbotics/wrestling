@@ -1,123 +1,6 @@
-#VRML_SIM R2023a utf8
-
-EXTERNPROTO "webots://projects/objects/floors/protos/Floor.proto"
-EXTERNPROTO "webots://projects/robots/softbank/nao/protos/Nao.proto"
-EXTERNPROTO "webots://projects/appearances/protos/Parquetry.proto"
-EXTERNPROTO "webots://projects/objects/toys/protos/RubberDuck.proto"
-EXTERNPROTO "webots://projects/objects/stairs/protos/StraightStairs.proto"
-EXTERNPROTO "webots://projects/objects/backgrounds/protos/TexturedBackground.proto"
-EXTERNPROTO "webots://projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
-EXTERNPROTO "webots://projects/appearances/protos/VarnishedPine.proto"
-EXTERNPROTO "../protos/WrestlingPole.proto"
-EXTERNPROTO "../protos/WrestlingReferee.proto"
-EXTERNPROTO "../protos/WrestlingRing.proto"
-
-WorldInfo {
-  info [
-    "Competitors should program a humanoid robot to tackle its opponent and knock it to the ground or outside of the ring."
-    "All shots are allowed."
-  ]
-  title "Humanoid Robot Wrestling Competition"
-  basicTimeStep 20
-}
-Viewpoint {
-  orientation -0.3229397796525716 0.6418022383181523 0.6955571763757155 1.0489499972797403
-  position -1.3986817085652454 -1.1269379588520365 1.9052234582496346
-  follow "wrestler red"
-  followType "None"
-  ambientOcclusionRadius 0.2
-  bloomThreshold 5
-}
-TexturedBackground {
-  texture "music_hall"
-}
-TexturedBackgroundLight {
-  texture "music_hall"
-}
-Floor {
-  size 6 6
-  tileSize 1 1
-  appearance Parquetry {
-  }
-}
-WrestlingRing {
-}
-StraightStairs {
-  translation -1.58 0 0
-  name "straight stairs red"
-  stepSize 0.13 0.4 0.03
-  stepRise 0.0835
-  stringerWidth 0.03
-  stepAppearance VarnishedPine {
-    colorOverride 0.4784 0.4 0.3412
-    textureTransform TextureTransform {
-      scale 4 4
-    }
-  }
-  stringerAppearance VarnishedPine {
-    colorOverride 0.4784 0.4 0.3412
-    textureTransform TextureTransform {
-      scale 4 4
-    }
-  }
-  leftRail []
-  rightRail []
-}
-StraightStairs {
-  translation 1.58 0 0
-  rotation 0 0 1 -3.1415853071795863
-  name "straight stairs blue"
-  stepSize 0.13 0.4 0.03
-  stepRise 0.0835
-  stringerWidth 0.03
-  stepAppearance VarnishedPine {
-    colorOverride 0.4784 0.4 0.3412
-    textureTransform TextureTransform {
-      scale 4 4
-    }
-  }
-  stringerAppearance VarnishedPine {
-    colorOverride 0.4784 0.4 0.3412
-    textureTransform TextureTransform {
-      scale 4 4
-    }
-  }
-  leftRail []
-  rightRail []
-}
-WrestlingPole {
-  translation 0.96 0.96 0.7449509500000024
-  rotation 0.21878239130673896 0.12666348970390315 -0.9675177650204333 2.900655404875012e-16
-  name "pole 1"
-}
-WrestlingPole {
-  translation -0.96 0.96 0.7449509500000024
-  rotation 0.33776059919250545 -0.311829641265408 0.8880766028116082 1.3355156042381876e-15
-  name "pole 2"
-}
-WrestlingPole {
-  translation 0.96 -0.96 0.7449509500000024
-  rotation -0.06811275414840787 0.9972405799677101 0.029527586897401377 4.026219593904713e-16
-  name "pole 3"
-}
-WrestlingPole {
-  translation -0.96 -0.96 0.7449509500000024
-  rotation 0.5319530739342379 0.6448009225665345 0.5488694720871814 5.717077524624774e-16
-  name "pole 4"
-}
-RubberDuck {
-  translation -9.49476424501316e-13 0.934999738519168 0.5204612613780432
-  rotation -4.1612665389611935e-16 7.452065077052091e-17 -1 1.5707996938994684
-  name "rubber duck 1"
-}
-RubberDuck {
-  translation -8.112965198207313e-13 -0.934999738519168 0.5204612613780432
-  rotation -2.1002801707958974e-16 9.872763006528721e-17 1 1.5707996938996827
-  name "rubber duck 2"
-}
 DEF WRESTLER_RED Robot {
-  translation -0.387717 0.0273939 0.557896
-  rotation -0.06828937245780545 -0.9976615976271442 0.002810378866529319 1.56275
+  translation 1.62072635380049 1.9851935286383477 0.27810062411602665
+  rotation -0.04453118078654575 -0.04404165048180121 0.9980367262584052 -2.093554697988676
   children [
     DEF BODY_SLOT Group {
     }
@@ -323,12 +206,12 @@ DEF WRESTLER_RED Robot {
     }
     DEF HeadYaw Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 5.139127114994384e-07
+        position 7.578018377152858e-07
         axis 0 0 1
         anchor 0 0 0.1265
       }
       jointParameters2 JointParameters {
-        position 0.002351061264920691
+        position 0.002350601301238171
         axis 0 1 0
       }
       device [
@@ -356,8 +239,8 @@ DEF WRESTLER_RED Robot {
         }
       ]
       endPoint Solid {
-        translation -7.824592466771354e-05 -0.0004006032427648007 0.1284197270396695
-        rotation 3.7357464224396894e-05 0.9999999766028298 0.0002130698475221441 0.002351063508558124
+        translation -7.824670996964674e-05 -0.000400603261848788 0.12841972700367893
+        rotation 4.483684344894775e-05 0.9999999491446941 0.00031575348988199743 0.002350604051229877
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -428,7 +311,6 @@ DEF WRESTLER_RED Robot {
                 appearance PBRAppearance {
                   baseColor 0.74902 0.74902 0.74902
                   metalness 0
-                  emissiveColor 1 0 0
                 }
                 geometry IndexedFaceSet {
                   coord USE HEAD_COORD
@@ -449,7 +331,6 @@ DEF WRESTLER_RED Robot {
                 appearance PBRAppearance {
                   baseColor 0.74902 0.74902 0.74902
                   metalness 0
-                  emissiveColor 1 0 0
                 }
                 geometry IndexedFaceSet {
                   coord USE HEAD_COORD
@@ -569,16 +450,18 @@ DEF WRESTLER_RED Robot {
             4.09863e-05 -3.61413e-05 8.73519e-06
           ]
         }
+        linearVelocity -8.01411692820196e-07 -8.347482677653744e-07 -7.072016308008777e-08
+        angularVelocity 5.008602081401748e-06 -1.5744259685666217e-06 -9.750133006608247e-08
       }
     }
     DEF RShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position -2.7727486685783957e-08
+        position 5.081092542957148e-07
         axis 0 1 0
         anchor 0 -0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 1.27902424834723e-07
+        position 3.9234982708489705e-09
       }
       device [
         RotationalMotor {
@@ -605,8 +488,8 @@ DEF WRESTLER_RED Robot {
         }
       ]
       endPoint Solid {
-        translation 0.002244826984162812 -0.09780428219051782 0.10085479776597793
-        rotation -0.8809078522871527 -0.4732834719127016 -0.002027558407323731 0.014348922005838425
+        translation 0.0022448274664594063 -0.09780428246882905 0.10085479656311702
+        rotation -0.8809234353901886 -0.47325443018581126 -0.0020359984899413095 0.014348668662956901
         children [
           Transform {
             translation 0.005 0 0
@@ -658,7 +541,7 @@ DEF WRESTLER_RED Robot {
           }
           DEF RElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position -0.10000011951743637
+              position -0.10000012659264543
               anchor 0.105 -0.015 0
             }
             device [
@@ -675,11 +558,11 @@ DEF WRESTLER_RED Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation -0.9999999999999999 0 0 0.10000011951743565
+              rotation -1 0 0 0.10000012659264625
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position 0.7600001409368194
+                    position 0.7600000067144701
                     axis 0 0 1
                   }
                   device [
@@ -695,12 +578,12 @@ DEF WRESTLER_RED Robot {
                     }
                   ]
                   endPoint Solid {
-                    translation 0.0010019810208979965 -0.0002529348735252504 0.00022786734933166692
-                    rotation -0.006829932018136757 0.002368186970869347 0.9999738715182006 0.7600103505172039
+                    translation 0.0010019809869484747 -0.0002529350080134948 0.00022786734933166698
+                    rotation -0.006829933006860144 0.002368187827168181 0.9999738715094195 0.7600102162983627
                     children [
                       DEF RWristYaw HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -1.771185431167865e-06
+                          position -1.7676360964660393e-06
                           anchor 0.05595 0 0
                         }
                         device [
@@ -717,11 +600,11 @@ DEF WRESTLER_RED Robot {
                         ]
                         endPoint Solid {
                           translation 0.05595 0 0
-                          rotation -0.9999999999999999 0 0 1.7711708495741023e-06
+                          rotation -1 0 0 1.767657116214919e-06
                           children [
                             DEF RPhalanx1 HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -3.901317445628778e-09
+                                position -3.795188023684519e-09
                                 axis 0 -1 0
                                 anchor 0.069 -0.013 -0.005
                               }
@@ -737,7 +620,7 @@ DEF WRESTLER_RED Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 -0.013 -0.005
-                                rotation 6.222896574769832e-13 1 4.446546831506385e-13 0.9600000300596685
+                                rotation 6.222896575168161e-13 0.9999999999999999 4.446546832289828e-13 0.9600000299535392
                                 children [
                                   DEF HAND_SLOT Transform {
                                     rotation 0 -1 0 0.96
@@ -761,7 +644,7 @@ DEF WRESTLER_RED Robot {
                                   }
                                   DEF RPhalanx2 HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -1.681008500668834e-09
+                                      position -1.6333770377110523e-09
                                       axis 0 -1 0
                                       anchor 0.014 0 0
                                     }
@@ -777,12 +660,12 @@ DEF WRESTLER_RED Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 3.661641178236214e-12 1 4.47413543313429e-12 0.9600000136681633
+                                      rotation 3.661641178297164e-12 1 4.474135433426165e-12 0.9600000136205318
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx3 HingeJoint {
                                           jointParameters HingeJointParameters {
-                                            position 3.201391440530561e-11
+                                            position 3.6548403808783077e-11
                                             axis 0 -1 0
                                             anchor 0.014 0 0
                                           }
@@ -798,7 +681,7 @@ DEF WRESTLER_RED Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9600000005383994
+                                            rotation 0 0.9999999999999999 0 0.9600000007926914
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -808,6 +691,8 @@ DEF WRESTLER_RED Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
+                                            linearVelocity -5.945544657936263e-07 -1.7016433252240408e-07 -1.026287466475937e-06
+                                            angularVelocity 5.155688152222015e-06 -2.171757655516454e-06 -2.037619527853131e-07
                                           }
                                         }
                                       ]
@@ -815,6 +700,8 @@ DEF WRESTLER_RED Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
+                                      linearVelocity -6.127455646860376e-07 -2.09267993526211e-07 -1.0697882163389793e-06
+                                      angularVelocity 5.155688091084186e-06 -2.1717576741127626e-06 -2.0376195131769136e-07
                                     }
                                   }
                                 ]
@@ -822,18 +709,20 @@ DEF WRESTLER_RED Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
+                                linearVelocity -6.396484150002438e-07 -2.734571362785975e-07 -1.0663485849768038e-06
+                                angularVelocity 5.15568817833825e-06 -2.171757664041898e-06 -2.0376194765876165e-07
                               }
                             }
                             DEF RPhalanx4 HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.8071584694002124e-09
+                                position -1.675872843247162e-09
                                 axis 0 -1 0
                                 anchor 0.069 0.013 -0.005
                               }
                               device [
                                 RotationalMotor {
                                   name "RPhalanx4"
-                                  minPosition -1.675872843247162e-09
+                                  minPosition -1.6700197474613381e-09
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -842,12 +731,12 @@ DEF WRESTLER_RED Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 0.013 -0.005
-                                rotation 6.188410926477967e-13 0.9999999999999999 4.490273761199392e-13 0.9600000275918844
+                                rotation 6.188410926963498e-13 0.9999999999999999 4.4902737621717856e-13 0.9600000274605986
                                 children [
                                   USE PHALANX_TRANS
                                   DEF RPhalanx5 HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 4.949622416613511e-10
+                                      position 5.426042829990175e-10
                                       axis 0 -1 0
                                       anchor 0.014 0 0
                                     }
@@ -863,12 +752,12 @@ DEF WRESTLER_RED Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 1.8545548781389606e-12 1 2.262789272529036e-12 0.959999988705656
+                                      rotation 1.854554875987121e-12 1 2.2627892622606894e-12 0.9599999920175087
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx6 HingeJoint {
                                           jointParameters HingeJointParameters {
-                                            position 4.807913182369115e-10
+                                            position 4.853236520744304e-10
                                             axis 0 -1 0
                                             anchor 0.014 0 0
                                           }
@@ -884,7 +773,7 @@ DEF WRESTLER_RED Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999812973401
+                                            rotation 0 1 0 0.9599999842443689
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -892,6 +781,8 @@ DEF WRESTLER_RED Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
+                                            linearVelocity -5.911560210018726e-07 -1.7030988108403693e-07 -9.386976471713481e-07
+                                            angularVelocity 5.155801766317611e-06 -2.1717288691707427e-06 -2.0376631252787503e-07
                                           }
                                         }
                                       ]
@@ -899,6 +790,8 @@ DEF WRESTLER_RED Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
+                                      linearVelocity -6.093469421066154e-07 -2.0941440315924122e-07 -9.82199544132288e-07
+                                      angularVelocity 5.1558017578115645e-06 -2.1717288754333375e-06 -2.0376631143937668e-07
                                     }
                                   }
                                 ]
@@ -906,11 +799,13 @@ DEF WRESTLER_RED Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
+                                linearVelocity -6.362494316095632e-07 -2.736049591210746e-07 -9.787598263626006e-07
+                                angularVelocity 5.15580152697385e-06 -2.171728955793288e-06 -2.0376631655380566e-07
                               }
                             }
                             DEF RPhalanx7 HingeJoint {
                               jointParameters HingeJointParameters {
-                                position 8.898191094078003e-11
+                                position 1.0430071594931018e-10
                                 axis 0 1 0
                                 anchor 0.049 0 -0.026
                               }
@@ -931,7 +826,7 @@ DEF WRESTLER_RED Robot {
                                   USE PHALANX_TRANS
                                   DEF RPhalanx8 HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -2.9384570897498326e-12
+                                      position 8.643480272228202e-12
                                       axis 0 1 0
                                       anchor 0.014 0 0
                                     }
@@ -947,7 +842,7 @@ DEF WRESTLER_RED Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -1 0 0.9600000013864629
+                                      rotation 0 -0.9999999999999999 0 0.9600000014543983
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -955,6 +850,8 @@ DEF WRESTLER_RED Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
+                                      linearVelocity -6.147558865824375e-07 -2.2162583379612e-07 -9.889123647946185e-07
+                                      angularVelocity 5.1557903227498e-06 -2.1717317842620068e-06 -2.0376587540195128e-07
                                     }
                                   }
                                 ]
@@ -962,6 +859,8 @@ DEF WRESTLER_RED Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
+                                linearVelocity -6.060882939309591e-07 -2.0608799376201486e-07 -9.352014846290428e-07
+                                angularVelocity 5.155790398268289e-06 -2.1717317757833954e-06 -2.0376587221498285e-07
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -1042,6 +941,8 @@ DEF WRESTLER_RED Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
+                          linearVelocity -6.726974866244547e-07 -3.713303124139444e-07 -8.59431817809921e-07
+                          angularVelocity 5.155790314358072e-06 -2.1717317775736423e-06 -2.037658718202282e-07
                         }
                       }
                       Shape {
@@ -1084,6 +985,8 @@ DEF WRESTLER_RED Robot {
                         2.33243e-06 -6.0117e-07 2.694e-08
                       ]
                     }
+                    linearVelocity -6.789084246643816e-07 -4.13403536960944e-07 -5.82577932093825e-07
+                    angularVelocity 5.008590067602573e-06 -1.5744416948672166e-06 -9.74818246049576e-08
                   }
                 }
               ]
@@ -1102,6 +1005,8 @@ DEF WRESTLER_RED Robot {
                   4.21e-09 4.319e-08 -1.84e-09
                 ]
               }
+              linearVelocity -6.833983451891507e-07 -4.4403048191195885e-07 -3.1635114861227806e-07
+              angularVelocity 5.008596243217987e-06 -1.574439507571708e-06 -9.748732785480003e-08
             }
           }
         ]
@@ -1129,16 +1034,18 @@ DEF WRESTLER_RED Robot {
             -0.000126182 1.89718e-05 2.00601e-05
           ]
         }
+        linearVelocity -6.911506581447155e-07 -4.867751874180985e-07 -2.143626647478711e-08
+        angularVelocity 5.008602249847285e-06 -1.574437488371331e-06 -9.749260473690625e-08
       }
     }
     DEF LShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position -3.475462860691035e-08
+        position 1.040000229404097
         axis 0 1 0
         anchor 0 0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 0.25000005630169936
+        position 0.24999988810119117
       }
       device [
         RotationalMotor {
@@ -1165,8 +1072,8 @@ DEF WRESTLER_RED Robot {
         }
       ]
       endPoint Solid {
-        translation 0.000686061874997799 0.09831700617416206 0.09967983846483724
-        rotation 0.08000665155759171 -0.024527596585179286 0.9964925151310956 0.2508701573505278
+        translation 7.118958540019385e-05 0.0983170060587661 0.099246265019376
+        rotation 0.13958353006786542 0.9689734562157682 0.203977644076654 1.061112786002541
         children [
           Transform {
             translation 0.005 0 0
@@ -1215,7 +1122,7 @@ DEF WRESTLER_RED Robot {
           }
           DEF LElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position 0.10000001098005684
+              position 0.1000000133122254
               anchor 0.105 0.015 0
             }
             device [
@@ -1231,12 +1138,12 @@ DEF WRESTLER_RED Robot {
               }
             ]
             endPoint Solid {
-              translation 0.105028 0.015005379542234899 4.74118276475953e-07
-              rotation 0.9999999999968218 2.5120517584137563e-06 -2.1396055085890652e-07 0.09999976253605815
+              translation 0.105028 0.015005379542233794 4.7411828902189e-07
+              rotation 0.9999999999968217 2.5120517085896787e-06 -2.1396054366469466e-07 0.09999976486822829
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -0.16999999130326712
+                    position -0.17000001923219277
                     axis 0 0 1
                   }
                   device [
@@ -1252,12 +1159,12 @@ DEF WRESTLER_RED Robot {
                     }
                   ]
                   endPoint Solid {
-                    translation 0.00043807219955719625 0.00045405211860163576 0.0002043501738793195
-                    rotation 0.015969929830781257 0.00025280902475562176 -0.9998724405786954 0.17073212194162332
+                    translation 0.0004380722122383836 0.0004540521063667492 0.00020435017387931953
+                    rotation 0.015969927228576146 0.00025280876049455376 -0.9998724406203245 0.17073214986698573
                     children [
                       DEF LWristYaw HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -3.4178204788355367e-06
+                          position -3.4170952470215986e-06
                           anchor 0.05595 0 0
                         }
                         device [
@@ -1274,11 +1181,11 @@ DEF WRESTLER_RED Robot {
                         ]
                         endPoint Solid {
                           translation 0.05595 0 0
-                          rotation -1 0 0 3.41779498740034e-06
+                          rotation -1 0 0 3.4171452535413807e-06
                           children [
                             DEF LPhalanx1 HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.4369143253620263e-07
+                                position -1.435375565741777e-07
                                 axis 0 -1 0
                                 anchor 0.069 -0.013 -0.005
                               }
@@ -1294,7 +1201,7 @@ DEF WRESTLER_RED Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 -0.013 -0.005
-                                rotation -8.987909475036368e-13 0.9999999999999999 -6.320717960214435e-13 0.9600001436914058
+                                rotation -8.98790947587834e-13 1 -6.320717961840052e-13 0.9600001435375323
                                 children [
                                   DEF HAND_SLOT Transform {
                                     rotation 0 -1 0 0.96
@@ -1318,7 +1225,7 @@ DEF WRESTLER_RED Robot {
                                   }
                                   DEF LPhalanx2 HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -1.0218715588920372e-07
+                                      position -1.0212139206041378e-07
                                       axis 0 -1 0
                                       anchor 0.014 0 0
                                     }
@@ -1334,12 +1241,12 @@ DEF WRESTLER_RED Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation -1.930656045287032e-12 1 -2.4886700981901217e-12 0.9600001021871032
+                                      rotation -1.9306560453271403e-12 1 -2.488670098410792e-12 0.9600001021213437
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx3 HingeJoint {
                                           jointParameters HingeJointParameters {
-                                            position -9.487370232144664e-09
+                                            position -9.482107167125276e-09
                                             axis 0 -1 0
                                             anchor 0.014 0 0
                                           }
@@ -1355,7 +1262,7 @@ DEF WRESTLER_RED Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation -1.2472108434939621e-12 1 -2.4382491238208003e-12 0.9600000094874968
+                                            rotation 1.2472108434938498e-12 -0.9999999999999999 2.4382491238364064e-12 -0.9600000094822345
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -1365,6 +1272,8 @@ DEF WRESTLER_RED Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
+                                            linearVelocity -3.450793031927504e-07 6.08802382428833e-07 -5.017539931450297e-07
+                                            angularVelocity 4.9613333216073534e-06 -1.69203681263444e-06 -3.840197986004643e-07
                                           }
                                         }
                                       ]
@@ -1372,6 +1281,8 @@ DEF WRESTLER_RED Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
+                                      linearVelocity -3.4171243223772185e-07 6.322219654095631e-07 -5.614454334593534e-07
+                                      angularVelocity 4.961333374445381e-06 -1.692036817824915e-06 -3.840198004101506e-07
                                     }
                                   }
                                 ]
@@ -1379,11 +1290,13 @@ DEF WRESTLER_RED Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
+                                linearVelocity -3.5684089324357636e-07 5.993433304623291e-07 -6.120303843930165e-07
+                                angularVelocity 4.9613332598282905e-06 -1.6920367214196129e-06 -3.840198848169964e-07
                               }
                             }
                             DEF LPhalanx4 HingeJoint {
                               jointParameters HingeJointParameters {
-                                position 1.1847928376686541e-07
+                                position 1.1863316333574579e-07
                                 axis 0 -1 0
                                 anchor 0.069 0.013 -0.005
                               }
@@ -1399,12 +1312,12 @@ DEF WRESTLER_RED Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 0.013 -0.005
-                                rotation 5.014321215238098e-13 1 3.718892290331639e-13 0.9599999007317925
+                                rotation 5.014321215693019e-13 1 3.718892291267045e-13 0.9599999005779132
                                 children [
                                   USE PHALANX_TRANS
                                   DEF LPhalanx5 HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 9.349969997418485e-08
+                                      position 9.35654446298077e-08
                                       axis 0 -1 0
                                       anchor 0.014 0 0
                                     }
@@ -1420,12 +1333,12 @@ DEF WRESTLER_RED Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation -1.3799375752953011e-12 1 -1.8177402543338755e-12 0.9599999133142959
+                                      rotation -1.3799375753226805e-12 1 -1.817740254494012e-12 0.9599999132485508
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx6 HingeJoint {
                                           jointParameters HingeJointParameters {
-                                            position -7.405862186404341e-11
+                                            position -6.879522292937931e-11
                                             axis 0 -1 0
                                             anchor 0.014 0 0
                                           }
@@ -1441,7 +1354,7 @@ DEF WRESTLER_RED Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9600000027959429
+                                            rotation 0 0.9999999999999999 0 0.9600000024129987
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -1449,6 +1362,8 @@ DEF WRESTLER_RED Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
+                                            linearVelocity -3.548257908991262e-07 5.884209902615764e-07 -5.378706682737521e-07
+                                            angularVelocity 4.961333388827134e-06 -1.6920367881449338e-06 -3.8401980191178394e-07
                                           }
                                         }
                                       ]
@@ -1456,6 +1371,8 @@ DEF WRESTLER_RED Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
+                                      linearVelocity -3.514589285549011e-07 6.118405457265688e-07 -5.975621136429943e-07
+                                      angularVelocity 4.9613332721939475e-06 -1.6920366962821827e-06 -3.840198026004339e-07
                                     }
                                   }
                                 ]
@@ -1463,11 +1380,13 @@ DEF WRESTLER_RED Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
+                                linearVelocity -3.66587397537226e-07 5.78961886362861e-07 -6.481470459893011e-07
+                                angularVelocity 4.961333343792773e-06 -1.692036738793733e-06 -3.8401981906718353e-07
                               }
                             }
                             DEF LPhalanx7 HingeJoint {
                               jointParameters HingeJointParameters {
-                                position 1.8606296123454476e-10
+                                position 2.0300094661964962e-10
                                 axis 0 1 0
                                 anchor 0.049 0 -0.026
                               }
@@ -1487,7 +1406,7 @@ DEF WRESTLER_RED Robot {
                                   USE PHALANX_TRANS
                                   DEF LPhalanx8 HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 8.065905814406804e-12
+                                      position 2.39733749501031e-11
                                       axis 0 1 0
                                       anchor 0.014 0 0
                                     }
@@ -1503,7 +1422,7 @@ DEF WRESTLER_RED Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -1 0 0.9599999994720997
+                                      rotation 0 -1 0 0.9599999996351627
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -1511,6 +1430,8 @@ DEF WRESTLER_RED Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
+                                      linearVelocity -3.595325190973783e-07 5.810311520345566e-07 -5.661192618599921e-07
+                                      angularVelocity 4.961333373380572e-06 -1.6920367942328954e-06 -3.84019800211617e-07
                                     }
                                   }
                                 ]
@@ -1518,6 +1439,8 @@ DEF WRESTLER_RED Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
+                                linearVelocity -3.70922397423907e-07 5.370158020701447e-07 -5.193338091985818e-07
+                                angularVelocity 4.961333388109462e-06 -1.6920367798599506e-06 -3.840198042961674e-07
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -1598,6 +1521,8 @@ DEF WRESTLER_RED Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
+                          linearVelocity -4.2718371867122213e-07 3.921325926639362e-07 -6.07828141027125e-07
+                          angularVelocity 4.961333324560484e-06 -1.6920367490833536e-06 -3.8401979956016616e-07
                         }
                       }
                       Shape {
@@ -1636,6 +1561,8 @@ DEF WRESTLER_RED Robot {
                         -2.34271e-06 7.459e-08 -2.655e-08
                       ]
                     }
+                    linearVelocity -5.1651846796117e-07 9.635652634014572e-08 -4.6556798631624505e-07
+                    angularVelocity 5.0086111090148935e-06 -1.5744415557261092e-06 -9.750008341122965e-08
                   }
                 }
               ]
@@ -1652,6 +1579,8 @@ DEF WRESTLER_RED Robot {
                   4.21e-09 4.319e-08 -1.84e-09
                 ]
               }
+              linearVelocity -5.884513459315158e-07 -1.4045947159097154e-07 -3.363399190502617e-07
+              angularVelocity 5.0086127961810084e-06 -1.5744419902834382e-06 -9.750027430226059e-08
             }
           }
         ]
@@ -1675,11 +1604,13 @@ DEF WRESTLER_RED Robot {
             9.6588e-05 3.57699e-07 3.29807e-05
           ]
         }
+        linearVelocity -6.669500413479992e-07 -3.994555363753356e-07 -1.8582285747571307e-07
+        angularVelocity 5.008614847540731e-06 -1.5744428250321309e-06 -9.750029213510781e-08
       }
     }
     DEF RHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position -2.914831233947705e-06
+        position -0.5000004035258151
         axis 0 0.707107 0.707107
         anchor 0 -0.05 -0.085
       }
@@ -1696,8 +1627,8 @@ DEF WRESTLER_RED Robot {
         }
       ]
       endPoint Solid {
-        translation -0.0009201602077289892 -0.05027469697383955 -0.08653761086542955
-        rotation 0.20880171367506017 0.6879485853802991 -0.6950745199182627 0.0011259095727091
+        translation -0.00037938544216824265 -0.05004006003241904 -0.08677224780685007
+        rotation 0.0010108746427629617 -0.7056634976465777 -0.7085464037179606 0.5000044030351326
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -1725,7 +1656,7 @@ DEF WRESTLER_RED Robot {
           }
           DEF RHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 0.11699970437202228
+              position -2.1368794342287014e-07
             }
             device [
               RotationalMotor {
@@ -1740,8 +1671,8 @@ DEF WRESTLER_RED Robot {
               }
             ]
             endPoint Solid {
-              translation -1.7423230480595472e-07 1.8912589757985047e-05 -4.030255611684318e-05
-              rotation 0.9999999992749253 -1.9582200636277998e-05 3.2660170087677675e-05 0.1169994164939699
+              translation -1.742323048059545e-07 1.4078645353914925e-05 -4.223474666555746e-05
+              rotation -0.11194873408827995 -0.46029184291747977 0.880680929894398 4.481064350418194e-06
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -1776,7 +1707,7 @@ DEF WRESTLER_RED Robot {
                 }
                 DEF RHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -0.435002225742601
+                    position -0.4120008445363279
                     axis 0 1 0
                   }
                   device [
@@ -1792,8 +1723,8 @@ DEF WRESTLER_RED Robot {
                     }
                   ]
                   endPoint Solid {
-                    translation -3.324832365127406e-05 1.8748537078061563e-05 -2.9637466978787258e-05
-                    rotation -0.00014439163446825596 -0.9999999732982122 -0.00018042901920692085 0.4350022315635741
+                    translation -3.392117136806141e-05 1.8748537078061563e-05 -2.8864937338528572e-05
+                    rotation -0.00015450773070513127 -0.9999999702819766 -0.00018858262678876715 0.412000851005227
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -1821,7 +1752,7 @@ DEF WRESTLER_RED Robot {
                       }
                       DEF RKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position 1.0469984837491353
+                          position 1.5235002955554149
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -1839,7 +1770,7 @@ DEF WRESTLER_RED Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 1 0 1.0469984837491355
+                          rotation 0 0.9999999999999999 0 1.523500295555415
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -1881,7 +1812,7 @@ DEF WRESTLER_RED Robot {
                             }
                             DEF RAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -0.6120004572728417
+                                position -0.8520013858275879
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -1899,7 +1830,7 @@ DEF WRESTLER_RED Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 0.6120004572728418
+                                rotation 0 -1 0 0.852001385827588
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -1917,7 +1848,7 @@ DEF WRESTLER_RED Robot {
                                   }
                                   DEF RAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -0.17000007994927813
+                                      position -2.034207371850375e-07
                                     }
                                     device [
                                       RotationalMotor {
@@ -1932,15 +1863,15 @@ DEF WRESTLER_RED Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      translation 0.00025399527299651886 -0.00037830264957604536 -0.0021718697373149555
-                                      rotation -0.9999998398615386 0.0005624407340348741 -6.274805101853756e-05 0.17000059666130315
+                                      translation 0.0002539952729965194 -5.407576877928584e-06 -0.0022045638590553716
+                                      rotation -0.007212018592928269 0.9996332994920087 -0.026100830150307865 9.609516121582938e-05
                                       children [
                                         DEF RIGHT_FOOT_SLOT Transform {
                                           translation 0.0254 -0.00332 -0.03241
                                         }
                                         DEF RFsr TouchSensor {
-                                          translation 0.01994640295967487 -0.0071063021700702445 -0.0406455438624751
-                                          rotation -2.368157977691283e-06 -2.56209422854278e-06 0.9999999999939138 -3.1415852827109934
+                                          translation 0.019947093673523764 -0.007103807993926958 -0.04066671580437441
+                                          rotation 1.4566840057588084e-06 2.0591785556959493e-06 -0.9999999999968191 3.1415851964451758
                                           name "RFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject DEF FOOT_Box Box {
@@ -1952,6 +1883,8 @@ DEF WRESTLER_RED Robot {
                                           }
                                           type "force-3d"
                                           lookupTable []
+                                          linearVelocity 4.3279087946721296e-07 -4.7183693112180133e-07 6.781504945392712e-08
+                                          angularVelocity 8.86858473611152e-07 2.8858640135067082e-06 -1.2351943502474247e-07
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -2094,6 +2027,8 @@ DEF WRESTLER_RED Robot {
                                           5.87505e-06 0.000139133 -1.88492e-05
                                         ]
                                       }
+                                      linearVelocity 3.070563927598798e-07 -2.8090836254134154e-07 6.346195959568799e-08
+                                      angularVelocity 8.878658878925589e-07 2.8868826755959285e-06 -1.1962616732326783e-07
                                     }
                                   }
                                 ]
@@ -2112,6 +2047,8 @@ DEF WRESTLER_RED Robot {
                                     6.434e-08 3.87466e-06 -4.58e-09
                                   ]
                                 }
+                                linearVelocity 2.800808734833105e-07 -1.2266737249964125e-07 1.1267856289621184e-08
+                                angularVelocity 9.520250388185908e-07 2.9402058735042343e-06 -1.205685529750283e-07
                               }
                             }
                           ]
@@ -2136,6 +2073,8 @@ DEF WRESTLER_RED Robot {
                               -8.965e-07 2.79969e-05 -3.8476e-05
                             ]
                           }
+                          linearVelocity 1.5453811976584512e-07 1.6177409591443324e-08 -3.350876592390003e-10
+                          angularVelocity 2.204707896304456e-06 1.4707132317964596e-06 -1.215805382889665e-07
                         }
                       }
                     ]
@@ -2177,6 +2116,8 @@ DEF WRESTLER_RED Robot {
                         -8.3954e-07 8.5883e-05 -3.91763e-05
                       ]
                     }
+                    linearVelocity 5.4425514256200756e-08 4.401894232679098e-09 5.175163039955875e-08
+                    angularVelocity 3.549408076563767e-06 -8.215743213701032e-08 -1.033724287920807e-07
                   }
                 }
               ]
@@ -2212,6 +2153,8 @@ DEF WRESTLER_RED Robot {
                   -1.919e-08 -4.10822e-06 2.51e-09
                 ]
               }
+              linearVelocity -8.01342980207302e-08 9.570898536570659e-08 1.8618623421551567e-07
+              angularVelocity 4.923794435892855e-06 -1.6398158253900435e-06 -1.0043937800990005e-07
             }
           }
         ]
@@ -2228,11 +2171,13 @@ DEF WRESTLER_RED Robot {
             5.00219e-06 1.27352e-05 -2.77008e-05
           ]
         }
+        linearVelocity -2.828623451432979e-07 1.3121620061655524e-07 1.5936846583690327e-07
+        angularVelocity 4.9698492203292515e-06 -1.6040444979327205e-06 -1.0033773331808596e-07
       }
     }
     DEF LHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 7.115302298692283e-07
+        position -0.5000005595050497
         axis 0 0.707107 -0.707107
         anchor 0 0.05 -0.085
       }
@@ -2249,8 +2194,8 @@ DEF WRESTLER_RED Robot {
         }
       ]
       endPoint Solid {
-        translation -0.0005760021990912641 0.05084166340742602 -0.08657347929572203
-        rotation -0.8872330598581076 0.3276168519337941 0.3247840756930824 0.0034489413418988275
+        translation -0.00025739927594918717 0.050691189035223023 -0.08672395366792501
+        rotation -0.006787440134792056 -0.7059684805150314 0.7082107279445254 0.500006008834825
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -2278,7 +2223,7 @@ DEF WRESTLER_RED Robot {
           }
           DEF LHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 0.18400005828038188
+              position 0.38500046248064457
             }
             device [
               RotationalMotor {
@@ -2293,14 +2238,14 @@ DEF WRESTLER_RED Robot {
               }
             ]
             endPoint Solid {
-              translation -2.0902467512406945e-05 9.853730454743467e-06 -2.605267117381687e-05
-              rotation 0.9999999595816487 -0.00024696946560059127 -0.0001408644174633569 0.18400211450781478
+              translation -2.0902467512406962e-05 1.485675645431407e-05 -2.356086727654491e-05
+              rotation 0.9999999906794248 -0.00011121215124095593 -7.920232137378647e-05 0.38500251481368936
               children [
                 USE HIP_ROLL_CYL_TRANS
                 USE UPPER_THIGH_SHAPE
                 DEF LHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -0.762998983292431
+                    position -0.9070006097878368
                     axis 0 1 0
                   }
                   device [
@@ -2316,8 +2261,8 @@ DEF WRESTLER_RED Robot {
                     }
                   ]
                   endPoint Solid {
-                    translation 5.8252490292669065e-05 -4.780617949506912e-06 5.591592634613073e-06
-                    rotation -8.325050804764862e-06 -0.9999999984734966 5.4623259637776314e-05 0.7629992286971414
+                    translation 5.684713931232789e-05 -4.780617949506905e-06 1.3893210050011365e-05
+                    rotation -1.0395687416954991e-05 -0.9999999988976029 4.5789997560861394e-05 0.9070008550060343
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -2345,7 +2290,7 @@ DEF WRESTLER_RED Robot {
                       }
                       DEF LKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position 1.2780004608977988
+                          position 0.8735001726936792
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -2363,7 +2308,7 @@ DEF WRESTLER_RED Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 1 0 1.2780004608977986
+                          rotation 0 1 0 0.8735001726936794
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -2401,7 +2346,7 @@ DEF WRESTLER_RED Robot {
                             }
                             DEF LAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -0.5149999474049585
+                                position 0.1880004905434467
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -2419,12 +2364,12 @@ DEF WRESTLER_RED Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 0.5149999474049584
+                                rotation 0 0.9999999999999999 0 0.188000490543447
                                 children [
                                   USE ANKLE_SHAPE
                                   DEF LAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -0.18399999606845746
+                                      position -2.341962645242641e-06
                                     }
                                     device [
                                       RotationalMotor {
@@ -2439,21 +2384,23 @@ DEF WRESTLER_RED Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      translation 2.175037606105818e-06 -3.237054174116568e-05 -0.0001704303273160968
-                                      rotation -0.9999999995160538 3.0976520022207054e-05 -2.8892583219065687e-06 0.18400096278556602
+                                      translation 2.1750376061058196e-06 -6.419943014191628e-07 -0.00017347603951268137
+                                      rotation -0.5009327907317125 0.8654857498336237 -0.0008694852894372418 6.604896626023052e-06
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
                                         }
                                         DEF LFsr TouchSensor {
-                                          translation 0.019585495223464755 0.007074718758237453 -0.04201896974203079
-                                          rotation 2.613019277805074e-06 -2.635720946030939e-06 0.9999999999931127 -3.141588755667214
+                                          translation 0.0195885643987328 0.007078246631557095 -0.04204325282442056
+                                          rotation 2.9927436933150164e-06 -2.040011083841377e-06 0.9999999999934409 -3.1415885113163466
                                           name "LFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject USE FOOT_Box
                                           physics USE FSR_Physics
                                           type "force-3d"
                                           lookupTable []
+                                          linearVelocity -1.7820889164393559e-06 1.8228094126570631e-06 -1.952062036072089e-07
+                                          angularVelocity -3.176527882556124e-06 7.204253539935105e-06 -3.878663437325075e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -2583,6 +2530,8 @@ DEF WRESTLER_RED Robot {
                                           -5.69572e-06 0.000139379 1.87409e-05
                                         ]
                                       }
+                                      linearVelocity -1.5882843341177052e-06 1.679987493415172e-06 -1.3774041133658413e-07
+                                      angularVelocity -3.182134648731904e-06 7.200197452848719e-06 -3.883440294922214e-06
                                     }
                                   }
                                 ]
@@ -2599,6 +2548,8 @@ DEF WRESTLER_RED Robot {
                                     -2.634e-08 3.86194e-06 1.834e-08
                                   ]
                                 }
+                                linearVelocity -1.1313796550629725e-06 1.6426841076681868e-06 -1.6634713791278398e-07
+                                angularVelocity -4.033042669388995e-06 -7.639232241209508e-07 -3.1624624173381255e-06
                               }
                             }
                           ]
@@ -2615,6 +2566,8 @@ DEF WRESTLER_RED Robot {
                               6.3362e-07 3.6497e-05 3.94952e-05
                             ]
                           }
+                          linearVelocity -1.0217726935486174e-06 1.3610917105308078e-06 -1.7064897523283511e-07
+                          angularVelocity 1.3820258688089422e-06 -1.1809379346091003e-06 -1.3652757377682837e-06
                         }
                       }
                     ]
@@ -2631,6 +2584,8 @@ DEF WRESTLER_RED Robot {
                         9.2451e-07 8.53067e-05 3.83616e-05
                       ]
                     }
+                    linearVelocity -8.753488842181696e-07 1.0833848584094132e-06 -7.83713701841069e-08
+                    angularVelocity 2.1733606951647272e-06 -1.2658372894743845e-06 -1.0979181922106622e-06
                   }
                 }
               ]
@@ -2647,6 +2602,8 @@ DEF WRESTLER_RED Robot {
                   -2.233e-08 -4.08164e-06 -4.19e-09
                 ]
               }
+              linearVelocity -6.801301277114234e-07 8.922873860674673e-07 9.401643659451873e-08
+              angularVelocity 5.085184629109882e-06 -1.5163028225805213e-06 -1.1156408148226671e-07
             }
           }
         ]
@@ -2663,6 +2620,8 @@ DEF WRESTLER_RED Robot {
             -4.99449e-06 1.27482e-05 2.34547e-05
           ]
         }
+        linearVelocity -5.80845512721239e-07 5.292589492293977e-07 8.309350826341588e-08
+        angularVelocity 5.0470691072041826e-06 -1.5452449087644312e-06 -1.0445179547970013e-07
       }
     }
     DEF ARMS_AXIS Transform {
@@ -2688,18 +2647,19 @@ DEF WRESTLER_RED Robot {
   boundingObject Group {
     children [
       Transform {
-        translation 0 0 -0.02
         children [
-          Sphere {
+          Capsule {
+            height 0.05
             radius 0.037
+            subdivision 16
           }
         ]
       }
       Transform {
-        translation 0 0 0.055
+        translation 0 0 0.06
         children [
-          Capsule {
-            height 0.03
+          Cylinder {
+            height 0.08
             radius 0.055
             subdivision 16
           }
@@ -2718,81 +2678,7 @@ DEF WRESTLER_RED Robot {
       1.43116e-05 0.000155191 -2.70793e-05
     ]
   }
-  controller "Alice"
-}
-DEF WRESTLER_BLUE Nao {
-  hidden translation_11 0 0 0.1265
-  hidden rotation_11 -9.850526420766488e-09 -0.9999160314163993 -0.012958785301043519 9.76679897795564e-07
-  hidden translation_18 0 -0.098 0.1
-  hidden rotation_18 6.230258481244138e-08 -0.7312144632814257 -0.6821476443469203 4.7590492435310335e-07
-  hidden translation_19 0.105 -0.015 0
-  hidden rotation_19 -1 0 0 6.201461567486791e-07
-  hidden translation_20 0 0 0
-  hidden rotation_20 0 0 1 5.607273495860947e-07
-  hidden translation_21 0.05595 0 0
-  hidden rotation_21 1 0 0 0
-  hidden translation_22 0.069 -0.013 -0.005
-  hidden translation_23 0.014 0 0
-  hidden translation_24 0.014 0 0
-  hidden translation_25 0.069 0.013 -0.005
-  hidden translation_26 0.014 0 0
-  hidden translation_27 0.014 0 0
-  hidden translation_28 0.049 0 -0.026
-  hidden translation_29 0.014 0 0
-  hidden translation_30 0 0.098 0.1
-  hidden rotation_30 -6.219176266105465e-08 -0.7292270959786668 0.6842717606992974 4.749708607944627e-07
-  hidden translation_31 0.105 0.015 0
-  hidden rotation_31 0.9999999999999999 0 0 4.6838026182358703e-07
-  hidden translation_32 0 0 0
-  hidden rotation_32 0 0 -1 5.740332688170161e-07
-  hidden translation_33 0.05595 0 0
-  hidden rotation_33 1 0 0 0
-  hidden translation_34 0.069 -0.013 -0.005
-  hidden translation_35 0.014 0 0
-  hidden translation_36 0.014 0 0
-  hidden translation_37 0.069 0.013 -0.005
-  hidden translation_38 0.014 0 0
-  hidden translation_39 0.014 0 0
-  hidden translation_40 0.049 0 -0.026
-  hidden translation_41 0.014 0 0
-  hidden translation_42 0 -0.05 -0.085
-  hidden rotation_42 0 0.7071067811865475 0.7071067811865475 2.6097068582363016e-05
-  hidden translation_43 0 0 0
-  hidden rotation_43 -1 0 0 6.342191188171821e-05
-  hidden translation_44 0 0 0
-  hidden rotation_44 0 1 0 3.228139082408509e-05
-  hidden translation_45 0 0 -0.1
-  hidden rotation_45 0 1 0 2.521072147197485e-06
-  hidden translation_46 0 0 -0.1029
-  hidden rotation_46 0 1 0 2.528810910653644e-07
-  hidden translation_47 0 0 0
-  hidden rotation_47 1 0 0 3.009887021291878e-07
-  hidden translation_52 0 0.05 -0.085
-  hidden rotation_52 0 0.7071067811865476 -0.7071067811865476 2.6106290071476066e-05
-  hidden translation_53 0 0 0
-  hidden rotation_53 1 0 0 6.342495073838562e-05
-  hidden translation_54 0 0 0
-  hidden rotation_54 0 1 0 3.228504993022274e-05
-  hidden translation_55 0 0 -0.1
-  hidden rotation_55 0 1 0 2.521600544621221e-06
-  hidden translation_56 0 0 -0.1029
-  hidden rotation_56 0 1 0 2.528810910653644e-07
-  hidden translation_57 0 0 0
-  hidden rotation_57 -1 0 0 3.009887021291878e-07
-  translation -0.3609722968917423 -0.4299465861807177 0.557989082552089
-  rotation -6.40363981271588e-06 -0.9999999995745019 2.8460315117272383e-05 1.6167492319265369
-  name "wrestler blue"
-  customColor [
-    0 0.3333 1
-  ]
-  controller "Alice"
-  selfCollision TRUE
-}
-WrestlingReferee {
-  hidden position_0_21 1000
-  hidden position_0_25 0
-  hidden position_0_30 0.40801493103816017
-  hidden translation_22 0.4393905 0 1000
-  hidden translation_26 0.4393905 0 0
-  hidden translation_31 0 0 0.40801493103816017
+  controller "Test"
+  linearVelocity -5.996477816191817e-07 -1.9778125032943186e-07 1.7930284889153825e-08
+  angularVelocity 5.008616267234781e-06 -1.5744411879091532e-06 -9.750177871385474e-08
 }

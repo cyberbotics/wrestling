@@ -1,0 +1,137 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "webots://projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "webots://projects/robots/softbank/nao/protos/Nao.proto"
+EXTERNPROTO "webots://projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "webots://projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "webots://projects/objects/stairs/protos/StraightStairs.proto"
+EXTERNPROTO "webots://projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "webots://projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "webots://projects/appearances/protos/VarnishedPine.proto"
+EXTERNPROTO "../protos/WrestlingPole.proto"
+EXTERNPROTO "../protos/WrestlingReferee.proto"
+EXTERNPROTO "../protos/WrestlingRing.proto"
+EXTERNPROTO "../protos/Nao_improved.proto"
+
+WorldInfo {
+  info [
+    "Competitors should program a humanoid robot to takle its opponent and knock it to the ground or outside of the ring."
+    "All shots are allowed."
+  ]
+  title "Humanoid Robot Wrestling Competition"
+  basicTimeStep 20
+}
+Viewpoint {
+  orientation 0.31643102399510425 -0.10802902979062705 -0.942444234836155 3.9478175119905234
+  position 1.2403358271400622 -1.2729710261500244 1.922384426864245
+  followType "None"
+  ambientOcclusionRadius 0.2
+  bloomThreshold 5
+}
+TexturedBackground {
+  texture "music_hall"
+}
+TexturedBackgroundLight {
+  texture "music_hall"
+}
+Floor {
+  size 6 6
+  tileSize 1 1
+  appearance Parquetry {
+  }
+}
+WrestlingRing {
+}
+StraightStairs {
+  translation -1.58 0 0
+  name "straight stairs red"
+  stepSize 0.13 0.4 0.03
+  stepRise 0.0835
+  stringerWidth 0.03
+  stepAppearance VarnishedPine {
+    colorOverride 0.4784 0.4 0.3412
+    textureTransform TextureTransform {
+      scale 4 4
+    }
+  }
+  stringerAppearance VarnishedPine {
+    colorOverride 0.4784 0.4 0.3412
+    textureTransform TextureTransform {
+      scale 4 4
+    }
+  }
+  leftRail []
+  rightRail []
+}
+StraightStairs {
+  translation 1.58 0 0
+  rotation 0 0 1 -3.1415853071795863
+  name "straight stairs blue"
+  stepSize 0.13 0.4 0.03
+  stepRise 0.0835
+  stringerWidth 0.03
+  stepAppearance VarnishedPine {
+    colorOverride 0.4784 0.4 0.3412
+    textureTransform TextureTransform {
+      scale 4 4
+    }
+  }
+  stringerAppearance VarnishedPine {
+    colorOverride 0.4784 0.4 0.3412
+    textureTransform TextureTransform {
+      scale 4 4
+    }
+  }
+  leftRail []
+  rightRail []
+}
+WrestlingPole {
+  translation 0.96 0.96 0.745
+  name "pole 1"
+}
+WrestlingPole {
+  translation -0.96 0.96 0.745
+  name "pole 2"
+}
+WrestlingPole {
+  translation 0.96 -0.96 0.745
+  name "pole 3"
+}
+WrestlingPole {
+  translation -0.96 -0.96 0.745
+  name "pole 4"
+}
+RubberDuck {
+  translation 0 0.935 0.525
+  rotation 0 0 1 -1.5707996938995747
+  name "rubber duck 1"
+}
+RubberDuck {
+  translation 0 -0.935 0.525
+  rotation 0 0 1 1.5707996938995747
+  name "rubber duck 2"
+}
+DEF WRESTLER_BLUE Nao {
+  translation -0.349682 -0.429946 0.574
+  rotation 2.653589999981315e-06 0.9999999999929585 2.653589999981315e-06 -1.5707953071795862
+  name "wrestler blue"
+  customColor [
+    0 0.3333 1
+  ]
+  controller "Alice"
+  selfCollision TRUE
+}
+WrestlingReferee {
+}
+Nao_improved {
+  translation 0 0 0.894
+  name "WRESTLER_GREEN"
+  customColor [
+    0 0.5 0
+  ]
+}
+Nao_improved {
+  translation 0.530001 0.64 0.904
+  rotation 0 0 1 3.14159
+  name "WRESTLER_RED"
+}

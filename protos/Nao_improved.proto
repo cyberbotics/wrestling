@@ -1,15 +1,13 @@
-#VRML_SIM R2023b utf8
+#VRML_SIM R2023a utf8
 # documentation url: https://www.cyberbotics.com/doc/guide/nao
 # Generic model of Nao robot
 # Model designed by Cyberbotics Ltd. according to the online documentation provided by Aldebaran Robotics.
 # template language: javascript
 
 EXTERNPROTO "NaoRightWristH25Realistic.proto"
-EXTERNPROTO "NaoRightWristH21.proto"
 EXTERNPROTO "NaoLeftWristH25Realistic.proto"
-EXTERNPROTO "NaoLeftWristH21.proto"
 
-PROTO Nao [
+PROTO Nao_improved [
   field SFVec3f                      translation           0 0 0.334             # Is `Transform.translation`.
   field SFRotation                   rotation              0 0 1 0               # Is `Transform.rotation`.
   field SFString                     name                  "NAO"                 # Is `Solid.name`.
@@ -18,7 +16,7 @@ PROTO Nao [
                                      version               "V5 (red)"            # Defines the Nao version.
   field SFInt32{21, 25}              degreeOfFreedom       25                    # Defines the number of degrees of freedom; either "21" (fixed fingers) or "25" (articulated fingers).
   field MFColor customColor          []                                          # Defines the color of the secondary plastic components.
-  field SFString                     controller            "nao_demo"            # Is `Robot.controller`.
+  field SFString                     controller            "Alice"            # Is `Robot.controller`.
   field MFString                     controllerArgs        []                    # Is `Robot.controllerArgs`.
   field SFString                     window                "<generic>"           # Is `Robot.window`.
   field SFString                     customData            ""                    # Is `Robot.customData`.
@@ -44,7 +42,7 @@ PROTO Nao [
   field MFNode                       leftFootSlot          []                    # Extends the robot with new nodes in the left foot slot.
   field MFNode                       rightFootSlot         []                    # Extends the robot with new nodes in the right foot slot.
   field MFNode                       leftHandSlot          []                    # Extends the robot with new nodes in the left hand slot.
-  field MFNode                       rightHandSlot         []                    # Extends the robot with new nodes in the righthand slot.
+  field MFNode                       rightHandSlot         []                    # Extends the robot with new nodes in the right hand slot.
 ]
 {
   %<
@@ -633,7 +631,7 @@ PROTO Nao [
           metalness 0
           baseColorMap ImageTexture {
             url [
-              "textures/chest_button.png"
+              "webots://projects/robots/softbank/nao/protos/textures/chest_button.png"
             ]
           }
         }
@@ -1331,7 +1329,7 @@ PROTO Nao [
                 metalness 0
                 baseColorMap ImageTexture {
                   url [
-                    "textures/ear.jpg"
+                    "webots://projects/robots/softbank/nao/protos/textures/ear.jpg"
                   ]
                 }
               }
@@ -2113,7 +2111,7 @@ PROTO Nao [
             children [
               DEF SHOULDER_BO Capsule {
                 height 0.1
-                radius 0.026
+                radius 0.024
               }
             ]
           }
@@ -4148,11 +4146,32 @@ PROTO Nao [
                                           }
                                         ]
                                         contactMaterial IS footContactMaterial
-                                        boundingObject Transform {
-                                          translation 0.02 -0.007 -0.025
+                                        boundingObject Group {
                                           children [
-                                            DEF FOOT_BO Box {
-                                              size 0.148 0.09 0.02
+                                            Transform {
+                                              translation 0.015 -0.007 -0.033
+                                              children [
+                                                DEF SOLE Box {
+                                                  size 0.11 0.085 0.004
+                                                }
+                                              ]
+                                            }
+                                            Transform {
+                                              translation -0.043 -0.005 -0.0245
+                                              children [
+                                                DEF HEEL Box {
+                                                  size 0.022 0.07 0.02
+                                                }
+                                              ]
+                                            }
+                                            Transform {
+                                              translation 0.08 -0.005 -0.027
+                                              rotation 0 1 0 0
+                                              children [
+                                                DEF TOES Box {
+                                                  size 0.025 0.085 0.016
+                                                }
+                                              ]
                                             }
                                           ]
                                         }
@@ -4264,12 +4283,29 @@ PROTO Nao [
                         }
                       ]
                       contactMaterial IS contactMaterial
-                      boundingObject DEF FEMUR_BO Transform {
-                        translation 0 0 -0.055
-                        rotation 0 1 0 5.9
+                      boundingObject DEF FEMUR_BO Group {
                         children [
-                          Box {
-                            size 0.06 0.08 0.13
+                          Transform {
+                            translation -0.009 0 -0.015
+                            rotation 0.7745972141192264 -0.44721312362157567 0.44721312362157567 1.82348
+                            children [
+                              Cylinder {
+                                height 0.07
+                                radius 0.03
+                                subdivision 16
+                              }
+                            ]
+                          }
+                          Transform {
+                            translation 0.008 0 -0.0662612
+                            rotation 0 1 0 5.9
+                            children [
+                              Cylinder {
+                                height 0.1
+                                radius 0.035
+                                subdivision 16
+                              }
+                            ]
                           }
                         ]
                       }
@@ -4305,11 +4341,23 @@ PROTO Nao [
                   }
                 ]
                 contactMaterial IS contactMaterial
-                boundingObject DEF HIP_ROLL_BO Transform {
-                  translation -0.022 0 0
+                boundingObject DEF HIP_ROLL_BO Group {
                   children [
-                    Box {
-                      size 0.08 0.05 0.05
+                    Transform {
+                      translation -0.017 0 0.004
+                      children [
+                        Box {
+                          size 0.025 0.025 0.074
+                        }
+                      ]
+                    }
+                    Transform {
+                      translation -0.018 0 0
+                      children [
+                        Box {
+                          size 0.08 0.025 0.025
+                        }
+                      ]
                     }
                   ]
                 }
@@ -5599,10 +5647,27 @@ PROTO Nao [
                                           }
                                         ]
                                         contactMaterial IS footContactMaterial
-                                        boundingObject Transform {
-                                          translation 0.02 0.007 -0.025
+                                        boundingObject Group {
                                           children [
-                                            USE FOOT_BO
+                                            Transform {
+                                              translation 0.015 0.007 -0.033
+                                              children [
+                                                USE SOLE
+                                              ]
+                                            }
+                                            Transform {
+                                              translation -0.043 0.005 -0.0245
+                                              children [
+                                                USE HEEL
+                                              ]
+                                            }
+                                            Transform {
+                                              translation 0.08 0.005 -0.027
+                                              rotation 0 1 0 0
+                                              children [
+                                                USE TOES
+                                              ]
+                                            }
                                           ]
                                         }
                                         physics Physics {
@@ -5820,12 +5885,25 @@ PROTO Nao [
         ]
       }
     ]
-    boundingObject Transform {
-      translation 0 0 0.02
+    boundingObject Group {
       children [
-        Capsule {
-          height 0.11
-          radius 0.055
+        Transform {
+          translation 0 0 -0.02
+          children [
+            Sphere {
+              radius 0.037
+            }
+          ]
+        }
+        Transform {
+          translation 0 0 0.055
+          children [
+            Capsule {
+              height 0.03
+              radius 0.055
+              subdivision 16
+            }
+          ]
         }
       ]
     }
