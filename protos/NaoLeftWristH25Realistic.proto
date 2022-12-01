@@ -832,7 +832,7 @@ Solid {
     rotation -0.527663 0.600656 -0.600654 2.170531
     children [
       DEF WRIST_BO Capsule {
-        height 0.025
+        height 0.02
         radius 0.022
       }
     ]

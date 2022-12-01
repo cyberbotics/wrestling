@@ -131,7 +131,7 @@ class Wrestler (Robot):
             return
         self.standUpFromFront.play()
 
-    def getUpBackNew(self, time):
+    def getUpBack(self, time):
         if self.startTime is None:
             self.startTime = time
         elif self.standUpFromBack.isOver():
@@ -143,7 +143,7 @@ class Wrestler (Robot):
             return
         self.standUpFromBack.play()
 
-    def getUpBack(self, time):
+    def getUpBackOld(self, time):
         if self.startTime is None:
             self.startTime = time
         if time - self.startTime < 0.5:

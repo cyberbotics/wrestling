@@ -2106,11 +2106,11 @@ PROTO Nao_improved [
           name "RShoulder"
           contactMaterial IS contactMaterial
           boundingObject Transform {
-            translation 0.029 -0.005 0
+            translation 0.027 -0.005 0
             rotation 0.623805 0.552662 -0.552660 -2.026117
             children [
               DEF SHOULDER_BO Capsule {
-                height 0.1
+                height 0.09
                 radius 0.024
               }
             ]
@@ -2646,7 +2646,7 @@ PROTO Nao_improved [
           name "LShoulder"
           contactMaterial IS contactMaterial
           boundingObject Transform {
-            translation 0.029 0.005 0
+            translation 0.027 0.005 0
             rotation 0.623805 -0.552662 0.552660 -2.026117
             children [
               USE SHOULDER_BO
