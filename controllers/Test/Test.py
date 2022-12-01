@@ -20,18 +20,20 @@ from enum import Enum
 
 State = Enum('State', ['IDLE', 'WALK', 'GET_UP_FRONT', 'GET_UP_BACK'])
 
+
 class Wrestler (Robot):
     def __init__(self):
         Robot.__init__(self)
         self.state = State.IDLE
         self.startTime = None
-        self.timeStep = int(self.getBasicTimeStep())  # retrieves the WorldInfo.basicTimeTime (ms) from the world file
+        # retrieves the WorldInfo.basicTimeTime (ms) from the world file
+        self.timeStep = int(self.getBasicTimeStep())
 
         # camera
-        #self.cameraTop = self.getDevice("CameraTop")
-        #self.cameraBottom = self.getDevice("CameraBottom")
-        #self.cameraTop.enable(4 * self.timeStep)
-        #self.cameraBottom.enable(4 * self.timeStep)
+        # self.cameraTop = self.getDevice("CameraTop")
+        # self.cameraBottom = self.getDevice("CameraBottom")
+        # self.cameraTop.enable(4 * self.timeStep)
+        # self.cameraBottom.enable(4 * self.timeStep)
 
         # accelerometer
         self.accelerometer = self.getDevice("accelerometer")
@@ -90,8 +92,9 @@ class Wrestler (Robot):
         while self.step(self.timeStep) != -1:
             t = self.getTime()
             # pseudo moving average
-            self.accelerometerAverage = [0.9 * x + 0.1 * y for x, y in zip(self.accelerometerAverage, self.accelerometer.getValues())]
-            #print(self.accelerometerAverage)
+            self.accelerometerAverage = [0.9 * x + 0.1 * y for x, y in zip(
+                self.accelerometerAverage, self.accelerometer.getValues())]
+            # print(self.accelerometerAverage)
             if self.accelerometerAverage[0] < -7:
                 self.state = State.GET_UP_FRONT
             if self.accelerometerAverage[0] > 7:
@@ -107,18 +110,18 @@ class Wrestler (Robot):
             self.getUpFront(t)
         elif self.state == State.GET_UP_BACK:
             self.getUpBack(t)
-    
+
     def idle(self):
-        #if self.stand.isOver():
+        # if self.stand.isOver():
         #    self.forwards.play()
         pass
-    
+
     def walk(self):
         self.forwards.play()
 
     def getUpFront(self, time):
-        if self.startTime == None:
-            self.startTime = time 
+        if self.startTime is None:
+            self.startTime = time
         elif self.standUpFromFront.isOver():
             self.state = State.IDLE
             self.startTime = None
@@ -129,8 +132,8 @@ class Wrestler (Robot):
         self.standUpFromFront.play()
 
     def getUpBack(self, time):
-        if self.startTime == None:
-            self.startTime = time 
+        if self.startTime is None:
+            self.startTime = time
         elif self.standUpFromBack.isOver():
             self.state = State.IDLE
             self.startTime = None
@@ -141,10 +144,10 @@ class Wrestler (Robot):
         self.standUpFromBack.play()
 
     def getUpBackOld(self, time):
-        if self.startTime == None:
-            self.startTime = time        
+        if self.startTime is None:
+            self.startTime = time
 
-        #print(f"Running time: {time - self.startTime}")
+        # print(f"Running time: {time - self.startTime}")
         if time - self.startTime < 0.5:
             # crouched T shape
             self.RHipPitch.setPosition(-1)
@@ -220,7 +223,7 @@ class Wrestler (Robot):
             self.LHipPitch.setPosition(-0.9)
             self.LAnklePitch.setPosition(-0.4)
             pass
-        #elif time - self.startTime < 5.0:
+        # elif time - self.startTime < 5.0:
         #    # stand up
         #    self.RHipYawPitch.setPosition(0)
         #    self.RHipRoll.setPosition(0)
@@ -243,9 +246,10 @@ class Wrestler (Robot):
         #    self.LShoulderPitch.setPosition(0)
         #    self.LElbowRoll.setPosition(0)
         #    self.LElbowYaw.setPosition(0)
-        #elif time - self.startTime < 6.0:
+        # elif time - self.startTime < 6.0:
         #    self.state = State.IDLE
         #    self.startTime = None
+
 
 # create the Robot instance and run main loop
 wrestler = Wrestler()

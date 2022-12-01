@@ -20,7 +20,8 @@ from controller import Supervisor
 
 class Referee (Supervisor):
     def init(self):
-        self.digit = [[0] * 10 for i in range(3)]  # create an array of size [3][10] filled in with zeros
+        # create an array of size [3][10] filled in with zeros
+        self.digit = [[0] * 10 for i in range(3)]
         for j in range(3):
             for i in range(10):
                 self.digit[j][i] = self.getDevice("digit " + str(j) + str(i))
@@ -42,7 +43,8 @@ class Referee (Supervisor):
 
     def displayTime(self, minutes, seconds):
         for j in range(3):
-            self.digit[j][self.currentDigit[j]].setPosition(1000)  # far away, not visible
+            self.digit[j][self.currentDigit[j]].setPosition(
+                1000)  # far away, not visible
         self.currentDigit[0] = minutes
         self.currentDigit[1] = seconds // 10
         self.currentDigit[2] = seconds % 10
@@ -51,7 +53,8 @@ class Referee (Supervisor):
 
     def run(self):
         matchDuration = 3 * 60 * 1000  # a match lasts 3 minutes
-        timeStep = int(self.getBasicTimeStep())  # retrieves the WorldInfo.basicTimeTime (ms) from the world file
+        # retrieves the WorldInfo.basicTimeTime (ms) from the world file
+        timeStep = int(self.getBasicTimeStep())
         time = 0
         seconds = -1
         ko = -1
@@ -83,12 +86,12 @@ class Referee (Supervisor):
                             ko = i
                     else:
                         self.koCount[i] = 0
-                    #print(f"robot {i}, position: {position}, koCount: {self.koCount[i]}")
+                    # print(f"robot {i}, position: {position}, koCount: {self.koCount[i]}")
                 if self.koCount[0] > self.koCount[1]:
                     print("\fred KO: %d" % (10 - self.koCount[0] // 1000))
                 elif self.koCount[1] > self.koCount[0]:
                     print("\fblue KO: %d" % (10 - self.koCount[1] // 1000))
-                #  print("\fred: %1.3f - blue: %1.3f" % (self.coverage[0], self.coverage[1]))
+                # print("\fred: %1.3f - blue: %1.3f" % (self.coverage[0], self.coverage[1]))
             if self.step(timeStep) == -1 or time > matchDuration or ko != -1:
                 break
             time += timeStep
@@ -96,15 +99,19 @@ class Referee (Supervisor):
             print("Wrestler red is KO. Wrestler blue wins!")
         elif ko == 1:
             print("Wrestler blue is KO. Wrestler red wins!")
-        elif self.coverage[0] >= self.coverage[1]:  # in case of coverage equality, red wins
-            print("Wrestler red wins: %s >= %s" % (self.coverage[0], self.coverage[1]))
+        # in case of coverage equality, red wins
+        elif self.coverage[0] >= self.coverage[1]:
+            print("Wrestler red wins: %s >= %s" %
+                  (self.coverage[0], self.coverage[1]))
         else:
-            print("Wrestler blue wins: %s > %s" % (self.coverage[1], self.coverage[0]))
+            print("Wrestler blue wins: %s > %s" %
+                  (self.coverage[1], self.coverage[0]))
 
 
 # create the referee instance and run main loop
 referee = Referee()
 referee.init()
 referee.run()
-print(f"red coverage: {referee.coverage[0]}, blue coverage: {referee.coverage[1]}")
-#referee.simulationSetMode(referee.SIMULATION_MODE_PAUSE)
+print(
+    f"red coverage: {referee.coverage[0]}, blue coverage: {referee.coverage[1]}")
+# referee.simulationSetMode(referee.SIMULATION_MODE_PAUSE)
