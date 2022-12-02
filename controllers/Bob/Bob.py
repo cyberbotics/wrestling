@@ -61,10 +61,11 @@ class Wrestler (Robot):
                 self.RShoulderPitch.setPosition(0)  # uppercut
             elif t == 25:
                 self.turnLeft60.stop()
+            elif t == 26:
                 self.forwards.play()  # push
-            elif t == 27:
+            elif t == 29:
                 self.forwards.stop()  # stop
-            elif t == 28:
+            elif t == 30:
                 self.LShoulderPitch.setPosition(-1.57)  # victory
                 self.RShoulderPitch.setPosition(-1.57)
                 self.leds[0].set(0x00ff00)  # set eyes to green
