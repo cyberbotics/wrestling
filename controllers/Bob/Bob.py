@@ -39,22 +39,32 @@ class Wrestler (Robot):
         self.LShoulderPitch = self.getDevice("LShoulderPitch")
 
         # load motion files
-        self.loop = Motion('../motions/ForwardLoop.motion')
-
+        self.forwards = Motion('../motions/Forwards50.motion')
+        self.turnLeft60 = Motion('../motions/TurnLeft60.motion')
 
     def run(self):
-        self.RShoulderPitch.setPosition(0)  # arms in front, zombie mode
-        self.LShoulderPitch.setPosition(0)
+        self.RShoulderPitch.setPosition(1.57)  # arms down
+        self.LShoulderPitch.setPosition(1.57)
 
-        self.loop.setLoop(True)
-        self.loop.play()
+        self.forwards.setLoop(True)
 
-        self.leds[0].set(0xff0000)  # set eyes to red, kill mode activated
+        self.leds[0].set(0xff0000)  # set eyes to red
         self.leds[1].set(0xff0000)
 
         while self.step(self.timeStep) != -1:
             t = self.getTime()
-            if t == 27:
+            if t == 1:
+                self.forwards.play()
+            elif t == 22:
+                self.forwards.stop()
+                self.turnLeft60.play()
+                self.RShoulderPitch.setPosition(0)  # uppercut
+            elif t == 25:
+                self.turnLeft60.stop()
+                self.forwards.play()  # push
+            elif t == 27:
+                self.forwards.stop()  # stop
+            elif t == 28:
                 self.LShoulderPitch.setPosition(-1.57)  # victory
                 self.RShoulderPitch.setPosition(-1.57)
                 self.leds[0].set(0x00ff00)  # set eyes to green
