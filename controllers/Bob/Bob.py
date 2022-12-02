@@ -59,7 +59,7 @@ class Wrestler (Robot):
                 self.forwards.stop()
                 self.turnLeft60.play()
                 self.RShoulderPitch.setPosition(0)  # uppercut
-            elif t == 25:
+            elif t == 23.5:
                 self.turnLeft60.stop()
             elif t == 26:
                 self.forwards.play()  # push
