@@ -1,0 +1,13 @@
+name: Listen for triggers from participants
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+
+jobs:
+  dump:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Dump event payload
+        run: |
+          jq . "$GITHUB_EVENT_PATH"
