@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  notify:
+  trigger:
     runs-on: ubuntu-20.04
     steps:
       - name: Create a repository dispatch event
