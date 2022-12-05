@@ -1,0 +1,15 @@
+name: triggers a run action on the repo of the organizer
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Create repository dispatch event
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          gh api repos/cyberbotics/wrestling/dispatches --raw-field event_type=run_trigger
