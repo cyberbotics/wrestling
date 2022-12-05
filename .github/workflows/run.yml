@@ -1,11 +1,11 @@
-name: Listen for triggers from participants
+name: Listen for triggers from participants to run an evaluation of their controller program
 
 on:
   repository_dispatch:
   workflow_dispatch:
 
 jobs:
-  dump:
+  run:
     runs-on: ubuntu-20.04
     steps:
       - name: Dump event payload
