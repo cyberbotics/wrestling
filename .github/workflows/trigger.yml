@@ -8,7 +8,7 @@ jobs:
   notify:
     runs-on: ubuntu-20.04
     steps:
-      - name: Create repository dispatch event
+      - name: Create a repository dispatch event
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
