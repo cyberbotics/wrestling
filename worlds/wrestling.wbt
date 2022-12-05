@@ -115,6 +115,7 @@ DEF WRESTLER_RED Nao {
   translation -0.88 0 0.834
   name "wrestler red"
   controller "Bob"
+  selfCollision TRUE
 }
 DEF WRESTLER_BLUE Nao {
   translation 0.88 0 0.834
@@ -124,6 +125,7 @@ DEF WRESTLER_BLUE Nao {
     0 0.3333 1
   ]
   controller "Alice"
+  selfCollision TRUE
 }
 WrestlingReferee {
 }

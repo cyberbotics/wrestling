@@ -34,9 +34,11 @@ class Wrestler (Robot):
         self.leds.append(self.getDevice('Face/Led/Right'))
         self.leds.append(self.getDevice('Face/Led/Left'))
 
-        # shoulder pitch motors
+        # shoulder motors
         self.RShoulderPitch = self.getDevice("RShoulderPitch")
+        self.RShoulderRoll = self.getDevice("RShoulderRoll")
         self.LShoulderPitch = self.getDevice("LShoulderPitch")
+        self.LShoulderRoll = self.getDevice("LShoulderRoll")
 
         # load motion files
         self.forwards = Motion('../motions/Forwards50.motion')
@@ -44,7 +46,9 @@ class Wrestler (Robot):
 
     def run(self):
         self.RShoulderPitch.setPosition(1.57)  # arms down
+        self.RShoulderRoll.setPosition(-0.15)
         self.LShoulderPitch.setPosition(1.57)
+        self.LShoulderRoll.setPosition(0.15)
 
         self.forwards.setLoop(True)
 
