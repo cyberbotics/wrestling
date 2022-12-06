@@ -84,7 +84,7 @@ It will run 3 docker containers:
 
 Each docker container running a player controller will be allocated 3 virtual CPU cores, 6 GB of RAM and shared access to the GPU hardware. 
 The runner machine configuration is the following:
-- CPU: Intel core i7-7700K @ 4.20 Ghz
+- CPU: [Intel core i7-7700K @ 4.20 Ghz](https://www.cpubenchmark.net/cpu.php?id=2874).
 - RAM: 16 GB.
-- GPU: NVIDIA GeForce GTX 1060 3 GB.
+- GPU: [NVIDIA GeForce GTX 1060 3 GB](https://www.videocardbenchmark.net/gpu.php?id=3566).
 
