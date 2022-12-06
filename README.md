@@ -58,9 +58,33 @@ This will allow you to compare your robot controller to others and have time to 
 
 ## Upcoming Workflow
 
-Starting from January 9th, 2023, games will run every day and a leaderboard will be updated accordingly.
+Starting from January 9th, 2023, games will run on demand and the leaderboard will be updated accordingly.
 We will soon publish a series of robot controllers that can serve as examples.
 You will be able to store your robot controller program on a private GitHub repository to avoid disclosing it to others.
 It will be possible to program the robot in any language (C, C++, Python, Java, ROS 2, etc.) with any library or python module.
 In order to achieve this, your GitHub repository should contain a Dockerfile specifying on which environment your controller should run.
+
+### Ranking System
+
+Each time you will push a commit on your main branch, a series of games will be started on the runner machine.
+If you are ranked number 1, no game will take place.
+Otherwise, you will first play a game against the competitor ranked just above you in the leader board.
+If you loose, nothing will be changed in the leader board ranking and no further game will be played.
+Otherwise, you will swap your position in the leader board with the competitor just above you and you will play another game with the competitor just above your new position.
+This will be repeated as long as you win until you reach the first rank of the leader board.
+
+### Runner Machine Configuration
+
+The runner machine will host a single game at a time.
+It will run 3 docker containers:
+
+1. One with Webots and the wrestling supervisor.
+2. One with the controller of the red player.
+3. One with the controller of the blue player.
+
+Each docker container running a player controller will be allocated 3 CPU virtual cores, 7 GB of memory and shared access to the GPU hardware. 
+The runner machine configuration is the following:
+- CPU: Intel core i7-7700K @ 4.20 Ghz
+- RAM: 16 GB.
+- GPU: NVIDIA GeForce GTX 1060 3 GB.
 
