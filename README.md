@@ -1,6 +1,6 @@
-# ICRA Simulated Humanoid Robot Wrestling Competition
+# Simulated Humanoid Robot Wrestling Competition
 
-This [ICRA 2023](https://www.icra2023.org) competition focuses on the development of advanced humanoid robot control software for a wrestling game. It relies on a calibrated simulation model of the NAO robot, running in the Webots simulator with realistic physics, sensor and actuator simulation. Being spectacular and fairly easy to get started with, this competition aims at gathering a large number of competitors, both on-site and remotely. The fully open-source competition software stack was designed to be re-used as a template for other simulation-based robot competitions.
+This competition focuses on the development of advanced humanoid robot control software for a wrestling game. It relies on a calibrated simulation model of the NAO robot, running in the Webots simulator with realistic physics, sensor and actuator simulation. Being spectacular and fairly easy to get started with, this competition aims at gathering a large number of competitors, both on-site and remotely. The fully open-source competition software stack was designed to be re-used as a template for other simulation-based robot competitions.
 
 A preliminary 3D animation of a very simple game is available on [webots.cloud](https://webots.cloud/AcrEbH3).
 
@@ -19,7 +19,7 @@ A preliminary 3D animation of a very simple game is available on [webots.cloud](
 | June 1st, 2023     | semifinals                              |
 | June 2nd, 2023     | third place game and final              |
 
-The finals will take place during [ICRA 2023](https://www.icra2023.org) in London and will be broadcasted online in real time.
+The finals will be broadcasted online in real time.
 
 ## Prize
 
@@ -64,6 +64,3 @@ You will be able to store your robot controller program on a private GitHub repo
 It will be possible to program the robot in any language (C, C++, Python, Java, ROS 2, etc.) with any library or python module.
 In order to achieve this, your GitHub repository should contain a Dockerfile specifying on which environment your controller should run.
 
-## More Information
-
-This [paper](https://raw.githubusercontent.com/cyberbotics/wrestling/main/Simulated_Humanoid_Robot_Wrestling_Competition.pdf) (PDF) provides additional information about this competition.
