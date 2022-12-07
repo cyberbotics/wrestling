@@ -12,5 +12,6 @@ jobs:
     steps:
       - name: Dump event payload
         run: |
-          jq '.repository.full_name' "$GITHUB_EVENT_PATH"
-          jq '.repository.private' "$GITHUB_EVENT_PATH"
+          jq '.' "$GITHUB_EVENT_PATH"
+          #jq '.repository.full_name' "$GITHUB_EVENT_PATH"
+          #jq '.repository.private' "$GITHUB_EVENT_PATH"
