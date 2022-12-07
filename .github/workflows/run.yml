@@ -17,5 +17,5 @@ jobs:
           #jq '.' "$GITHUB_EVENT_PATH"
           #jq '.repository.full_name' "$GITHUB_EVENT_PATH"
           #jq '.repository.private' "$GITHUB_EVENT_PATH"
-          'echo "field: ${{ github.event.client_payload.foo }}"'
-          'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+          #'echo "field: ${{ github.event.client_payload.foo }}"'
+          echo "payload: ${{ toJson(github.event.client_payload) }}"
