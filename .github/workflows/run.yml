@@ -9,17 +9,17 @@ on:
 jobs:
   evaluation:
     name: Evaluation Requested by a Participant
-    #if: >
-    #  startsWith(github.event.client_payload.repository, format('{0}/', github.event.sender.login)) ||
-    #  startsWith(github.event.client_payload.repository, format('{0}/', github.event.sender.organization))
+    if: >
+      startsWith(github.event.client_payload.repository, format('{0}/', github.event.sender.login)) ||
+      startsWith(github.event.client_payload.repository, format('{0}/', github.event.organization.login))
     runs-on: ubuntu-20.04
     steps:
       - name: Dump event payload
         run: |
           echo ${{ format('{0}/', github.event.sender.login) }}
           echo ${{ startsWith(github.event.client_payload.repository, format('{0}/', github.event.sender.login)) }}
-          echo ${{ format('{0}/', github.event.sender.organization) }}
-          echo ${{ startsWith(github.event.client_payload.repository, format('{0}/', github.event.sender.organization)) }}
+          echo ${{ format('{0}/', github.event.organization.login) }}
+          echo ${{ startsWith(github.event.client_payload.repository, format('{0}/', github.event.organization.login)) }}
           echo ${{ github.event.client_payload.repository }}
           echo ${{ github.event.sender.login }}
           echo ${{ github.event.organization.login }}
