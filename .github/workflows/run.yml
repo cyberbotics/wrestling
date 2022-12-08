@@ -23,6 +23,7 @@ jobs:
           echo ${{ github.event.client_payload.repository }}
           echo ${{ github.event.sender.login }}
           echo ${{ github.event.organization.login }}
+          gh api -H "Accept: application/vnd.github+json" /repos/${{ github.event.client_payload.repository }}
       - name: Check out the repo
         uses: actions/checkout@v3
       - name: Record Animation and Update Performance
