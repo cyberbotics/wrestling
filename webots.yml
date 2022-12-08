@@ -1,0 +1,7 @@
+publish: true
+type: benchmark
+world:
+  file: worlds/wrestling.wbt
+  max-duration: 30
+  metric: percent
+dockerCompose: theia:webots-project/controllers/edit_me/
