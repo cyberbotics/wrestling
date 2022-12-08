@@ -30,6 +30,6 @@ jobs:
         id: webots_test
         uses: cyberbotics/benchmark-record-action@main
         env:
-          INPUT_INDIVIDUAL_EVALUATION: ${{ github.event.client_payload.repository }}
+          INPUT_INDIVIDUAL_EVALUATION: ${{ format('{0}:{1}', github.event.sender.id, github.event.client_payload.repository) }}
           INPUT_REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
           INPUT_ALLOW_PUSH: True
