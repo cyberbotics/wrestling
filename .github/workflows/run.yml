@@ -17,4 +17,4 @@ jobs:
           jq '.sender.login' "$GITHUB_EVENT_PATH"
           echo ${{ github.event.client_payload.repository }}
           echo ${{ github.event.sender.login }}
-          echo ${{ github.event.oranization.login }}
+          echo ${{ github.event.organization.login }}
