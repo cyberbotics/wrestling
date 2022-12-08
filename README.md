@@ -33,6 +33,12 @@ To get started programming your wrestling robot, you will have to:
 2. Register to the competition by [forking](https://github.com/cyberbotics/wrestling/fork) this repository and clone it locally.
 3. Start programming the behavior of a robot by editing its [controller program](controllers/wrestler_red/wrestler_red.py).
 
+## Participation Conditions
+
+Anyone can participate: there is absolutely no restriction on the quality and number of team members.
+
+Participation is free of charge, including the finals.
+
 ## Rules
 
 The rules of game are implemented in the [wrestling referee supervisor](controllers/wrestling_referee/wrestling_referee.py).
