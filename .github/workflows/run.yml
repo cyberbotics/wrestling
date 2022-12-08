@@ -35,4 +35,12 @@ jobs:
           INPUT_ALLOW_PUSH: True
       - name: Feedback on Failure
         if: failure() || cancelled()
-        run: gh issue create --title "Failing controller" --body "There was a problem with your controller program. Look at the [action logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for more details." --label "bug"
+        uses: actions-ecosystem/action-create-issue@v1.0.0
+        with:
+          repo: ${{ github.event.client_payload.repository }}
+          github_token: ${{ secrets.REPO_TOKEN }}
+          title: Failure
+          body: |
+            There was a problem with your controller program.
+            Look at the [action logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for more details.
+          labels: bug
