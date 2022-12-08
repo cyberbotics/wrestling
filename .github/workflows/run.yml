@@ -33,3 +33,6 @@ jobs:
           INPUT_INDIVIDUAL_EVALUATION: ${{ format('{0}:{1}', github.event.sender.id, github.event.client_payload.repository) }}
           INPUT_REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
           INPUT_ALLOW_PUSH: True
+      - name: Feedback on Failure
+        if: failure() || cancelled()
+        run: gh issue create --title "Failing controller" --body "There was a problem with your controller program. Look at the [action logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for more details." --label "bug"
