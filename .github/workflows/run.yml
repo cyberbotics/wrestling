@@ -9,6 +9,9 @@ on:
 jobs:
   evaluation:
     name: Evaluation Requested by a Participant
+    if: >
+      startsWith(github.event.client_payload.repository, format('{0}/', github.event.sender.login)) ||
+      startsWith(github.event.client_payload.repository, format('{0}/', github.event.sender.organization)
     runs-on: ubuntu-20.04
     steps:
       - name: Dump event payload
