@@ -7,7 +7,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  run:
+  evaluation:
+    name: Evaluation Requested by a Participant
     runs-on: ubuntu-20.04
     steps:
       - name: Dump event payload
@@ -15,3 +16,5 @@ jobs:
           jq '.organization.login' "$GITHUB_EVENT_PATH"
           jq '.sender.login' "$GITHUB_EVENT_PATH"
           echo ${{ github.event.client_payload.repository }}
+          echo ${{ github.event.sender.login }}
+          echo ${{ github.event.oranization.login }}
