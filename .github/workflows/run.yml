@@ -15,6 +15,8 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Dump event payload
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           echo ${{ format('{0}/', github.event.sender.login) }}
           echo ${{ startsWith(github.event.client_payload.repository, format('{0}/', github.event.sender.login)) }}
