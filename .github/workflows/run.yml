@@ -27,6 +27,7 @@ jobs:
           echo ${{ github.event.organization.login }}
           repo_id=$( gh api -H "Accept: application/vnd.github+json" /repos/${{ github.event.client_payload.repository }} | jq '.id' )
           echo $repo_id
+          echo "PARTICIPANT_REPO_ID=$repo_id" >> GITHUB_ENV
       - name: Check out the repo
         uses: actions/checkout@v3
       - name: Record Animation and Update Performance
@@ -34,7 +35,7 @@ jobs:
         id: webots_test
         uses: cyberbotics/benchmark-record-action@main
         env:
-          INPUT_INDIVIDUAL_EVALUATION: ${{ format('{0}:{1}', github.event.sender.id, github.event.client_payload.repository) }}
+          INPUT_INDIVIDUAL_EVALUATION: ${{ format('{0}:{1}', env.PARTICIPANT_REPO_ID, github.event.client_payload.repository) }}
           INPUT_REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
           INPUT_ALLOW_PUSH: True
       - name: Feedback on Failure
