@@ -4,5 +4,5 @@ world:
   file: worlds/wrestling.wbt
   max-duration: 30
   metric: ranking
-  higher_is_better: false
+  higher-is-better: false
 dockerCompose: theia:webots-project/controllers/participant/

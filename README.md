@@ -1,10 +1,31 @@
+<span id="title">
+
 # Simulated Humanoid Robot Wrestling Competition
 
-This competition focuses on the development of advanced humanoid robot control software for a wrestling game. It relies on a calibrated simulation model of the NAO robot, running in the Webots simulator with realistic physics, sensor and actuator simulation. Being spectacular and fairly easy to get started with, this competition aims at gathering a large number of competitors, both on-site and remotely. The fully open-source competition software stack was designed to be re-used as a template for other simulation-based robot competitions.
+</span>
 
-A preliminary 3D animation of a very simple game is available on [webots.cloud](https://webots.cloud/AcrEbH3).
+[![webots.cloud - Competition](https://img.shields.io/badge/webots.cloud-Competition-007ACC)][1]
 
-![Webots screenshot](wrestling.jpg "Webots screenshot")
+<span id="description">
+
+This competition focuses on the development of advanced humanoid robot control software for a wrestling game. It relies on a calibrated simulation model of the NAO robot, running in the Webots simulator with realistic physics, sensor and actuator simulation.
+
+</span>
+
+Being spectacular and fairly easy to get started with, this competition aims at gathering a large number of competitors, both on-site and remotely. The fully open-source competition software stack was designed to be re-used as a template for other simulation-based robot competitions.
+
+![Webots screenshot](preview/thumbnail.jpg "Webots screenshot")
+
+## Competition Information
+
+<span id="information">
+
+- Difficulty: Master or PhD
+- Robot: NAO
+- Programming Language: any
+- Commitment: a few weeks
+
+</span>
 
 ## Important Dates
 
@@ -25,19 +46,40 @@ The finals will be broadcasted online in real time.
 
 The winning team will receive one Ethereum crypto-currency (priced around USD 1,260 on December 1st, 2022).
 
-## Getting Started Now
-
-To get started programming your wrestling robot, you will have to:
-
-1. Download and install [Webots R2023a](https://github.com/cyberbotics/webots/releases/tag/R2023a).
-2. Register to the competition by [forking](https://github.com/cyberbotics/wrestling/fork) this repository and clone it locally.
-3. Start programming the behavior of a robot by editing its [controller program](controllers/wrestler_red/wrestler_red.py).
-
 ## Participation Conditions
 
 Anyone can participate: there is absolutely no restriction on the quality and number of team members.
 
 Participation is free of charge, including the finals.
+
+## Getting Started Now
+
+To get started programming your wrestling robot, you will have to:
+
+### 1. Create your own Participant Repository from this Template
+
+[Click here](../../generate) to create your own repository automatically or do it manually by clicking on the green button "Use this template". If you get a 404 page it's probably because you are not connected to your GitHub account.
+- Fill the "Repository name" field with a name for your controller.
+- Set the visibility of your repository to "Private" unless you don't care about people looking at your code.
+- Finally, click on the green button "Create repository from template".
+
+You should continue reading this document on your **own** repository page and not this one. **This is important** in order to be able to use the links in the following sections. Remember that you can open a link in a new tab by middle-clicking the link.
+
+### 2. Add the Organizer as a Collaborator
+
+You can skip this step if you created your repository as "Public" instead of "Private".
+
+- [Click here](../../settings/access) to go to the "Collaborators" setting page. You might need to confirm the access by re-entering your GitHub password.
+- You should see a "Manage access" box where you will see the current collaborators of the repo.
+Click on the "Add people" and search for "[omichel](https://github.com/omichel)". When you found the organizer, add him to the repository.
+
+### 3. Modify your Robot Controller
+
+You can now edit your [participant.json](../../edit/main/controllers/participant/participant.json) file to set your name, description and country information and also modify your [main robot controller file](../../edit/main/controllers/participant/participant.py) or create new files in this folder and push the modification to the main branch of your repository.
+A series of automated actions will take place in a few seconds.
+If everything went well, your repository should appear after some time in the [leaderboard][1] of the competition.
+If there was a problem, an [issue](../../issues) will be open automatically on your repository by the organizer.
+You will have to read it, fix what is wrong and push the changes to your main branch to re-run the automated verification.
 
 ## Rules
 
@@ -94,3 +136,4 @@ The runner machine configuration is the following:
 - RAM: 16 GB.
 - GPU: [NVIDIA GeForce GTX 1060 3 GB](https://www.videocardbenchmark.net/gpu.php?id=3566).
 
+[1]: https://webots.cloud/run?version=R2022b&url=https%3A%2F%2Fgithub.com%2Fcyberbotics%2Fwrestling%2Fblob%2Fmain%2Fworlds%2Fwrestling.wbt&type=competition "Leaderboard"
