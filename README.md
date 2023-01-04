@@ -1,10 +1,31 @@
+<span id="title">
+
 # Simulated Humanoid Robot Wrestling Competition
 
+</span>
+
+[![webots.cloud - Competition](https://img.shields.io/badge/webots.cloud-Competition-007ACC)][1]
+
+<span id="description">
+
 This competition focuses on the development of advanced humanoid robot control software for a wrestling game. It relies on a calibrated simulation model of the NAO robot, running in the Webots simulator with realistic physics, sensor and actuator simulation. Being spectacular and fairly easy to get started with, this competition aims at gathering a large number of competitors, both on-site and remotely. The fully open-source competition software stack was designed to be re-used as a template for other simulation-based robot competitions.
+
+</span>
 
 A preliminary 3D animation of a very simple game is available on [webots.cloud](https://webots.cloud/AcrEbH3).
 
 ![Webots screenshot](wrestling.jpg "Webots screenshot")
+
+## Competition Information
+
+<span id="information">
+
+- Difficulty: Master or PhD
+- Robot: NAO
+- Language: any programming language
+- Commitment: a few weeks
+
+</span>
 
 ## Important Dates
 
