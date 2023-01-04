@@ -15,7 +15,8 @@
 """Referee supervisor controller for the Robot Wrestling Tournament."""
 
 import math
-from controller import Supervisor
+import os
+from controller import Supervisor, AnsiCodes
 
 
 class Referee (Supervisor):
@@ -25,7 +26,7 @@ class Referee (Supervisor):
         for j in range(3):
             for i in range(10):
                 self.digit[j][i] = self.getDevice('digit ' + str(j) + str(i))
-        self.currentDigit = [0, 0, 0]  # 0:00
+        self.current_digit = [0, 0, 0]  # 0:00
         self.robot = [0] * 2
         self.robot[0] = self.getFromDef('WRESTLER_RED')
         self.robot[1] = self.getFromDef('WRESTLER_BLUE')
@@ -35,25 +36,26 @@ class Referee (Supervisor):
             self.min[i] = self.robot[i].getPosition()
             self.max[i] = self.robot[i].getPosition()
         self.coverage = [0] * 2
-        self.koCount = [0] * 2
+        self.ko_count = [0] * 2
         # linear motors on the side of the ring to display the coverage visually
         self.indicator = [0] * 2
         self.indicator[0] = self.getDevice('red indicator')
         self.indicator[1] = self.getDevice('blue indicator')
 
-    def displayTime(self, minutes, seconds):
+    def display_time(self, minutes, seconds):
         for j in range(3):
-            self.digit[j][self.currentDigit[j]].setPosition(1000)  # far away, not visible
-        self.currentDigit[0] = minutes
-        self.currentDigit[1] = seconds // 10
-        self.currentDigit[2] = seconds % 10
+            self.digit[j][self.current_digit[j]].setPosition(1000)  # far away, not visible
+        self.current_digit[0] = minutes
+        self.current_digit[1] = seconds // 10
+        self.current_digit[2] = seconds % 10
         for j in range(3):
-            self.digit[j][self.currentDigit[j]].setPosition(0)  # visible
+            self.digit[j][self.current_digit[j]].setPosition(0)  # visible
 
-    def run(self):
-        matchDuration = 3 * 60 * 1000  # a match lasts 3 minutes
+    def run(self, CI):
+        # Performance output used by automated CI script
+        game_duration = 3 * 60 * 1000  # a game lasts 3 minutes
         # retrieves the WorldInfo.basicTimeTime (ms) from the world file
-        timeStep = int(self.getBasicTimeStep())
+        time_step = int(self.getBasicTimeStep())
         time = 0
         seconds = -1
         ko = -1
@@ -63,7 +65,7 @@ class Referee (Supervisor):
                 if seconds != s:
                     seconds = s
                     minutes = int(time / 60000)
-                    self.displayTime(minutes, seconds)
+                    self.display_time(minutes, seconds)
                 box = [0] * 3
                 for i in range(2):
                     position = self.robot[i].getPosition()
@@ -80,34 +82,35 @@ class Referee (Supervisor):
                         self.coverage[i] = coverage
                         self.indicator[i].setPosition(self.coverage[i] / 7)
                     if position[2] < 0.75:  # low position threshold
-                        self.koCount[i] = self.koCount[i] + 200
-                        if self.koCount[i] > 10000:  # 10 seconds
+                        self.ko_count[i] = self.ko_count[i] + 200
+                        if self.ko_count[i] > 10000:  # 10 seconds
                             ko = i
                     else:
-                        self.koCount[i] = 0
-                if self.koCount[0] > self.koCount[1]:
-                    print("\fred KO: %d" % (10 - self.koCount[0] // 1000))
-                elif self.koCount[1] > self.koCount[0]:
-                    print("\fblue KO: %d" % (10 - self.koCount[1] // 1000))
-                # print("\fred: %1.3f - blue: %1.3f" % (self.coverage[0], self.coverage[1]))
-            if self.step(timeStep) == -1 or time > matchDuration or ko != -1:
+                        self.ko_count[i] = 0
+                if self.ko_count[0] > self.ko_count[1]:
+                    print(AnsiCodes.CLEAR_SCREEN)
+                    print('Red KO: %d' % (10 - self.ko_count[0] // 1000))
+                elif self.ko_count[1] > self.ko_count[0]:
+                    print(AnsiCodes.CLEAR_SCREEN)
+                    print('Blue KO: %d' % (10 - self.ko_count[1] // 1000))
+            if self.step(time_step) == -1 or time > game_duration or ko != -1:
                 break
-            time += timeStep
+            time += time_step
         if ko == 0:
-            print('Wrestler red is KO. Wrestler blue wins! (performance: 0)')
+            print('performance:0' if CI else 'Red is KO. Blue wins!')
         elif ko == 1:
-            print('Wrestler blue is KO. Wrestler red wins! (performance: 1)')
+            print('performance:1' if CI else 'Blue is KO. Red wins!')
         # in case of coverage equality, red wins
         elif self.coverage[0] >= self.coverage[1]:
-            print('Wrestler red wins: %s >= %s (performance: 1)' % (self.coverage[0], self.coverage[1]))
+            print('performance:1' if CI else 'Red wins coverage: %s >= %s' % (self.coverage[0], self.coverage[1]))
         else:
-            print('Wrestler blue wins: %s > %s => (performance: 0)' % (self.coverage[1], self.coverage[0]))
+            print('performance:0' if CI else 'Blue wins coverage: %s > %s' % (self.coverage[1], self.coverage[0]))
 
 
 # create the referee instance and run main loop
+CI = os.environ.get("CI")
 referee = Referee()
 referee.init()
-referee.run()
-print(
-    f"red coverage: {referee.coverage[0]}, blue coverage: {referee.coverage[1]}")
-# referee.simulationSetMode(referee.SIMULATION_MODE_PAUSE)
+referee.run(CI)
+if CI:
+    referee.simulationSetMode(referee.SIMULATION_MODE_PAUSE)
