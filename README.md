@@ -22,7 +22,7 @@ Being spectacular and fairly easy to get started with, this competition aims at 
 
 - Difficulty: Master or PhD
 - Robot: NAO
-- Language: any programming language
+- Programming Language: any
 - Commitment: a few weeks
 
 </span>
