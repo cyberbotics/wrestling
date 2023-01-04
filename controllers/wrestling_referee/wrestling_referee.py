@@ -24,11 +24,11 @@ class Referee (Supervisor):
         self.digit = [[0] * 10 for i in range(3)]
         for j in range(3):
             for i in range(10):
-                self.digit[j][i] = self.getDevice("digit " + str(j) + str(i))
+                self.digit[j][i] = self.getDevice('digit ' + str(j) + str(i))
         self.currentDigit = [0, 0, 0]  # 0:00
         self.robot = [0] * 2
-        self.robot[0] = self.getFromDef("WRESTLER_RED")
-        self.robot[1] = self.getFromDef("WRESTLER_BLUE")
+        self.robot[0] = self.getFromDef('WRESTLER_RED')
+        self.robot[1] = self.getFromDef('WRESTLER_BLUE')
         self.min = [[0] * 3 for i in range(2)]
         self.max = [[0] * 3 for i in range(2)]
         for i in range(2):
@@ -38,13 +38,12 @@ class Referee (Supervisor):
         self.koCount = [0] * 2
         # linear motors on the side of the ring to display the coverage visually
         self.indicator = [0] * 2
-        self.indicator[0] = self.getDevice("red indicator")
-        self.indicator[1] = self.getDevice("blue indicator")
+        self.indicator[0] = self.getDevice('red indicator')
+        self.indicator[1] = self.getDevice('blue indicator')
 
     def displayTime(self, minutes, seconds):
         for j in range(3):
-            self.digit[j][self.currentDigit[j]].setPosition(
-                1000)  # far away, not visible
+            self.digit[j][self.currentDigit[j]].setPosition(1000)  # far away, not visible
         self.currentDigit[0] = minutes
         self.currentDigit[1] = seconds // 10
         self.currentDigit[2] = seconds % 10
@@ -95,16 +94,14 @@ class Referee (Supervisor):
                 break
             time += timeStep
         if ko == 0:
-            print("Wrestler red is KO. Wrestler blue wins!")
+            print('Wrestler red is KO. Wrestler blue wins! (performance: 0)')
         elif ko == 1:
-            print("Wrestler blue is KO. Wrestler red wins!")
+            print('Wrestler blue is KO. Wrestler red wins! (performance: 1)')
         # in case of coverage equality, red wins
         elif self.coverage[0] >= self.coverage[1]:
-            print("Wrestler red wins: %s >= %s" %
-                  (self.coverage[0], self.coverage[1]))
+            print('Wrestler red wins: %s >= %s (performance: 1)' % (self.coverage[0], self.coverage[1]))
         else:
-            print("Wrestler blue wins: %s > %s" %
-                  (self.coverage[1], self.coverage[0]))
+            print('Wrestler blue wins: %s > %s => (performance: 0)' % (self.coverage[1], self.coverage[0]))
 
 
 # create the referee instance and run main loop
