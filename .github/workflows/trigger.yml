@@ -1,15 +1,20 @@
-name: triggers a run action on the repo of the organizer
+# Triggers a run action on the repository of the organizer when the robot controller get modified on the main branch
+
+name: Trigger Evaluation
 
 on:
   push:
+    branches:
+      - main
+    paths:
+      - controllers/**
+
   workflow_dispatch:
 
 jobs:
   trigger:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - name: Create a repository dispatch event
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - name: Send a repository dispatch event
         run: |
-          gh api repos/cyberbotics/wrestling/dispatches --raw-field event_type=run_trigger
+          curl -s -X POST -F 'organizer=cyberbotics/wrestling' -F'participant=${{ github.repository }}' -F'token=${{ github.token }}' https://webots.cloud/run_competition.php
