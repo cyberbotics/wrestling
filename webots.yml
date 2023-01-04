@@ -1,5 +1,5 @@
 publish: true
-type: benchmark
+type: competition
 world:
   file: worlds/wrestling.wbt
   max-duration: 30
