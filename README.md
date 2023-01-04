@@ -46,6 +46,12 @@ The finals will be broadcasted online in real time.
 
 The winning team will receive one Ethereum crypto-currency (priced around USD 1,260 on December 1st, 2022).
 
+## Participation Conditions
+
+Anyone can participate: there is absolutely no restriction on the quality and number of team members.
+
+Participation is free of charge, including the finals.
+
 ## Getting Started Now
 
 To get started programming your wrestling robot, you will have to:
@@ -74,12 +80,6 @@ A series of automated actions will take place in a few seconds.
 If everything went well, your repository should appear after some time in the [leaderboard][1] of the competition.
 If there was a problem, an [issue](../../issues) will be open automatically on your repository by the organizer.
 You will have to read it, fix what is wrong and push the changes to your main branch to re-run the automated verification.
-
-## Participation Conditions
-
-Anyone can participate: there is absolutely no restriction on the quality and number of team members.
-
-Participation is free of charge, including the finals.
 
 ## Rules
 
