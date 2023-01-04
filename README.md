@@ -14,8 +14,6 @@ This competition focuses on the development of advanced humanoid robot control s
 
 Being spectacular and fairly easy to get started with, this competition aims at gathering a large number of competitors, both on-site and remotely. The fully open-source competition software stack was designed to be re-used as a template for other simulation-based robot competitions.
 
-A preliminary 3D animation of a very simple game is available on [webots.cloud](https://webots.cloud/AcrEbH3).
-
 ![Webots screenshot](preview/thumbnail.jpg "Webots screenshot")
 
 ## Competition Information
