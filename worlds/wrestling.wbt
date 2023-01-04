@@ -114,7 +114,7 @@ RubberDuck {
 DEF WRESTLER_RED Nao {
   translation -0.88 0 0.834
   name "wrestler red"
-  controller "Bob"
+  controller "participant"
   selfCollision TRUE
 }
 DEF WRESTLER_BLUE Nao {
@@ -124,7 +124,7 @@ DEF WRESTLER_BLUE Nao {
   customColor [
     0 0.3333 1
   ]
-  controller "Alice"
+  controller "opponent"
   selfCollision TRUE
 }
 WrestlingReferee {
