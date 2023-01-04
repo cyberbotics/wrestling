@@ -5,4 +5,4 @@ world:
   max-duration: 30
   metric: ranking
   higher_is_better: false
-dockerCompose: theia:webots-project/controllers/edit_me/
+dockerCompose: theia:webots-project/controllers/participant/
