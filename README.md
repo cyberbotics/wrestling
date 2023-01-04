@@ -16,7 +16,7 @@ Being spectacular and fairly easy to get started with, this competition aims at 
 
 A preliminary 3D animation of a very simple game is available on [webots.cloud](https://webots.cloud/AcrEbH3).
 
-![Webots screenshot](wrestling.jpg "Webots screenshot")
+![Webots screenshot](preview/thumbnail.jpg "Webots screenshot")
 
 ## Competition Information
 
