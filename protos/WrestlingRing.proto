@@ -3,8 +3,8 @@
 # license url: http://www.apache.org/licenses/LICENSE-2.0
 # A wrestling ring for the NAO robots
 
-EXTERNPROTO "webots://projects/appearances/protos/ScuffedPlastic.proto"
-EXTERNPROTO "webots://projects/appearances/protos/WornBurlap.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/ScuffedPlastic.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/WornBurlap.proto"
 
 PROTO WrestlingRing [
   field SFVec3f translation 0 0 0.25

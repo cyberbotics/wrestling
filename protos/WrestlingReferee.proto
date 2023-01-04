@@ -3,7 +3,7 @@
 # license url: http://www.apache.org/licenses/LICENSE-2.0
 # A wrestling referee, including a timer display for the NAO robots
 
-EXTERNPROTO "webots://projects/appearances/protos/ScuffedPlastic.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/ScuffedPlastic.proto"
 
 PROTO WrestlingReferee [
   field SFVec3f translation -0.9 -1.01 0.04

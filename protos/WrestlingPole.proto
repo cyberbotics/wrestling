@@ -3,7 +3,7 @@
 # license url: http://www.apache.org/licenses/LICENSE-2.0
 # A wrestling ring pole for the NAO robots
 
-EXTERNPROTO "webots://projects/appearances/protos/PaintedWood.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/PaintedWood.proto"
 
 PROTO WrestlingPole [
   field SFVec3f translation 0 0 0.745
