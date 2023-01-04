@@ -58,7 +58,7 @@ jobs:
         uses: actions-ecosystem/action-create-issue@v1.0.0
         with:
           repo: ${{ github.event.client_payload.repository }}
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.REPO_TOKEN }}
           title: Failure
           body: |
             There was a problem with your controller program.
