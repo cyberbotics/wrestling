@@ -50,9 +50,30 @@ The winning team will receive one Ethereum crypto-currency (priced around USD 1,
 
 To get started programming your wrestling robot, you will have to:
 
-1. Download and install [Webots R2023a](https://github.com/cyberbotics/webots/releases/tag/R2023a).
-2. Register to the competition by [forking](https://github.com/cyberbotics/wrestling/fork) this repository and clone it locally.
-3. Start programming the behavior of a robot by editing its [controller program](controllers/wrestler_red/wrestler_red.py).
+### 1. Create your own Participant Repository from this Template
+
+[Click here](../../generate) to create your own repository automatically or do it manually by clicking on the green button "Use this template". If you get a 404 page it's probably because you are not connected to your GitHub account.
+- Fill the "Repository name" field with a name for your controller.
+- Set the visibility of your repository to "Private" unless you don't care about people looking at your code.
+- Finally, click on the green button "Create repository from template".
+
+You should continue reading this document on your **own** repository page and not this one. **This is important** in order to be able to use the links in the following sections. Remember that you can open a link in a new tab by middle-clicking the link.
+
+### 2. Add the Organizer as a Collaborator
+
+You can skip this step if you created your repository as "Public" instead of "Private".
+
+- [Click here](../../settings/access) to go to the "Collaborators" setting page. You might need to confirm the access by re-entering your GitHub password.
+- You should see a "Manage access" box where you will see the current collaborators of the repo.
+Click on the "Add people" and search for @omichel [omichel](https://github.com/omichel). When you found the organizer, add him to the repository.
+
+### 3. Modify your Robot Controller
+
+You can now edit your [participant.json](../../edit/main/controllers/participant/participant.json) file to set your name, description and country information and also modify your [main robot controller file](../../edit/main/controllers/participant/participant.py) or create new files in this folder and push the modification to the main branch of your repository.
+A series of automated actions will take place in a few seconds.
+If everything went well, your repository should appear after some time in the [leaderboard][1] of the competition.
+If there was a problem, an [issue](../../issues) will be open automatically on your repository by the organizer.
+You will have to read it, fix what is wrong and push the changes to your main branch to re-run the automated verification.
 
 ## Participation Conditions
 
