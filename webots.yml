@@ -3,5 +3,6 @@ type: competition
 world:
   file: worlds/wrestling.wbt
   max-duration: 30
-  metric: percent
-dockerCompose: theia:webots-project/controllers/edit_me/
+  metric: ranking
+  higher_is_better: false
+dockerCompose: theia:webots-project/controllers/participant/
