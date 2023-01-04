@@ -71,7 +71,7 @@ You can skip this step if you created your repository as "Public" instead of "Pr
 
 - [Click here](../../settings/access) to go to the "Collaborators" setting page. You might need to confirm the access by re-entering your GitHub password.
 - You should see a "Manage access" box where you will see the current collaborators of the repo.
-Click on the "Add people" and search for @omichel [omichel](https://github.com/omichel). When you found the organizer, add him to the repository.
+Click on the "Add people" and search for "[omichel](https://github.com/omichel)". When you found the organizer, add him to the repository.
 
 ### 3. Modify your Robot Controller
 
