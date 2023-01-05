@@ -98,13 +98,17 @@ class Referee (Supervisor):
             time += time_step
         if ko == 0:
             print('performance:0' if CI else 'Red is KO. Blue wins!')
+            print('Red is KO. Blue wins!')
         elif ko == 1:
             print('performance:1' if CI else 'Blue is KO. Red wins!')
+            print('Blue is KO. Red wins!')
         # in case of coverage equality, red wins
         elif self.coverage[0] >= self.coverage[1]:
             print('performance:1' if CI else 'Red wins coverage: %s >= %s' % (self.coverage[0], self.coverage[1]))
+            print('Red wins coverage: %s >= %s' % (self.coverage[0], self.coverage[1]))
         else:
             print('performance:0' if CI else 'Blue wins coverage: %s > %s' % (self.coverage[1], self.coverage[0]))
+            print('Blue wins coverage: %s > %s' % (self.coverage[1], self.coverage[0]))
 
 
 # create the referee instance and run main loop
