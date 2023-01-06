@@ -1,6 +1,6 @@
 <span id="title">
 
-# Simulated Humanoid Robot Wrestling Competition
+# Humanoid Robot Wrestling Competition
 
 </span>
 
