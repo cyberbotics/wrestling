@@ -99,27 +99,27 @@ class Referee (Supervisor):
                 elif self.ko_count[1] > self.ko_count[0]:
                     counter = 10 - self.ko_count[1] // 1000
                     string = str(counter) if counter > 0 else 'KO'
-                    self.setLabel(7, string, 0.7 - len(string) * 0.01, 0.051, 0.08, 0x0000ff, 0, 'Lucida Console')
+                    self.setLabel(7, string, 0.7 - len(string) * 0.01, 0.051, 0.08, 0x0000ff, 0, 'Arial')
             if self.step(time_step) == -1 or time > game_duration or ko != -1:
                 break
-            time += time_step         
+            time += time_step
         if ko == 0:
             print('Red is KO. Blue wins!')
-            if CI:
-                print('performance:0')
+            performance = 0
         elif ko == 1:
             print('Blue is KO. Red wins!')
-            if CI:
-                print('performance:1')
+            performance = 1
         # in case of coverage equality, blue wins
         elif self.coverage[0] > self.coverage[1]:
             print('Red wins coverage: %s > %s' % (self.coverage[0], self.coverage[1]))
-            if CI:
-                print('performance:1')
+            performance = 1
         else:
             print('Blue wins coverage: %s >= %s' % (self.coverage[1], self.coverage[0]))
-            if CI:
-                print('performance:0')
+            performance = 0
+        self.setLabel(7 - performance, 'WIN', 0.673, 0.051 - 0.048 * performance,
+                      0.08, 0x0000ff if performance == 0 else 0xff0000, 0, 'Arial')
+        if CI:
+            print(f'performance:{performance}')
 
 
 # create the referee instance and run main loop
