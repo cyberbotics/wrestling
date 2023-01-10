@@ -4113,6 +4113,10 @@ PROTO Nao [
                                                 }
                                               ]
                                             }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.0001
+                                            }
                                             lookupTable [
                                             ]
                                           }
@@ -4141,6 +4145,10 @@ PROTO Nao [
                                               }
                                             }
                                             boundingObject USE BUMPER_BO
+                                            physics Physics {
+                                              density -1
+                                              mass 0.0001
+                                            }
                                             lookupTable [
                                             ]
                                           }
@@ -5632,6 +5640,10 @@ PROTO Nao [
                                               }
                                             }
                                             boundingObject USE BUMPER_BO
+                                            physics Physics {
+                                              density -1
+                                              mass 0.0001
+                                            }
                                             lookupTable [
                                             ]
                                           }
@@ -5660,6 +5672,10 @@ PROTO Nao [
                                               }
                                             }
                                             boundingObject USE BUMPER_BO
+                                            physics Physics {
+                                              density -1
+                                              mass 0.0001
+                                            }
                                             lookupTable [
                                             ]
                                           }
