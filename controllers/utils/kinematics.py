@@ -18,16 +18,17 @@ import numpy as np
 class Kinematics():
     """Class that takes care of the computation of the inverse kinematics."""
     IKPY_MAX_ITERATIONS = 4
+    URDF_PATH = '../utils/kinematics_nao.urdf'
     def __init__(self):
         self.left_leg_chain = Chain.from_urdf_file(
-            '../../protos/nao.urdf',
+            self.URDF_PATH,
             base_elements=['base_link', 'LHipYawPitch'],
             active_links_mask=[False, True, True,
                                True, True, True, True, False]
         )
 
         self.right_leg_chain = Chain.from_urdf_file(
-            '../../protos/nao.urdf',
+            self.URDF_PATH,
             base_elements=['base_link', 'RHipYawPitch'],
             active_links_mask=[False, True, True,
                                True, True, True, True, False]
