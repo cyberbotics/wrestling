@@ -46,7 +46,6 @@ jobs:
       - name: Checkout the Organizer Repository
         uses: actions/checkout@v3
       - name: Record Animation and Update Performance
-        timeout-minutes: 10
         id: webots_test
         uses: cyberbotics/competition-record-action@main
         env:
