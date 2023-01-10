@@ -1,4 +1,4 @@
-#VRML_SIM R2023a utf8
+#VRML_SIM R2023b utf8
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
 EXTERNPROTO "../protos/Nao.proto"
@@ -22,7 +22,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation 0.19498090561580528 -0.2764227505822969 -0.9410488347613836 5.405573313424377
-  position -3.0494663943147273 -3.12082712312562 1.607529864231621
+  position -2.691780750858717 -2.734811659479189 1.4547104403271727
   follow "wrestler_red"
   followType "Pan and Tilt Shot"
   ambientOcclusionRadius 0.2

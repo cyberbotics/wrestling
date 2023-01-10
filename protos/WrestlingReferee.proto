@@ -8,8 +8,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/project
 PROTO WrestlingReferee [
   field SFVec3f translation -0.9 -1.01 0.04
   field SFRotation rotation 0 0 1 0
-  field SFString name "wrestling referee"
-  field SFString controller "wrestling_referee"
+  field SFString name "referee"
+  field SFString controller "referee"
 ]
 {
   Robot {

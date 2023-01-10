@@ -84,7 +84,7 @@ You will have to read it, fix what is wrong and push the changes to your main br
 
 ## Rules
 
-The rules of game are implemented in the [wrestling referee supervisor](controllers/wrestling_referee/wrestling_referee.py).
+The rules of game are implemented in the [referee supervisor](controllers/referee/referee.py).
 They can be summarized as follow:
 
 A game lasts until one of these two conditions occurs:

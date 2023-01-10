@@ -59,6 +59,10 @@ class Referee (Supervisor):
         time = 0
         seconds = -1
         ko = -1
+        self.setLabel(0, '█' * 100, 0, 0, 0.1, 0xffffff, 0.3, 'Lucida Console')
+        self.setLabel(1, '█' * 100, 0, 0.048, 0.1, 0xffffff, 0.3, 'Lucida Console')
+        self.setLabel(2, 'Participant', 0.01, 0.003, 0.08, 0xff0000, 0, 'Arial')
+        self.setLabel(3, 'Opponent', 0.01, 0.051, 0.08, 0x0000ff, 0, 'Arial')
         while True:
             if time % 200 == 0:
                 s = int(time / 1000) % 60
@@ -81,6 +85,7 @@ class Referee (Supervisor):
                         coverage = math.sqrt(coverage)
                         self.coverage[i] = coverage
                         self.indicator[i].setPosition(self.coverage[i] / 7)
+                        self.setLabel(4 + i, '{:.3f}'.format(coverage), 0.8, 0.003 + 0.048 * i, 0.08, 0xff0000 if i == 0 else 0x0000ff, 0, 'Arial')
                     if position[2] < 0.75:  # low position threshold
                         self.ko_count[i] = self.ko_count[i] + 200
                         if self.ko_count[i] > 10000:  # 10 seconds
@@ -88,27 +93,33 @@ class Referee (Supervisor):
                     else:
                         self.ko_count[i] = 0
                 if self.ko_count[0] > self.ko_count[1]:
-                    print(AnsiCodes.CLEAR_SCREEN)
-                    print('Red KO: %d' % (10 - self.ko_count[0] // 1000))
+                    counter = 10 - self.ko_count[0] // 1000
+                    string = str(counter) if counter > 0 else 'KO'
+                    self.setLabel(6, string, 0.7 - len(string) * 0.01, 0.003, 0.08, 0xff0000, 0, 'Arial')
                 elif self.ko_count[1] > self.ko_count[0]:
-                    print(AnsiCodes.CLEAR_SCREEN)
-                    print('Blue KO: %d' % (10 - self.ko_count[1] // 1000))
+                    counter = 10 - self.ko_count[1] // 1000
+                    string = str(counter) if counter > 0 else 'KO'
+                    self.setLabel(7, string, 0.7 - len(string) * 0.01, 0.051, 0.08, 0x0000ff, 0, 'Lucida Console')
             if self.step(time_step) == -1 or time > game_duration or ko != -1:
                 break
-            time += time_step
+            time += time_step         
         if ko == 0:
-            print('performance:0' if CI else 'Red is KO. Blue wins!')
             print('Red is KO. Blue wins!')
+            if CI:
+                print('performance:0')
         elif ko == 1:
-            print('performance:1' if CI else 'Blue is KO. Red wins!')
             print('Blue is KO. Red wins!')
-        # in case of coverage equality, red wins
-        elif self.coverage[0] >= self.coverage[1]:
-            print('performance:1' if CI else 'Red wins coverage: %s >= %s' % (self.coverage[0], self.coverage[1]))
-            print('Red wins coverage: %s >= %s' % (self.coverage[0], self.coverage[1]))
+            if CI:
+                print('performance:1')
+        # in case of coverage equality, blue wins
+        elif self.coverage[0] > self.coverage[1]:
+            print('Red wins coverage: %s > %s' % (self.coverage[0], self.coverage[1]))
+            if CI:
+                print('performance:1')
         else:
-            print('performance:0' if CI else 'Blue wins coverage: %s > %s' % (self.coverage[1], self.coverage[0]))
-            print('Blue wins coverage: %s > %s' % (self.coverage[1], self.coverage[0]))
+            print('Blue wins coverage: %s >= %s' % (self.coverage[1], self.coverage[0]))
+            if CI:
+                print('performance:0')
 
 
 # create the referee instance and run main loop
