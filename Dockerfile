@@ -9,6 +9,12 @@ COPY . /usr/local/webots-project
 ARG WORLD_PATH
 ENV WORLD_PATH=${WORLD_PATH}
 
+ARG PARTICIPANT_NAME
+ENV PARTICIPANT_NAME=${PARTICIPANT_NAME}
+
+ARG OPPONENT_NAME
+ENV OPPONENT_NAME=${OPPONENT_NAME}
+
 # If called with no arguments, launch in headless mode
 # (for instance, on the simulation server of webots.cloud, the GUI is launched to stream it to the user and a different command is used)
 # - Launching Webots in shell mode to be able to read stdout from benchmark_record_action script
