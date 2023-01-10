@@ -59,10 +59,12 @@ class Referee (Supervisor):
         time = 0
         seconds = -1
         ko = -1
+        participant = os.environ['PARTICIPANT_NAME'] if 'PARTICIPANT_NAME' in os.environ else 'Participant'
+        opponent = os.environ['OPPONENT_NAME'] if 'OPPONENT_NAME' in os.environ else 'Opponent'
         self.setLabel(0, '█' * 100, 0, 0, 0.1, 0xffffff, 0.3, 'Lucida Console')
         self.setLabel(1, '█' * 100, 0, 0.048, 0.1, 0xffffff, 0.3, 'Lucida Console')
-        self.setLabel(2, 'Participant', 0.01, 0.003, 0.08, 0xff0000, 0, 'Arial')
-        self.setLabel(3, 'Opponent', 0.01, 0.051, 0.08, 0x0000ff, 0, 'Arial')
+        self.setLabel(2, participant, 0.01, 0.003, 0.08, 0xff0000, 0, 'Arial')
+        self.setLabel(3, opponent, 0.01, 0.051, 0.08, 0x0000ff, 0, 'Arial')
         while True:
             if time % 200 == 0:
                 s = int(time / 1000) % 60
