@@ -14,7 +14,7 @@
 
 import numpy as np
 from scipy.spatial.transform import Rotation as R
-from kinematics import Kinematics
+from .kinematics import Kinematics
 
 class Ellipsoid_gait_generator():
     """Simple gait generator, based on an ellipsoid path.
