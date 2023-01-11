@@ -99,7 +99,7 @@ The *coverage* reflects how far a robot has moved inside the ring. It is compute
 coverage = X_max + Y_max - X_min - Y_min
 ```
 
-## Demo Robot Controllers
+### Demo Robot Controllers
 
 A series of sample demo robot controllers with increasing complexity and performance is provided as examples:
 
@@ -110,7 +110,7 @@ A series of sample demo robot controllers with increasing complexity and perform
 - [Eve](https://github.com/cyberbotics/wrestling-eve) processes camera images to detect her opponent and target him.
 - [Fatima](https://github.com/cyberbotics/wrestling-fatima) uses an advanced gait manager with inverse kinematics.
 
-## Recommendation to Competitors
+### Recommendation to Competitors
 
 The earlier you start working on the competition, the better.
 The ranking algorithm allows a very good robot controller to climp-up to the top of the leader board in one day.
