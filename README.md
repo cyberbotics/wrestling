@@ -65,7 +65,7 @@ You should continue reading this document on your **own** repository page and no
 **This is important** in order to be able to use the links in the following sections.
 Remember that you can open a link in a new tab by middle-clicking the link.
 
-### 2. Add the Organizer as a Collaborator
+### 2. Add [omichel](https://github.com/omichel) as a Collaborator
 
 You can skip this step if you created your repository as "Public" instead of "Private".
 
