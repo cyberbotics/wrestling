@@ -31,7 +31,7 @@ Being spectacular and fairly easy to get started with, this competition aims at 
 
 | date               | description                                      |
 |--------------------|--------------------------------------------------|
-| January 10th, 2023 | registration opens and qualification games start |
+| January 11th, 2023 | registration opens and qualification games start |
 | May 23rd, 2023     | selection of the best 32 teams                   |
 | **May 30th, 2023** | **1/16 finals**                                  |
 | **May 31th, 2023** | **1/8 finals**                                   |
@@ -97,25 +97,27 @@ The *coverage* reflects how far a robot has moved inside the ring. It is compute
 coverage = X_max + Y_max - X_min - Y_min
 ```
 
+## Demo Robot Controllers
+
+A series of sample demo robot controllers with increasing complexity and performance is provided as examples:
+
+- [Alice](https://github.com/cyberbotics/wrestling-alice) plays a simple motion file.
+- [Bob](https://github.com/cyberbotics/wrestling-bob) loads several motion files.
+- [Charlie](https://github.com/cyberbotics/wrestling-charlie) plays a custom motion file and use the LEDs.
+- [David](https://github.com/cyberbotics/wrestling-david): is able to detect when he falls down and to recover.
+- [Eve](https://github.com/cyberbotics/wrestling-eve): processes camera images to detect her opponent and target him.
+- [Fatima](https://github.com/cyberbotics/wrestling-fatima): uses an advanced gait manager with inverse kinematics.
+
 ## Recommendation to Competitors
 
 The earlier you start working on the competition, the better.
-Starting early will allow you to compete with others from January 10th with an already pretty good robot controller.
-The ranking algorithm will allow a very good robot controller to climp-up to the top of the leader board in one day.
+The ranking algorithm allows a very good robot controller to climp-up to the top of the leader board in one day.
 However, in practice, it is recommended to enter the leaderboard rankings as early as possible.
-This will allow you to compare your robot controller to others and have time to improve its performance.
-
-## Upcoming Workflow
-
-Starting from January 10th, 2023, games will run on demand and the leaderboard will be updated accordingly.
-We will soon publish a series of robot controllers that can serve as examples.
-You will be able to store your robot controller program on a private GitHub repository to avoid disclosing it to others.
-It will be possible to program the robot in any language (C, C++, Python, Java, ROS 2, etc.) with any library or python module.
-In order to achieve this, your GitHub repository should contain a [Dockerfile](controllers/Dockerfile) specifying on which environment your controller should run.
+This allows you to compare your robot controller to others and have time to improve its performance.
 
 ### Ranking System
 
-Each time you will push a commit on your main branch, a series of games will be started on the runner machine.
+Each time you push a commit on your main branch, a series of games is started on the runner machine.
 If you are ranked number 1, no game will take place.
 Otherwise, you will first play a game against the competitor ranked just above you in the leaderboard.
 If you loose, nothing will be changed in the leaderboard ranking and no further game will be played.
