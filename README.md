@@ -12,7 +12,7 @@ This competition focuses on the development of advanced humanoid robot control s
 
 </span>
 
-Being spectacular and easy to get started with, this competition aims at gathering a large number of competitors, both on-site and remotely. The fully open-source competition software stack was designed to be re-used as a template for other simulation-based robot competitions.
+Being spectacular and easy to get started with, this competition aims at gathering a large number of competitors, both on-site and remotely. The fully open-source competition software stack was designed to be re-used as a [template](https://github.com/cyberbotics/competition-template) for other simulation-based robot competitions.
 
 ![Webots screenshot](preview/thumbnail.jpg "Webots screenshot")
 
