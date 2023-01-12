@@ -20,24 +20,29 @@ import numpy as np
 import cv2
 import base64
 
+
 def get_cv_image_from_camera(camera):
     """Get an openCV image (BGRA) from a Webots camera."""
     return np.frombuffer(camera.getImage(), np.uint8).reshape((camera.getHeight(), camera.getWidth(), 4))
 
+
 def send_image_to_robot_window(robot, img):
     """Send an openCV image to the robot's web interface."""
-    _, im_arr = cv2.imencode('.png', img[:,:,:3])
+    _, im_arr = cv2.imencode('.png', img[:, :, :3])
     im_bytes = im_arr.tobytes()
     im_b64 = base64.b64encode(im_bytes).decode()
     robot.wwiSendText("data:image/png;base64," + im_b64)
 
+
 def get_largest_contour(image):
     """Get the largest contour in an image."""
-    contours, _ = cv2.findContours(image, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    contours, _ = cv2.findContours(
+        image, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     contours = sorted(contours, key=cv2.contourArea, reverse=True)
     if len(contours) == 0:
         return None
     return contours[0]
+
 
 def get_contour_centroid(contour):
     """Get the centroid of a contour."""
@@ -50,6 +55,7 @@ def get_contour_centroid(contour):
         # we use the mean of the contour points instead
         vertical_coordinate, horizontal_coordinate = np.mean(contour, axis=0)[0]
     return int(vertical_coordinate), int(horizontal_coordinate)
+
 
 def locate_opponent(img):
     """Image processing demonstration to locate the opponent robot in an image."""

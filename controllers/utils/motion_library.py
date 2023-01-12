@@ -15,6 +15,7 @@
 import os
 from controller import Motion
 
+
 class MotionLibrary:
     def __init__(self):
         """Initializes the motion library with the motions in the motions folder."""
@@ -26,17 +27,17 @@ class MotionLibrary:
             if ext != '.motion':
                 continue
             motion = Motion(motion_path)
-            if motion_name.endswith('Loop'): # if the file ends with "Loop", it is played on loop
+            # if the file ends with "Loop", it is played on loop
+            if motion_name.endswith('Loop'):
                 motion.setLoop(True)
             self.motions[motion_name] = motion
 
-    
     def add(self, name, motion_path, loop=False):
         """Adds a custom motion to the library."""
         self.motions[name] = Motion(motion_path)
         if loop:
             self.motions[name].setLoop(loop)
-    
+
     def get(self, name):
         """Returns the motion with the given name."""
         return self.motions[name]

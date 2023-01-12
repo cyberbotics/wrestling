@@ -17,13 +17,15 @@ from .finite_state_machine import FiniteStateMachine
 from .motion_library import MotionLibrary
 from .current_motion_manager import CurrentMotionManager
 
+
 class FallDetection:
     def __init__(self, time_step, robot):
         self.time_step = time_step
         self.robot = robot
         # the Finite State Machine (FSM) is a way of representing a robot's behavior as a sequence of states
         self.fsm = FiniteStateMachine(
-            states=['NO_FALL', 'BLOCKING_MOTION', 'SIDE_FALL', 'FRONT_FALL', 'BACK_FALL'],
+            states=['NO_FALL', 'BLOCKING_MOTION',
+                    'SIDE_FALL', 'FRONT_FALL', 'BACK_FALL'],
             initial_state='NO_FALL',
             actions={
                 'NO_FALL': self.wait,
@@ -35,7 +37,8 @@ class FallDetection:
         )
 
         # accelerometer
-        self.accelerometer = Accelerometer(robot.getDevice('accelerometer'), self.time_step)
+        self.accelerometer = Accelerometer(
+            robot.getDevice('accelerometer'), self.time_step)
 
         # Shoulder roll motors
         self.RShoulderRoll = robot.getDevice('RShoulderRoll')
@@ -52,7 +55,7 @@ class FallDetection:
                 self.fsm.execute_action()
                 self.robot.step(self.time_step)
                 self.detect_fall()
-    
+
     def detect_fall(self):
         """Detect a fall and update the FSM state."""
         self.accelerometer.update_average()
@@ -82,13 +85,13 @@ class FallDetection:
             self.current_motion.set(self.library.get('Stand'))
             self.fsm.transition_to('NO_FALL')
 
-    def front_fall(self): 
+    def front_fall(self):
         self.current_motion.set(self.library.get('GetUpFront'))
         self.fsm.transition_to('BLOCKING_MOTION')
 
     def back_fall(self):
         self.current_motion.set(self.library.get('GetUpBack'))
         self.fsm.transition_to('BLOCKING_MOTION')
-    
+
     def wait(self):
         pass

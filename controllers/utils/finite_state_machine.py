@@ -16,10 +16,11 @@
 This module provides a basic Finite State Machine class.
 """
 
+
 class FiniteStateMachine:
     def __init__(self, states, initial_state, actions=None):
         """Create a finite state machine.
-        
+
         Args:
             states (list): List of states.
             initial_state (str): Initial state.
@@ -34,7 +35,7 @@ class FiniteStateMachine:
         if state not in self.states:
             raise ValueError("Invalid state: {}".format(state))
         self.current_state = state
-    
+
     def execute_action(self):
         """Execute the action of the current state."""
         action = self.actions[self.current_state]

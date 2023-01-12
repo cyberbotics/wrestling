@@ -18,13 +18,15 @@ This module provides a sensor class using the RunningAverage class.
 
 from .running_average import RunningAverage
 
+
 class Accelerometer():
     """Class that provides an interface to the accelerometer sensor."""
 
     def __init__(self, device, time_step, history_steps=10):
         self.device = device
         self.device.enable(time_step)
-        self.average = RunningAverage(dimensions=3, history_steps=history_steps)
+        self.average = RunningAverage(
+            dimensions=3, history_steps=history_steps)
 
     def get_values(self):
         """Returns the current accelerometer values."""

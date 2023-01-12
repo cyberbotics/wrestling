@@ -15,15 +15,15 @@
 class CurrentMotionManager:
     def __init__(self):
         self.currentMotion = None
-    
+
     def get(self):
         """Returns the motion that is currently playing."""
         return self.currentMotion
-    
+
     def is_over(self):
         """Returns True if the current motion is over."""
         return self.currentMotion.isOver()
-    
+
     def set(self, motion):
         """Sets the current motion to the given motion."""
         if self.currentMotion:
