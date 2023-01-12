@@ -113,7 +113,7 @@ A series of sample demo robot controllers with increasing complexity and perform
 ### Recommendation to Competitors
 
 The earlier you start working on the competition, the better.
-The ranking algorithm allows a very good robot controller to climp-up to the top of the leader board in one day.
+The ranking algorithm allows a very good robot controller to climp-up to the top of the leaderboard in one day.
 However, in practice, it is recommended to enter the leaderboard rankings as early as possible.
 This allows you to compare your robot controller to others and have time to improve its performance.
 
