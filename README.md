@@ -105,9 +105,9 @@ A series of sample demo robot controllers with increasing complexity and perform
 
 - [Alice](https://github.com/cyberbotics/wrestling-alice) plays a simple motion file.
 - [Bob](https://github.com/cyberbotics/wrestling-bob) loads several motion files.
-- [Charlie](https://github.com/cyberbotics/wrestling-charlie) plays a custom motion file and use the LEDs.
+- [Charlie](https://github.com/cyberbotics/wrestling-charlie) plays a custom motion file and uses the LEDs.
 - [David](https://github.com/cyberbotics/wrestling-david) is able to detect when he falls down and to recover.
-- [Eve](https://github.com/cyberbotics/wrestling-eve) processes camera images to detect her opponent and target him.
+- [Eve](https://github.com/cyberbotics/wrestling-eve) processes camera images to detect her opponent and targets him.
 - [Fatima](https://github.com/cyberbotics/wrestling-fatima) uses an advanced gait manager with inverse kinematics.
 
 ### Recommendation to Competitors
