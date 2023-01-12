@@ -16,7 +16,7 @@
 This module provides a basic Finite State Machine class.
 """
 
-class Finite_state_machine:
+class FiniteStateMachine:
     def __init__(self, states, initial_state, actions=None):
         """Create a finite state machine.
         

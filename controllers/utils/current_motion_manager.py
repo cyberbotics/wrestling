@@ -12,10 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
-from controller import Motion
-
-class Current_motion_manager:
+class CurrentMotionManager:
     def __init__(self):
         self.currentMotion = None
     
@@ -39,31 +36,3 @@ class Current_motion_manager:
         """Resets Webots' isOver() flag of the given motion."""
         motion.play()
         motion.stop()
-
-class Motion_library:
-    def __init__(self):
-        """Initializes the motion library with the motions in the motions folder."""
-        self.motions = {}
-        motion_dir = '../motions/'
-        for motion_file in os.listdir(motion_dir):
-            motion_path = os.path.join(motion_dir, motion_file)
-            motion_name = os.path.splitext(motion_file)[0]
-            motion = Motion(motion_path)
-            if motion_name.endswith('Loop'): # if the file ends with "Loop", it is played on loop
-                motion.setLoop(True)
-            self.motions[motion_name] = motion
-
-    
-    def add(self, name, motion_path, loop=False):
-        """Adds a custom motion to the library."""
-        self.motions[name] = Motion(motion_path)
-        if loop:
-            self.motions[name].setLoop(loop)
-    
-    def get(self, name):
-        """Returns the motion with the given name."""
-        return self.motions[name]
-
-    def play(self, name):
-        """Plays the motion with the given name."""
-        self.motions[name].play()

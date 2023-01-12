@@ -12,19 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import sys
+from .accelerometer import Accelerometer
+from .finite_state_machine import FiniteStateMachine
+from .motion_library import MotionLibrary
+from .current_motion_manager import CurrentMotionManager
 
-sys.path.append('..')
-from utils.sensors import Accelerometer
-from utils.fsm import Finite_state_machine
-from utils.motion import Current_motion_manager, Motion_library
-
-class Fall_detection:
+class FallDetection:
     def __init__(self, time_step, robot):
         self.time_step = time_step
         self.robot = robot
         # the Finite State Machine (FSM) is a way of representing a robot's behavior as a sequence of states
-        self.fsm = Finite_state_machine(
+        self.fsm = FiniteStateMachine(
             states=['NO_FALL', 'BLOCKING_MOTION', 'SIDE_FALL', 'FRONT_FALL', 'BACK_FALL'],
             initial_state='NO_FALL',
             actions={
@@ -44,8 +42,8 @@ class Fall_detection:
         self.LShoulderRoll = robot.getDevice('LShoulderRoll')
 
         # load motion files
-        self.current_motion = Current_motion_manager()
-        self.library = Motion_library()
+        self.current_motion = CurrentMotionManager()
+        self.library = MotionLibrary()
 
     def check(self):
         if self.detect_fall():

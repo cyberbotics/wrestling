@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-class Average():
+class RunningAverage():
     """Class that takes care of the computation of a list of values' running average."""
 
     def __init__(self, dimensions, history_steps=10):

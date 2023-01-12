@@ -13,12 +13,10 @@
 # limitations under the License.
 
 """
-This module provides a set of classes to interact with the robot's sensors.
+This module provides a sensor class using the RunningAverage class.
 """
 
-import sys
-sys.path.append('..')
-from utils.utils import Average
+from .running_average import RunningAverage
 
 class Accelerometer():
     """Class that provides an interface to the accelerometer sensor."""
@@ -26,7 +24,7 @@ class Accelerometer():
     def __init__(self, device, time_step, history_steps=10):
         self.device = device
         self.device.enable(time_step)
-        self.average = Average(dimensions=3, history_steps=history_steps)
+        self.average = RunningAverage(dimensions=3, history_steps=history_steps)
 
     def get_values(self):
         """Returns the current accelerometer values."""
