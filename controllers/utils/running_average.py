@@ -19,12 +19,12 @@ class RunningAverage():
         self.HISTORY_STEPS = history_steps
         if dimensions > 1:
             self.is_vector = True
-            self.average = [0]*dimensions
-            self.history = [[0]*dimensions]*self.HISTORY_STEPS
+            self.average = [0] * dimensions
+            self.history = [[0] * dimensions] * self.HISTORY_STEPS
         else:
             self.is_vector = False
             self.average = 0
-            self.history = [0]*self.HISTORY_STEPS
+            self.history = [0] * self.HISTORY_STEPS
 
     def get_new_average(self, value):
         """Returns the current accelerometer average of the last HISTORY_STEPS values."""
@@ -36,6 +36,6 @@ class RunningAverage():
         self.history.pop(0)
         self.history.append(value)
         if self.is_vector:
-            self.average = [sum(col)/self.HISTORY_STEPS for col in zip(*self.history)]
+            self.average = [sum(col) / self.HISTORY_STEPS for col in zip(*self.history)]
         else:
-            self.average = sum(self.history)/self.HISTORY_STEPS
+            self.average = sum(self.history) / self.HISTORY_STEPS

@@ -36,8 +36,8 @@ class ImageProcessing():
         """Get the centroid of a contour."""
         M = cv2.moments(contour)
         if M['m00'] != 0:
-            vertical_coordinate = int(M['m01']/M['m00'])
-            horizontal_coordinate = int(M['m10']/M['m00'])
+            vertical_coordinate = int(M['m01'] / M['m00'])
+            horizontal_coordinate = int(M['m10'] / M['m00'])
         else:
             # if the contour has an area of 0, the centroid cannot be computed this way
             # we use the mean of the contour points instead

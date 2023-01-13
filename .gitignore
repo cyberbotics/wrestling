@@ -1,2 +1,2 @@
 .vscode
-controllers/motions/.~lock*
+*.pyc

@@ -113,10 +113,10 @@ def DH(a, alpha, d, theta):
     """Return the Denavit-Hartenberg matrix for the given parameters"""
     return np.array([
         [np.cos(theta), -np.sin(theta), 0, a],
-        [np.sin(theta) * np.cos(alpha), np.cos(theta) *
-         np.cos(alpha), -np.sin(alpha), -d * np.sin(alpha)],
-        [np.sin(theta) * np.sin(alpha), np.cos(theta) *
-         np.sin(alpha), np.cos(alpha), d * np.cos(alpha)],
+        [np.sin(theta) * np.cos(alpha), np.cos(theta) * np.cos(alpha),
+            -np.sin(alpha), -d * np.sin(alpha)],
+        [np.sin(theta) * np.sin(alpha), np.cos(theta) * np.sin(alpha),
+            np.cos(alpha), d * np.cos(alpha)],
         [0, 0, 0, 1]
     ])
 
@@ -151,12 +151,13 @@ def get_A_base_0(is_left):
 
 
 def get_T_0_1(theta_1, is_left):
-    T_0_1 = DH(0, -np.pi/4 * 3 if is_left else 1, 0, theta_1 - np.pi/2)
+    T_0_1 = DH(0, -np.pi / 4 * 3 if is_left else 1, 0, theta_1 - np.pi / 2)
     return T_0_1
 
 
 def get_T_1_2(theta_2, is_left):
-    T_1_2 = DH(0, -np.pi/2, 0, theta_2 + np.pi/4 if is_left else -np.pi/4)
+    T_1_2 = DH(0, -np.pi / 2, 0,
+               theta_2 + np.pi / 4 if is_left else -np.pi / 4)
     return T_1_2
 
 
@@ -176,12 +177,12 @@ def get_T_4_5(theta_5):
 
 
 def get_T_5_6(theta_6):
-    T_5_6 = DH(0, -np.pi/2, 0, theta_6)
+    T_5_6 = DH(0, -np.pi / 2, 0, theta_6)
     return T_5_6
 
 
 def get_Rot_zy():
-    Rot_zy = orientation_to_transform([np.pi, -np.pi/2, 0])
+    Rot_zy = orientation_to_transform([np.pi, -np.pi / 2, 0])
     return Rot_zy
 
 
@@ -258,15 +259,16 @@ def inverse_leg(x, y, z, roll, pitch, yaw, is_left):
     A_6_end = get_A_6_end()
     T_hat = np.linalg.inv(A_base_0) @ T @ np.linalg.inv(A_6_end)
     # This angle offset depends on which leg we are doing the inverse kinematics
-    plus_or_minus_pi_over_4 = np.pi/4 if is_left else -np.pi/4
+    plus_or_minus_pi_over_4 = np.pi / 4 if is_left else -np.pi / 4
     T_tilde = orientation_to_transform([0, 0, plus_or_minus_pi_over_4]) @ T_hat
     T_prime = np.linalg.inv(T_tilde)
     px_prime, py_prime, pz_prime = T_prime[0:3, 3]
-    theta_6 = np.arctan(py_prime/pz_prime)
+    theta_6 = np.arctan(py_prime / pz_prime)
     solution_tree = Tree(theta_6)
     d = np.linalg.norm([px_prime, py_prime, pz_prime])
-    theta_4_double_prime = np.pi - np.arccos((ThighLength**2 + TibiaLength**2 - d**2) /
-                                             (2*ThighLength*TibiaLength))
+    theta_4_double_prime = np.pi - \
+        np.arccos((ThighLength**2 + TibiaLength**2 - d**2)
+                  / (2 * ThighLength * TibiaLength))
     for theta_4_test in [theta_4_double_prime, -theta_4_double_prime]:
         if LKneePitchLow < theta_4_test < LKneePitchHigh:
             solution_tree.add_child_node(theta_4_test)
@@ -306,7 +308,7 @@ def inverse_leg(x, y, z, roll, pitch, yaw, is_left):
                 theta_1_prime = np.arccos(
                     T_triple_prime[0, 2] / np.sin(theta_2_test + plus_or_minus_pi_over_4))
                 theta_1 = []
-                for theta_1_test in [theta_1_prime + np.pi/2, - theta_1_prime + np.pi/2]:
+                for theta_1_test in [theta_1_prime + np.pi / 2, - theta_1_prime + np.pi / 2]:
                     if LHipYawPitchLow < theta_1_test < LHipYawPitchHigh:
                         theta_1.append(theta_1_test)
                 for theta_3_angle in theta_3:
