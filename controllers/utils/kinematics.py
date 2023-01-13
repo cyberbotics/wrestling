@@ -113,10 +113,8 @@ def DH(a, alpha, d, theta):
     """Return the Denavit-Hartenberg matrix for the given parameters"""
     return np.array([
         [np.cos(theta), -np.sin(theta), 0, a],
-        [np.sin(theta) * np.cos(alpha), np.cos(theta) * np.cos(alpha),
-            -np.sin(alpha), -d * np.sin(alpha)],
-        [np.sin(theta) * np.sin(alpha), np.cos(theta) * np.sin(alpha),
-            np.cos(alpha), d * np.cos(alpha)],
+        [np.sin(theta) * np.cos(alpha), np.cos(theta) * np.cos(alpha), -np.sin(alpha), -d * np.sin(alpha)],
+        [np.sin(theta) * np.sin(alpha), np.cos(theta) * np.sin(alpha), np.cos(alpha), d * np.cos(alpha)],
         [0, 0, 0, 1]
     ])
 
@@ -156,8 +154,7 @@ def get_T_0_1(theta_1, is_left):
 
 
 def get_T_1_2(theta_2, is_left):
-    T_1_2 = DH(0, -np.pi / 2, 0,
-               theta_2 + np.pi / 4 if is_left else -np.pi / 4)
+    T_1_2 = DH(0, -np.pi / 2, 0, theta_2 + np.pi / 4 if is_left else -np.pi / 4)
     return T_1_2
 
 
@@ -266,9 +263,7 @@ def inverse_leg(x, y, z, roll, pitch, yaw, is_left):
     theta_6 = np.arctan(py_prime / pz_prime)
     solution_tree = Tree(theta_6)
     d = np.linalg.norm([px_prime, py_prime, pz_prime])
-    theta_4_double_prime = np.pi - \
-        np.arccos((ThighLength**2 + TibiaLength**2 - d**2)
-                  / (2 * ThighLength * TibiaLength))
+    theta_4_double_prime = np.pi - np.arccos((ThighLength**2 + TibiaLength**2 - d**2) / (2 * ThighLength * TibiaLength))
     for theta_4_test in [theta_4_double_prime, -theta_4_double_prime]:
         if LKneePitchLow < theta_4_test < LKneePitchHigh:
             solution_tree.add_child_node(theta_4_test)
@@ -278,8 +273,7 @@ def inverse_leg(x, y, z, roll, pitch, yaw, is_left):
         theta_4_test = theta_4_node.angle
         numerator = T_double_prime[1, 3] * (TibiaLength + ThighLength * np.cos(theta_4_test)) + \
             ThighLength * T_double_prime[0, 3] * np.sin(theta_4_test)
-        denominator = ThighLength**2 * np.sin(theta_4_test)**2 + \
-            (TibiaLength + ThighLength * np.cos(theta_4_test))**2
+        denominator = ThighLength**2 * np.sin(theta_4_test)**2 + (TibiaLength + ThighLength * np.cos(theta_4_test))**2
         theta_5_prime = np.arcsin(-numerator / denominator)
         for theta_5_test in [theta_5_prime, (np.pi if theta_5_prime >= 0 else -np.pi) - theta_5_prime]:
             if LAnklePitchLow < theta_5_test < LAnklePitchHigh:
