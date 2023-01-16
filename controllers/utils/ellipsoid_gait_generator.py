@@ -30,8 +30,6 @@ class EllipsoidGaitGenerator():
         self.robot = robot
         self.time_step = time_step
         self.theta = 0  # angle of the ellipsoid path
-        self.imu = robot.getDevice('inertial unit')
-        self.imu.enable(self.time_step)
         self.right_foot_sensor = robot.getDevice('RFsr')
         self.right_foot_sensor.enable(self.time_step)
         self.left_foot_sensor = robot.getDevice('LFsr')
@@ -88,7 +86,8 @@ class EllipsoidGaitGenerator():
         factor = -1 if is_left else 1
         amplitude_z = self.step_penetration if factor * self.theta < 0 else self.step_height
         # vestibulospinal reflex: corrects the robot's roll
-        amplitude_z += factor * self.imu.getRollPitchYaw()[0] * self.roll_reflex_factor
+        # TODO: sensor fusion to get a pose estimation to correct the robot's roll
+        # amplitude_z += factor * ROLL_VALUE * self.roll_reflex_factor
         # extensor response: pushes on the leg when it is on the ground
         force_values = self.left_foot_sensor.getValues() if is_left else self.right_foot_sensor.getValues()
         force_magnitude = np.linalg.norm(np.array([force_values[0], force_values[1], force_values[2]]))
