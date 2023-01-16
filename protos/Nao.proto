@@ -23,7 +23,6 @@ PROTO Nao [
   field SFBool                       supervisor            FALSE                 # Is `Robot.supervisor`.
   field SFBool                       synchronization       TRUE                  # Is `Robot.synchronization`.
   field SFBool                       selfCollision         FALSE                 # Is `Robot.selfCollision`.
-  field SFFloat                      gpsAccuracy           0.0                   # Is `GPS.accuracy`.
   field SFInt32                      cameraWidth           160                   # Is `Camera.width`.
   field SFInt32                      cameraHeight          120                   # Is `Camera.height`.
   field SFBool                       cameraAntiAliasing    FALSE                 # Is `Camera.antiAliasing`.
@@ -689,9 +688,6 @@ PROTO Nao [
         ]
         gradual TRUE
       }
-      DEF GPS GPS {
-        accuracy IS gpsAccuracy
-      }
       DEF RECEIVER Receiver {
         channel IS channel
       }
@@ -715,11 +711,6 @@ PROTO Nao [
           -8.726 -8.726 0.01, 8.726 8.726 0.01
         ]
         zAxis FALSE
-      }
-      DEF INERTIAL_UNIT InertialUnit {
-        translation -0.008 0.006 0.029
-        rotation 1 0 0 1.5708
-        yAxis FALSE
       }
       DEF US1 Transform {
         translation 0.0537 -0.0341 0.0698
