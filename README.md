@@ -31,7 +31,7 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 
 | date               | description                                      |
 |--------------------|--------------------------------------------------|
-| January 13th, 2023 | registration opens and qualification games start |
+| January 16th, 2023 | registration opens and qualification games start |
 | May 23rd, 2023     | selection of the best 32 teams                   |
 | **May 30th, 2023** | **1/16 finals**                                  |
 | **May 31th, 2023** | **1/8 finals**                                   |
