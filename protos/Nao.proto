@@ -710,7 +710,6 @@ PROTO Nao [
         lookupTable [
           -8.726 -8.726 0.01, 8.726 8.726 0.01
         ]
-        zAxis FALSE
       }
       DEF US1 Transform {
         translation 0.0537 -0.0341 0.0698
