@@ -9,7 +9,7 @@ on:
 jobs:
   evaluation:
     name: Evaluation Requested by a Participant
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     steps:
       - name: Is repo link actually a repo?
         id: repo_check
