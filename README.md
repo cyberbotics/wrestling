@@ -43,7 +43,7 @@ Remote participation will be possible.
 
 ## Prize
 
-The winning team will receive one Ethereum crypto-currency (priced around USD 1,248 on January 6th, 2023).
+The winning team will receive one Ethereum crypto-currency (priced around USD 1'547 on January 16th, 2023).
 
 ## Participation Conditions
 
