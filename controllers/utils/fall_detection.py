@@ -12,9 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+'''Routine to detect a fall and recover from it.'''
+
 from .accelerometer import Accelerometer
-from .finite_state_machine import FiniteStateMachine
 from .motion_library import MotionLibrary
+from .finite_state_machine import FiniteStateMachine
 from .current_motion_manager import CurrentMotionManager
 
 
@@ -24,31 +26,26 @@ class FallDetection:
         self.robot = robot
         # the Finite State Machine (FSM) is a way of representing a robot's behavior as a sequence of states
         self.fsm = FiniteStateMachine(
-            states=['NO_FALL', 'BLOCKING_MOTION',
-                    'SIDE_FALL', 'FRONT_FALL', 'BACK_FALL'],
+            states=['NO_FALL', 'BLOCKING_MOTION', 'FRONT_FALL', 'BACK_FALL', 'SIDE_FALL'],
             initial_state='NO_FALL',
             actions={
                 'NO_FALL': self.wait,
                 'BLOCKING_MOTION': self.pending,
-                'SIDE_FALL': self.wait,
                 'FRONT_FALL': self.front_fall,
-                'BACK_FALL': self.back_fall
+                'BACK_FALL': self.back_fall,
+                'SIDE_FALL': self.wait
             }
         )
-
-        # accelerometer
-        self.accelerometer = Accelerometer(
-            robot.getDevice('accelerometer'), self.time_step)
-
-        # Shoulder roll motors
+        self.accelerometer = Accelerometer(robot, self.time_step)
+        # Shoulder roll motors to recover from a side fall
         self.RShoulderRoll = robot.getDevice('RShoulderRoll')
         self.LShoulderRoll = robot.getDevice('LShoulderRoll')
-
-        # load motion files
         self.current_motion = CurrentMotionManager()
         self.library = MotionLibrary()
 
     def check(self):
+        '''Check if the robot has fallen.
+        If that is the case, block everything to recover from it.'''
         if self.detect_fall():
             while self.fsm.current_state != 'NO_FALL':
                 # block everything and run the recovery motion until the robot is back on its feet
@@ -57,7 +54,7 @@ class FallDetection:
                 self.detect_fall()
 
     def detect_fall(self):
-        """Detect a fall and update the FSM state."""
+        '''Detect a fall from the accelerometer and update the FSM state.'''
         self.accelerometer.update_average()
         [acc_x, acc_y, _] = self.accelerometer.get_average()
         fall = False
@@ -80,7 +77,7 @@ class FallDetection:
         return fall
 
     def pending(self):
-        # waits for the current motion to finish
+        '''Wait for the current motion to finish before going back to NO_FALL.'''
         if self.current_motion.is_over():
             self.current_motion.set(self.library.get('Stand'))
             self.fsm.transition_to('NO_FALL')

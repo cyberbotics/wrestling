@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
+'''
 Port of the inverse kinematics code from this paper:
 N. Kofinas, “Forward and inverse kinematics for the NAO humanoid robot,” Diploma Thesis,
 Technical University of Crete, Greece, 2012,
 available at: https://www.cs.umd.edu/~nkofinas/Projects/KofinasThesis.pdf
 C++ code available at: https://github.com/kouretes/NAOKinematics
 /!\ This code works in millimeters, not meters like Webots
-"""
+'''
 
 from . import kinematics_constants as constants
 import numpy as np
@@ -27,7 +27,7 @@ from scipy.spatial.transform import Rotation as R
 
 
 class Node:
-    """A node in the tree data structure for storing all the possible inverse kinematics solutions."""
+    '''A node in the tree data structure for storing all the possible inverse kinematics solutions.'''
 
     def __init__(self, angle):
         self.angle = angle
@@ -40,7 +40,7 @@ class Node:
         self.children.append(child)
 
     def get_angle_combinations(self):
-        """Return all the possible combinations of joint angles for the given node and its children"""
+        '''Return all the possible combinations of joint angles for the given node and its children'''
         if not self.children:
             return [[self.angle]]
         combinations = []
@@ -52,7 +52,7 @@ class Node:
 
 
 class Kinematics:
-    """Inverse kinematics for the NAO robot"""
+    '''Inverse kinematics for the NAO robot'''
 
     def __init__(self) -> None:
         # The thetas are stored in the order they are computed in the paper:
@@ -63,7 +63,7 @@ class Kinematics:
 
     @staticmethod
     def DH(a, alpha, d, theta):
-        """Return the Denavit-Hartenberg matrix for the given parameters"""
+        '''Return the Denavit-Hartenberg matrix for the given parameters'''
         return np.array([
             [np.cos(theta), -np.sin(theta), 0, a],
             [np.sin(theta) * np.cos(alpha), np.cos(theta) * np.cos(alpha), -np.sin(alpha), -d * np.sin(alpha)],
@@ -73,14 +73,14 @@ class Kinematics:
 
     @staticmethod
     def orientation_to_transform(orientation):
-        """Return the affine transform matrix for the given orientation"""
+        '''Return the affine transform matrix for the given orientation'''
         T = np.eye(4)
         T[:3, :3] = R.from_euler('ZYX', orientation).as_matrix()
         return T
 
     @staticmethod
     def transform_to_orientation(T):
-        """Return the orientation from the given affine transform matrix"""
+        '''Return the orientation from the given affine transform matrix'''
         roll = np.arctan2(T[2, 1], T[2, 2])
         pitch = np.arctan2(-T[2, 0], np.sqrt(T[2, 1]**2 + T[2, 2]**2))
         yaw = np.arctan2(T[1, 0], T[0, 0])
@@ -88,7 +88,7 @@ class Kinematics:
 
     @classmethod
     def position_and_orientation_to_transform(cls, position, orientation):
-        """Return the affine transform matrix for the desired position and orientation"""
+        '''Return the affine transform matrix for the desired position and orientation'''
         T = cls.orientation_to_transform(orientation)
         T[0:3, 3] = position
         return T
@@ -143,7 +143,7 @@ class Kinematics:
 
     @classmethod
     def forward_left_leg(cls, thetas):
-        """Return the position and orientation of the left foot for the given joint angles (forwards kinematics)"""
+        '''Return the position and orientation of the left foot for the given joint angles (forwards kinematics)'''
         A_base_0 = cls.get_A_base_0(True)
         T_0_1 = cls.get_T_0_1(thetas[0], True)
         T_1_2 = cls.get_T_1_2(thetas[1], True)
@@ -158,7 +158,7 @@ class Kinematics:
 
     @classmethod
     def forward_right_leg(cls, thetas):
-        """Return the position and orientation of the right foot for the given joint angles (forwards kinematics)"""
+        '''Return the position and orientation of the right foot for the given joint angles (forwards kinematics)'''
         A_base_0 = cls.get_A_base_0(False)
         T_0_1 = cls.get_T_0_1(thetas[0], False)
         T_1_2 = cls.get_T_1_2(thetas[1], False)
@@ -172,7 +172,7 @@ class Kinematics:
         return np.concatenate((T_base_end[0:3, 3], cls.transform_to_orientation(T_base_end)))
 
     def inverse_leg(self, x, y, z, roll, pitch, yaw, is_left):
-        """Return the joint angles for the desired position and orientation of the foot (inverse kinematics)"""
+        '''Return the joint angles for the desired position and orientation of the foot (inverse kinematics)'''
         global left_leg_previous_joints
         global right_leg_previous_joints
 
@@ -240,8 +240,13 @@ class Kinematics:
                     theta_5_node.add_child(theta_2_node)
         # retrieve all the possible combinations of angles from the tree
         combinations = solution_tree_root.get_angle_combinations()
-        if len(combinations) != 1:
-            print("Number of combination different than one:", combinations)
+        combinations = [candidate for candidate in combinations if len(candidate) == 6]
+        if len(combinations) == 0 or len(combinations[0]) != 6:
+            print(f'WARNING: Incomputable desired end point position for the {"left" if is_left else "right"} leg:')
+            print(f'x: {x}, y: {y}, z: {z}, roll: {roll}, pitch: {pitch}, yaw: {yaw}')
+            best_solution = left_leg_previous_joints if is_left else right_leg_previous_joints
+        elif len(combinations) != 1:
+            print('Number of combination different than one:', combinations)
             # compute the distance between the different combinations and the previous joints and return the closest one
             shortest_distance = np.Inf
             best_index = -1
@@ -252,9 +257,6 @@ class Kinematics:
                     shortest_distance = distance
                     best_index = i
             best_solution = combinations[best_index]
-        elif len(combinations[0]) != 6:
-            print("Incomputable desired end point position", combinations)
-            best_solution = left_leg_previous_joints if is_left else right_leg_previous_joints
         else:
             best_solution = combinations[0]
         if is_left:

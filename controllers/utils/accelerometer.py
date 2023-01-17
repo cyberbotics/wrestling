@@ -12,37 +12,36 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
+'''
 This module provides a sensor class using the RunningAverage class.
-"""
+'''
 
 from .running_average import RunningAverage
 
 
 class Accelerometer():
-    """Class that provides an interface to the accelerometer sensor."""
+    '''Class that provides an interface to the accelerometer sensor.'''
 
-    def __init__(self, device, time_step, history_steps=10):
-        self.device = device
-        self.device.enable(time_step)
-        self.average = RunningAverage(
-            dimensions=3, history_steps=history_steps)
+    def __init__(self, robot, time_step, history_steps=10):
+        self.accelerometer = robot.getDevice('accelerometer')
+        self.accelerometer.enable(time_step)
+        self.average = RunningAverage(dimensions=3, history_steps=history_steps)
 
     def get_values(self):
-        """Returns the current accelerometer values."""
-        return self.device.getValues()
+        '''Returns the current accelerometer values.'''
+        return self.accelerometer.getValues()
 
     def get_average(self):
-        """Returns the current accelerometer average of the last HISTORY_STEPS values."""
+        '''Returns the current accelerometer average of the last HISTORY_STEPS values.'''
         return self.average.average
 
     def update_average(self):
-        """Updates the accelerometer average."""
+        '''Updates the accelerometer average.'''
         values = self.get_values()
         self.average.update_average(values)
 
     def get_new_average(self):
-        """Updates the accelerometer average and returns it."""
+        '''Updates the accelerometer average and returns it.'''
         values = self.get_values()
         self.average.update_average(values)
         return self.get_average()
