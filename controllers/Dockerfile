@@ -1,4 +1,4 @@
-FROM cyberbotics/webots.cloud:R2023a-ubuntu20.04
+FROM cyberbotics/webots.cloud:R2023a-ubuntu20.04-numpy
 
 # Environment variables needed for Webots
 # https://cyberbotics.com/doc/guide/running-extern-robot-controllers#remote-extern-controllers
