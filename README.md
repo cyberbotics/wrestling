@@ -118,6 +118,10 @@ The ranking algorithm allows a very good robot controller to climp-up to the top
 However, in practice, it is recommended to enter the leaderboard rankings as early as possible.
 This allows you to compare your robot controller to others and have time to improve its performance.
 
+### Include Dependencies in your Docker Container
+
+Your controller is run in a [Docker container](https://www.docker.com/resources/what-container/). If your robot controller has dependencies, such as some specific libraries, python modules, a Java programming interface or a complete ROS framework, be sure to update the [controllers/Dockerfile](controllers/Dockerfile) to include all these dependencies. The default Dockerfile includes the tools needed to run and compile simple C, C++ and Python controllers.
+
 ### Ranking System
 
 Each time you push a commit on your main branch, a series of games is started on the runner machine.
