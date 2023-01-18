@@ -12,11 +12,7 @@ ENV WEBOTS_CONTROLLER_URL=${WEBOTS_CONTROLLER_URL}
 RUN mkdir -p /usr/local/webots-project/controllers
 COPY . /usr/local/webots-project/controllers
 
-# The default controller name is extracted from webots.yml and is given by the build-arg:
-ARG DEFAULT_CONTROLLER
-ENV DEFAULT_CONTROLLER=${DEFAULT_CONTROLLER}
-
 # Entrypoint command to launch default Python controller script
 # (In shell form to allow variable expansion)
 WORKDIR /usr/local/webots-project/controllers/$DEFAULT_CONTROLLER
-ENTRYPOINT python3 -u $DEFAULT_CONTROLLER.py
+ENTRYPOINT python3 -u participant.py
