@@ -85,10 +85,6 @@ If everything went well, your repository should appear after some time in the [l
 If there was a problem, an [issue](../../issues) will be open automatically on your repository by the organizer.
 You will have to read it, fix what is wrong and push the changes to your main branch to re-run the automated verification.
 
-### 4. Adapt the Dockerfile to your dependencies needs.
-
-Your controller is evaluated in a [Docker container](https://www.docker.com/resources/what-container/). If your robot controller has dependencies, such as some specific libraries, python modules or a complete ROS framework, be sure to update the [controllers/Dockerfile](https://github.com/cyberbotics/wrestling/blob/main/controllers/Dockerfile) to include all these dependencies. The default Webots Docker container includes the tools needed to run and compile simple C, C++ and Python controllers.
-
 ## Rules
 
 The rules of game are implemented in the [referee supervisor](controllers/referee/referee.py).
@@ -121,6 +117,10 @@ The earlier you start working on the competition, the better.
 The ranking algorithm allows a very good robot controller to climp-up to the top of the leaderboard in one day.
 However, in practice, it is recommended to enter the leaderboard rankings as early as possible.
 This allows you to compare your robot controller to others and have time to improve its performance.
+
+### Include Dependencies in your Docker Container
+
+Your controller is run in a [Docker container](https://www.docker.com/resources/what-container/). If your robot controller has dependencies, such as some specific libraries, python modules, a Java programming interface or a complete ROS framework, be sure to update the [controllers/Dockerfile](controllers/Dockerfile) to include all these dependencies. The default Dockerfile includes the tools needed to run and compile simple C, C++ and Python controllers.
 
 ### Ranking System
 
