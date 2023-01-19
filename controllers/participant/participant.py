@@ -17,27 +17,16 @@
 
 from controller import Robot
 import sys
-sys.path.append('..')
+
 # We provide a set of utilities to help you with the development of your controller. You can find them in the utils folder.
 # If you want to see a list of examples that use them, you can go to https://github.com/cyberbotics/wrestling#demo-robot-controllers
-
-# from utils.accelerometer import Accelerometer
-# from utils.camera import Camera
-# from utils.current_motion_manager import CurrentMotionManager
-# from utils.ellipsoid_gait_generator import EllipsoidGaitGenerator
-# from utils.fall_detection import FallDetection
-# from utils.finite_state_machine import FiniteStateMachine
-# from utils.gait_manager import GaitManager
-# from utils.image_processing import ImageProcessing as IP
-# from utils.kinematics import Kinematics
+sys.path.append('..')
 from utils.motion_library import MotionLibrary
-# from utils.pose_estimator import PoseEstimator
-# from utils.running_average import RunningAverage
 
 
 class Wrestler (Robot):
     def run(self):
-        # to load all the motions from the motion folder, we use the Motion_library class:
+        # to load all the motions from the motions folder, we use the MotionLibrary class:
         motion_library = MotionLibrary()
         # retrieves the WorldInfo.basicTimeTime (ms) from the world file
         time_step = int(self.getBasicTimeStep())
