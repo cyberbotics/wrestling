@@ -15,7 +15,7 @@
 """Minimalist controller example for the Robot Wrestling Tournament.
    Demonstrates how to play a simple motion file."""
 
-from controller import Robot, Motion
+from controller import Robot
 import sys
 sys.path.append('..')
 # We provide a set of utilities to help you with the development of your controller. You can find them in the utils folder.
@@ -30,18 +30,19 @@ sys.path.append('..')
 # from utils.gait_manager import GaitManager
 # from utils.image_processing import ImageProcessing as IP
 # from utils.kinematics import Kinematics
-# from utils.motion_library import MotionLibrary
+from utils.motion_library import MotionLibrary
 # from utils.pose_estimator import PoseEstimator
 # from utils.running_average import RunningAverage
 
+
 class Wrestler (Robot):
     def run(self):
-        motion = Motion('../motions/Backwards.motion')  # look into this text file, it's easy to understand
-        motion.setLoop(True)
-        motion.play()
-        time_step = int(self.getBasicTimeStep())  # retrieves the WorldInfo.basicTimeTime (ms) from the world file
-        while self.step(time_step) != -1:  # runs the hand wave motion in a loop until Webots quits
-            pass
+        # to load all the motions from the motion folder, we use the Motion_library class:
+        motion_library = MotionLibrary()
+        # retrieves the WorldInfo.basicTimeTime (ms) from the world file
+        time_step = int(self.getBasicTimeStep())
+        while self.step(time_step) != -1:  # mandatory function to make the simulation run
+            motion_library.play('Backwards')
 
 
 # create the Robot instance and run main loop
