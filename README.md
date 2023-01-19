@@ -24,6 +24,7 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 - Robot: NAO
 - Programming Language: any
 - Commitment: a few weeks
+- Prize: <a href="https://www.google.com/search?q=ethereum+price" target="_blank">1 Ethereum</a>
 
 </span>
 
