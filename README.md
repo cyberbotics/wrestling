@@ -132,6 +132,13 @@ If you loose, nothing will be changed in the leaderboard ranking and no further 
 Otherwise, you will swap your position in the leaderboard with the competitor just above you and you will play another game with the competitor just above your new position.
 This will be repeated as long as you win until you reach the first rank of the leaderboard.
 
+### Checking the Log File of an Evaluation Run
+
+When there is a problem with your repository, an issue is opened automatically on your repository to invite you to check the log of the evaluation run.
+However, if your controller crashes for some reason, no error is reported to you, but the animation of your robot will show your robot not moving at all (and your robot will likely loose the game).
+It that case, you should check the log file of the evaluation run to understand why your controller crashed.
+All the log files are available on https://github.com/cyberbotics/wrestling/actions
+
 ### Runner Machine Configuration
 
 The runner machine will host a single game at a time.
