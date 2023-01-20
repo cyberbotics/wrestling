@@ -18,6 +18,7 @@ WorldInfo {
     "All shots are allowed."
   ]
   title "Humanoid Robot Wrestling Competition"
+  window "competition_description"
   basicTimeStep 20
 }
 Viewpoint {
@@ -117,6 +118,7 @@ DEF WRESTLER_RED Nao {
   controller "participant"
   synchronization FALSE
   selfCollision TRUE
+  window "competition_description"
 }
 DEF WRESTLER_BLUE Nao {
   translation 0.88 0 0.834
