@@ -65,6 +65,8 @@ class Referee (Supervisor):
         self.setLabel(1, '█' * 100, 0, 0.048, 0.1, 0xffffff, 0.3, 'Lucida Console')
         self.setLabel(2, participant, 0.01, 0.003, 0.08, 0xff0000, 0, 'Arial')
         self.setLabel(3, opponent, 0.01, 0.051, 0.08, 0x0000ff, 0, 'Arial')
+        ko_labels = ['', '']
+        coverage_labels = ['', '']
         while True:
             if time % 200 == 0:
                 s = int(time / 1000) % 60
@@ -88,7 +90,10 @@ class Referee (Supervisor):
                         coverage = math.sqrt(coverage)
                         self.coverage[i] = coverage
                         self.indicator[i].setPosition(self.coverage[i] / 7)
-                        self.setLabel(4 + i, '{:.3f}'.format(coverage), 0.8, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
+                        string = '{:.3f}'.format(coverage)
+                        if string != coverage_labels[i]:
+                            self.setLabel(4 + i, string, 0.8, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
+                        coverage_labels[i] = string
                     if position[2] < 0.75:  # low position threshold
                         self.ko_count[i] = self.ko_count[i] + 200
                         if self.ko_count[i] > 10000:  # 10 seconds
@@ -97,7 +102,9 @@ class Referee (Supervisor):
                         self.ko_count[i] = 0
                     counter = 10 - self.ko_count[i] // 1000
                     string = '' if self.ko_count[i] == 0 else str(counter) if counter > 0 else 'KO'
-                    self.setLabel(6 + i, string, 0.7 - len(string) * 0.01, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
+                    if string != ko_labels[i]:
+                        self.setLabel(6 + i, string, 0.7 - len(string) * 0.01, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
+                    ko_labels[i] = string
 
             if self.step(time_step) == -1 or time > game_duration or ko != -1:
                 break
@@ -118,7 +125,9 @@ class Referee (Supervisor):
         self.setLabel(7 - performance, 'WIN', 0.673, 0.051 - 0.048 * performance,
                       0.08, 0x0000ff if performance == 0 else 0xff0000, 0, 'Arial')
         if CI:
-            self.step(2000)  # wait 2 seconds to display the result
+            self.step(3000)  # wait 3 seconds to display the result
+            self.animationStopRecording()  # stop the recording of the animation
+            self.step(time_step)
             print(f'performance:{performance}')
 
 
