@@ -81,14 +81,24 @@
       "date": "2023-01-24T11:48:17Z"
     },
     {
+      "id": "592665845",
+      "repository": "RomainGsd/Isaac-for-ICRA-2023",
+      "private": true,
+      "name": "JonOsterman",
+      "description": "Isaac v1",
+      "country": "FR",
+      "performance": 9,
+      "date": "2023-01-24T14:35:31Z"
+    },
+    {
       "id": "591877549",
       "repository": "piyush-g0enka/BoxerNAO",
       "private": true,
       "name": "Piyush Goenka",
       "description": "Boxing Champion",
       "country": "IN",
-      "performance": 9,
-      "date": "2023-01-24T11:45:53Z"
+      "performance": 10,
+      "date": "2023-01-24T14:32:30Z"
     },
     {
       "id": "586830620",
@@ -97,16 +107,6 @@
       "name": "Bob",
       "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
       "country": "CH",
-      "performance": 10,
-      "date": "2023-01-24T11:11:05Z"
-    },
-    {
-      "id": "592665845",
-      "repository": "RomainGsd/Isaac-for-ICRA-2023",
-      "private": true,
-      "name": "JonOsterman",
-      "description": "Isaac v1",
-      "country": "FR",
       "performance": 11,
       "date": "2023-01-24T14:29:05Z"
     },
