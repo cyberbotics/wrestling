@@ -1,22 +1,22 @@
 {
   "participants": [
     {
-      "id": "592893244",
-      "repository": "mospaeda/webots_armen",
-      "private": true,
-      "name": "Mospaeda",
-      "description": "Elder Robot Armen.",
-      "country": "FR",
-      "performance": 1,
-      "date": "2023-01-24T23:20:03Z"
-    },
-    {
       "id": "592670321",
       "repository": "sagwl96/nao-wrestler-v1",
       "private": true,
       "name": "Sagwl",
       "description": "Testing motions",
       "country": "DE",
+      "performance": 1,
+      "date": "2023-01-24T23:58:25Z"
+    },
+    {
+      "id": "592893244",
+      "repository": "mospaeda/webots_armen",
+      "private": true,
+      "name": "Mospaeda",
+      "description": "Elder Robot Armen.",
+      "country": "FR",
       "performance": 2,
       "date": "2023-01-24T23:51:33Z"
     },
