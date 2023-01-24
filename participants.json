@@ -101,14 +101,24 @@
       "date": "2023-01-24T14:32:30Z"
     },
     {
+      "id": "592893244",
+      "repository": "mospaeda/webots_armen",
+      "private": true,
+      "name": "Mospaeda",
+      "description": "Elder Robot Armen.",
+      "country": "FR",
+      "performance": 11,
+      "date": "2023-01-24T21:13:43Z"
+    },
+    {
       "id": "586830620",
       "repository": "cyberbotics/wrestling-bob",
       "private": false,
       "name": "Bob",
       "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
       "country": "CH",
-      "performance": 11,
-      "date": "2023-01-24T14:29:05Z"
+      "performance": 12,
+      "date": "2023-01-24T21:10:11Z"
     },
     {
       "id": "586762611",
@@ -117,8 +127,8 @@
       "name": "Alice",
       "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "performance": 12,
-      "date": "2023-01-24T13:48:55Z"
+      "performance": 13,
+      "date": "2023-01-24T21:08:56Z"
     },
     {
       "id": "590556641",
@@ -127,8 +137,8 @@
       "name": "DH",
       "description": "Description of my robot controller program.",
       "country": "GB",
-      "performance": 13,
-      "date": "2023-01-24T13:44:00Z"
+      "performance": 14,
+      "date": "2023-01-24T21:07:01Z"
     },
     {
       "id": "592532770",
@@ -137,8 +147,8 @@
       "name": "RamCharanThota",
       "description": "Description of my robot controller program.",
       "country": "AU",
-      "performance": 14,
-      "date": "2023-01-24T11:03:47Z"
+      "performance": 15,
+      "date": "2023-01-24T21:05:19Z"
     },
     {
       "id": "585201575",
@@ -147,8 +157,8 @@
       "name": "Olivier",
       "description": "I am walking backwards falling off the stage, a perfect loser...",
       "country": "CH",
-      "performance": 15,
-      "date": "2023-01-24T11:02:48Z"
+      "performance": 16,
+      "date": "2023-01-24T21:04:06Z"
     },
     {
       "id": "591694573",
@@ -157,8 +167,8 @@
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "performance": 16,
-      "date": "2023-01-24T11:01:27Z"
+      "performance": 18,
+      "date": "2023-01-24T21:02:28Z"
     }
   ]
 }
