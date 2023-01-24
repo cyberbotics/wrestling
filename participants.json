@@ -127,7 +127,7 @@
       "name": "JonOsterman",
       "description": "Isaac v1",
       "country": "FR",
-      "performance": 14,
+      "performance": 13,
       "date": "2023-01-24T10:13:15Z"
     },
     {
@@ -137,7 +137,7 @@
       "name": "Olivier",
       "description": "I am walking backwards falling off the stage, a perfect loser...",
       "country": "CH",
-      "performance": 15,
+      "performance": 14,
       "date": "2023-01-24T10:11:09Z"
     },
     {
@@ -147,7 +147,7 @@
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "performance": 16,
+      "performance": 15,
       "date": "2023-01-21T15:43:21Z"
     }
   ]
