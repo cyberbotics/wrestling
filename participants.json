@@ -91,14 +91,24 @@
       "date": "2023-01-22T09:34:06Z"
     },
     {
+      "id": "592670321",
+      "repository": "sagwl96/nao-wrestler-v1",
+      "private": true,
+      "name": "Sagwl",
+      "description": "Testing motions",
+      "country": "DE",
+      "performance": 10,
+      "date": "2023-01-24T10:52:59Z"
+    },
+    {
       "id": "586762611",
       "repository": "cyberbotics/wrestling-alice",
       "private": false,
       "name": "Alice",
       "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "performance": 10,
-      "date": "2023-01-22T09:32:21Z"
+      "performance": 11,
+      "date": "2023-01-24T10:49:57Z"
     },
     {
       "id": "590556641",
@@ -107,17 +117,7 @@
       "name": "DH",
       "description": "Description of my robot controller program.",
       "country": "GB",
-      "performance": 11,
-      "date": "2023-01-22T09:30:13Z"
-    },
-    {
-      "id": "592670321",
-      "repository": "sagwl96/nao-wrestler-v1",
-      "private": true,
-      "name": "Sagwl",
-      "description": "Testing motions",
-      "country": "DE",
-      "performance": 13,
+      "performance": 12,
       "date": "2023-01-24T10:45:44Z"
     },
     {
