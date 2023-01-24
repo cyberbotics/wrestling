@@ -71,14 +71,24 @@
       "date": "2023-01-24T22:56:54Z"
     },
     {
+      "id": "592926826",
+      "repository": "manul30/NAO-Undertaker",
+      "private": true,
+      "name": "Manuel Carita",
+      "description": "Description of my robot controller program.",
+      "country": "PE",
+      "performance": 8,
+      "date": "2023-01-24T23:34:52Z"
+    },
+    {
       "id": "592665845",
       "repository": "RomainGsd/Isaac-for-ICRA-2023",
       "private": true,
       "name": "JonOsterman",
       "description": "Isaac v1",
       "country": "FR",
-      "performance": 8,
-      "date": "2023-01-24T22:43:10Z"
+      "performance": 9,
+      "date": "2023-01-24T23:30:28Z"
     },
     {
       "id": "589663245",
@@ -87,8 +97,8 @@
       "name": "Tony",
       "description": "So far no idea, I'm just looking around...",
       "country": "DE",
-      "performance": 9,
-      "date": "2023-01-24T22:30:41Z"
+      "performance": 10,
+      "date": "2023-01-24T23:28:40Z"
     },
     {
       "id": "586837559",
@@ -97,8 +107,8 @@
       "name": "Charlie",
       "description": "Demonstrates how to access the LEDs and play a custom motion file. Beats Bob by moving forwards and pushing him to the ground. Doesn't seem to beat Alice though",
       "country": "CH",
-      "performance": 10,
-      "date": "2023-01-24T22:29:18Z"
+      "performance": 11,
+      "date": "2023-01-24T23:26:58Z"
     },
     {
       "id": "591877549",
@@ -107,16 +117,6 @@
       "name": "Piyush Goenka",
       "description": "Boxing Champion",
       "country": "IN",
-      "performance": 11,
-      "date": "2023-01-24T21:13:43Z"
-    },
-    {
-      "id": "592926826",
-      "repository": "manul30/NAO-Undertaker",
-      "private": true,
-      "name": "Manuel Carita",
-      "description": "Description of my robot controller program.",
-      "country": "PE",
       "performance": 12,
       "date": "2023-01-24T21:38:01Z"
     },
