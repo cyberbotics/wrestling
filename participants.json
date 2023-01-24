@@ -11,14 +11,24 @@
       "date": "2023-01-18T15:15:14Z"
     },
     {
+      "id": "592670321",
+      "repository": "sagwl96/nao-wrestler-v1",
+      "private": true,
+      "name": "Sagwl",
+      "description": "Testing motions",
+      "country": "DE",
+      "performance": 2,
+      "date": "2023-01-24T13:22:39Z"
+    },
+    {
       "id": "587237349",
       "repository": "cyberbotics/wrestling-fatima",
       "private": false,
       "name": "Fatima",
       "description": "Demonstrates the gait manager (inverse kinematics + simple ellipsoid path).",
       "country": "CH",
-      "performance": 2,
-      "date": "2023-01-18T16:37:04Z"
+      "performance": 3,
+      "date": "2023-01-24T13:19:59Z"
     },
     {
       "id": "590147287",
@@ -27,8 +37,8 @@
       "name": "ildsjel",
       "description": "i'm just a little guy",
       "country": "US",
-      "performance": 3,
-      "date": "2023-01-19T21:32:32Z"
+      "performance": 4,
+      "date": "2023-01-24T13:18:45Z"
     },
     {
       "id": "586919026",
@@ -37,16 +47,6 @@
       "name": "Eve",
       "description": "Demonstrates how to use the camera and gives an image processing example to locate the opponent.",
       "country": "CH",
-      "performance": 4,
-      "date": "2023-01-19T21:21:49Z"
-    },
-    {
-      "id": "592670321",
-      "repository": "sagwl96/nao-wrestler-v1",
-      "private": true,
-      "name": "Sagwl",
-      "description": "Testing motions",
-      "country": "DE",
       "performance": 5,
       "date": "2023-01-24T13:15:33Z"
     },
