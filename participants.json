@@ -121,14 +121,24 @@
       "date": "2023-01-24T10:09:13Z"
     },
     {
+      "id": "592665845",
+      "repository": "RomainGsd/Isaac-for-ICRA-2023",
+      "private": true,
+      "name": "JonOsterman",
+      "description": "Isaac v1",
+      "country": "FR",
+      "performance": 14,
+      "date": "2023-01-24T10:13:15Z"
+    },
+    {
       "id": "585201575",
       "repository": "omichel/my-wrestler",
       "private": true,
       "name": "Olivier",
       "description": "I am walking backwards falling off the stage, a perfect loser...",
       "country": "CH",
-      "performance": 14,
-      "date": "2023-01-24T10:05:03Z"
+      "performance": 15,
+      "date": "2023-01-24T10:11:09Z"
     },
     {
       "id": "591694573",
@@ -137,17 +147,7 @@
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "performance": 15,
-      "date": "2023-01-21T15:43:21Z"
-    },
-    {
-      "id": "592665845",
-      "repository": "RomainGsd/Isaac-for-ICRA-2023",
-      "private": true,
-      "name": "Amir Hossein Nourian",
-      "description": "Wresteling Robot Controler using Reinforcement Learning",
-      "country": "IR",
-      "performance": 15,
+      "performance": 16,
       "date": "2023-01-21T15:43:21Z"
     }
   ]
