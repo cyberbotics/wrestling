@@ -101,14 +101,24 @@
       "date": "2023-01-24T11:11:05Z"
     },
     {
+      "id": "592665845",
+      "repository": "RomainGsd/Isaac-for-ICRA-2023",
+      "private": true,
+      "name": "JonOsterman",
+      "description": "Isaac v1",
+      "country": "FR",
+      "performance": 11,
+      "date": "2023-01-24T13:56:27Z"
+    },
+    {
       "id": "586762611",
       "repository": "cyberbotics/wrestling-alice",
       "private": false,
       "name": "Alice",
       "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "performance": 11,
-      "date": "2023-01-24T10:49:57Z"
+      "performance": 12,
+      "date": "2023-01-24T13:48:55Z"
     },
     {
       "id": "590556641",
@@ -117,16 +127,6 @@
       "name": "DH",
       "description": "Description of my robot controller program.",
       "country": "GB",
-      "performance": 12,
-      "date": "2023-01-24T10:45:44Z"
-    },
-    {
-      "id": "592665845",
-      "repository": "RomainGsd/Isaac-for-ICRA-2023",
-      "private": true,
-      "name": "JonOsterman",
-      "description": "Isaac v1",
-      "country": "FR",
       "performance": 13,
       "date": "2023-01-24T13:44:00Z"
     },
