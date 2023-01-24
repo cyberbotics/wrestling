@@ -81,22 +81,22 @@
       "date": "2023-01-22T09:36:47Z"
     },
     {
-      "id": "586830620",
-      "repository": "cyberbotics/wrestling-bob",
-      "private": false,
-      "name": "Bob",
-      "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
-      "country": "CH",
-      "performance": 9,
-      "date": "2023-01-22T09:34:06Z"
-    },
-    {
       "id": "592670321",
       "repository": "sagwl96/nao-wrestler-v1",
       "private": true,
       "name": "Sagwl",
       "description": "Testing motions",
       "country": "DE",
+      "performance": 9,
+      "date": "2023-01-24T11:17:12Z"
+    },
+    {
+      "id": "586830620",
+      "repository": "cyberbotics/wrestling-bob",
+      "private": false,
+      "name": "Bob",
+      "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
+      "country": "CH",
       "performance": 10,
       "date": "2023-01-24T11:11:05Z"
     },
