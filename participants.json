@@ -137,7 +137,8 @@
       "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
       "country": "CH",
       "performance": 13,
-      "date": "2023-01-24T21:34:26Z"
+      "date": "2023-01-25T17:09:38Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008219659/jobs/6882098792"
     },
     {
       "id": "586762611",
