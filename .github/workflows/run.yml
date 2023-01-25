@@ -39,7 +39,7 @@ jobs:
           repo_id=$( jq '.id' repo.json )
           repo_private=$( jq '.private' repo.json )
           rm repo.json
-          log_url=$( gh api -H "Accept: application/vnd.github+json" /repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq '.jobs[0].html_url')
+          log_url=$( gh api -H "Accept: application/vnd.github+json" /repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq -r '.jobs[0].html_url')
           echo "participant repository: https://github.com/${{ github.event.client_payload.repository }}"
           echo "LOG_URL=$log_url" >> $GITHUB_ENV
           echo "PARTICIPANT_REPO_ID=$repo_id" >> $GITHUB_ENV
