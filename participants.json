@@ -4,12 +4,12 @@
       "id": "592926826",
       "repository": "manul30/NAO-Undertaker",
       "private": true,
-      "name": "Manuel Carita",
-      "description": "Description of my robot controller program.",
+      "name": "manuxd",
+      "description": "The Undertaker",
       "country": "PE",
       "performance": 1,
-      "date": "2023-01-25T22:05:40Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010299949/jobs/6886650523"
+      "date": "2023-01-25T22:37:10Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010550506/jobs/6887176308"
     },
     {
       "id": "592893244",
