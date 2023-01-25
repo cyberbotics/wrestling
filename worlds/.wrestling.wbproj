@@ -7,8 +7,8 @@ centralWidgetVisible: 1
 orthographicViewHeight: 1
 textFiles: 0 "controllers/participant/participant.py"
 consoles: Console:referee;All Webots:All
-consoles: Console:wrestler red:All
-consoles: Console:wrestler blue:All
+consoles: Console:wrestler red;participant:All
+consoles: Console:wrestler blue;opponent:All
 renderingDevicePerspectives: opponent:CameraBottom;1;1;0;0.832187
 renderingDevicePerspectives: opponent:CameraTop;1;1.00833;0.819919;0.662998
 renderingDevicePerspectives: participant:CameraBottom;1;1.00833;0.819919;0.830812
