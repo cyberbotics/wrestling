@@ -1,24 +1,26 @@
 {
   "participants": [
     {
-      "id": "592893244",
-      "repository": "mospaeda/webots_armen",
-      "private": true,
-      "name": "Mospaeda",
-      "description": "Elder Robot Armen.",
-      "country": "FR",
-      "performance": 1,
-      "date": "2023-01-25T01:03:45Z"
-    },
-    {
       "id": "592670321",
       "repository": "sagwl96/nao-wrestler-v1",
       "private": true,
       "name": "Sagwl",
       "description": "Testing motions",
       "country": "DE",
+      "performance": 1,
+      "date": "2023-01-25T16:05:22Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007671660/jobs/6880833287"
+    },
+    {
+      "id": "592893244",
+      "repository": "mospaeda/webots_armen",
+      "private": true,
+      "name": "Mospaeda",
+      "description": "Elder Robot Armen.",
+      "country": "FR",
       "performance": 2,
-      "date": "2023-01-25T00:56:24Z"
+      "date": "2023-01-25T16:05:22Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007671660/jobs/6880833287"
     },
     {
       "id": "589709194",
