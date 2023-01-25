@@ -1,15 +1,26 @@
 {
   "participants": [
     {
+      "id": "592926826",
+      "repository": "manul30/NAO-Undertaker",
+      "private": true,
+      "name": "Manuel Carita",
+      "description": "Description of my robot controller program.",
+      "country": "PE",
+      "performance": 1,
+      "date": "2023-01-25T19:24:20Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4009208568/jobs/6884282810"
+    },
+    {
       "id": "592893244",
       "repository": "mospaeda/webots_armen",
       "private": true,
       "name": "Mospaeda",
       "description": "Elder Robot Armen.",
       "country": "FR",
-      "performance": 1,
-      "date": "2023-01-25T18:53:16Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008981359/jobs/6883797114"
+      "performance": 2,
+      "date": "2023-01-25T19:24:20Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4009208568/jobs/6884282810"
     },
     {
       "id": "592670321",
@@ -18,20 +29,9 @@
       "name": "Sagwl",
       "description": "Testing motions",
       "country": "DE",
-      "performance": 2,
-      "date": "2023-01-25T18:53:16Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008981359/jobs/6883797114"
-    },
-    {
-      "id": "592926826",
-      "repository": "manul30/NAO-Undertaker",
-      "private": true,
-      "name": "Manuel Carita",
-      "description": "Description of my robot controller program.",
-      "country": "PE",
       "performance": 3,
-      "date": "2023-01-25T18:51:50Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008981359/jobs/6883797114"
+      "date": "2023-01-25T19:23:14Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4009208568/jobs/6884282810"
     },
     {
       "id": "589709194",
