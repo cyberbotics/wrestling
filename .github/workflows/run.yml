@@ -46,7 +46,6 @@ jobs:
           echo "PARTICIPANT_REPO_PRIVATE=$repo_private"
           echo "github.run_id = ${{ github.run_id }}"
           echo "github.job = ${{ github.job }}"
-          echo "checkrun.id = ${{ checkrun.id }}"
       - name: Checkout the Organizer Repository
         uses: actions/checkout@v3
       - name: Record Animation and Update Performance
