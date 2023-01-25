@@ -44,8 +44,10 @@ jobs:
           echo "participant repository: ${{ github.event.client_payload.repository }}"
           echo "PARTICIPANT_REPO_ID=$repo_id"
           echo "PARTICIPANT_REPO_PRIVATE=$repo_private"
+          log_url=$( gh api -H "Accept: application/vnd.github+json" /repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs -jq '.jobs[0].html_url')
           echo "github.run_id = ${{ github.run_id }}"
-          echo "github.job = ${{ github.job }}"
+          echo "LOG_URL=$log_url" >> $GITHUB_ENV
+          echo "log_url = $log_url"
       - name: Checkout the Organizer Repository
         uses: actions/checkout@v3
       - name: Record Animation and Update Performance
