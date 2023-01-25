@@ -61,22 +61,22 @@
       "date": "2023-01-24T23:01:42Z"
     },
     {
-      "id": "586877702",
-      "repository": "cyberbotics/wrestling-david",
-      "private": false,
-      "name": "David",
-      "description": "Controller example for the Robot Wrestling Tournament. Demonstrates how to use a sensor, here an accelerometer to detect a fall. Depending on the fall direction, the robot will play a different motion, which is implemented by a simple Finite State Machine. Beats Charlie by getting up after being knocked down.",
-      "country": "CH",
-      "performance": 7,
-      "date": "2023-01-24T22:56:54Z"
-    },
-    {
       "id": "592926826",
       "repository": "manul30/NAO-Undertaker",
       "private": true,
       "name": "Manuel Carita",
       "description": "Description of my robot controller program.",
       "country": "PE",
+      "performance": 7,
+      "date": "2023-01-25T03:48:45Z"
+    },
+    {
+      "id": "586877702",
+      "repository": "cyberbotics/wrestling-david",
+      "private": false,
+      "name": "David",
+      "description": "Controller example for the Robot Wrestling Tournament. Demonstrates how to use a sensor, here an accelerometer to detect a fall. Depending on the fall direction, the robot will play a different motion, which is implemented by a simple Finite State Machine. Beats Charlie by getting up after being knocked down.",
+      "country": "CH",
       "performance": 8,
       "date": "2023-01-25T03:37:21Z"
     },
