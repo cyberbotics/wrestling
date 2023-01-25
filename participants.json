@@ -163,15 +163,26 @@
       "date": "2023-01-24T21:29:57Z"
     },
     {
+      "id": "593296451",
+      "repository": "brice-t/brice-webot",
+      "private": true,
+      "name": "Brice T.",
+      "description": "Just testing.",
+      "country": "FR",
+      "performance": 16,
+      "date": "2023-01-25T17:38:43Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008433416/jobs/6882573839"
+    },
+    {
       "id": "585201575",
       "repository": "omichel/my-wrestler",
       "private": true,
       "name": "Olivier",
       "description": "I am walking backwards falling off the stage, a perfect loser...",
       "country": "CH",
-      "performance": 16,
-      "date": "2023-01-25T15:45:55Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007508267/jobs/6880434727"
+      "performance": 17,
+      "date": "2023-01-25T17:37:45Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008433416/jobs/6882573839"
     },
     {
       "id": "592532770",
@@ -180,8 +191,9 @@
       "name": "RamCharanThota",
       "description": "Description of my robot controller program.",
       "country": "AU",
-      "performance": 17,
-      "date": "2023-01-25T11:15:52Z"
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008433416/jobs/6882573839",
+      "date": "2023-01-25T17:37:14Z",
+      "performance": 18
     },
     {
       "id": "591694573",
@@ -190,8 +202,9 @@
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "performance": 18,
-      "date": "2023-01-25T09:56:37Z"
+      "performance": 19,
+      "date": "2023-01-25T17:36:10Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008433416/jobs/6882573839"
     }
   ]
 }
