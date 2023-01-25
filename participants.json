@@ -153,25 +153,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008120544/jobs/6881877780"
     },
     {
-      "id": "590556641",
-      "repository": "dennisushi/WrestleBot-CharlieXXX",
-      "private": true,
-      "name": "DH",
-      "description": "Description of my robot controller program.",
-      "country": "GB",
-      "performance": 15,
-      "date": "2023-01-24T21:29:57Z"
-    },
-    {
       "id": "593296451",
       "repository": "brice-t/brice-webot",
       "private": true,
       "name": "Brice T.",
       "description": "Just testing.",
       "country": "FR",
+      "performance": 15,
+      "date": "2023-01-25T17:48:32Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008492636/jobs/6882710913"
+    },
+    {
+      "id": "590556641",
+      "repository": "dennisushi/WrestleBot-CharlieXXX",
+      "private": true,
+      "name": "DH",
+      "description": "Description of my robot controller program.",
+      "country": "GB",
       "performance": 16,
-      "date": "2023-01-25T17:38:43Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008433416/jobs/6882573839"
+      "date": "2023-01-25T17:46:59Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008492636/jobs/6882710913"
     },
     {
       "id": "585201575",
