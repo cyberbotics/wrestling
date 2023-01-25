@@ -106,7 +106,7 @@ coverage = X_max + Y_max - X_min - Y_min
 A series of sample demo robot controllers with increasing complexity and performance is provided as examples:
 
 - [Alice](https://github.com/cyberbotics/wrestling-alice) plays a simple motion file.
-- [Bob](https://github.com/cyberbotics/wrestling-bob) loads several motion files.
+- [Bob](https://github.com/cyberbotics/wrestling-bob) sends position commands to some motors and plays a motion file.
 - [Charlie](https://github.com/cyberbotics/wrestling-charlie) plays a custom motion file and uses the LEDs.
 - [David](https://github.com/cyberbotics/wrestling-david) is able to detect when he falls down and to recover.
 - [Eve](https://github.com/cyberbotics/wrestling-eve) processes camera images to detect her opponent and targets him.
