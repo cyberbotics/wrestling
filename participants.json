@@ -31,14 +31,26 @@
       "date": "2023-01-24T23:12:18Z"
     },
     {
+      "id": "592926826",
+      "repository": "manul30/NAO-Undertaker",
+      "private": true,
+      "name": "Manuel Carita",
+      "description": "Description of my robot controller program.",
+      "country": "PE",
+      "performance": 4,
+      "date": "2023-01-25T15:22:58Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007212462/jobs/6879755975"
+    },
+    {
       "id": "587237349",
       "repository": "cyberbotics/wrestling-fatima",
       "private": false,
       "name": "Fatima",
       "description": "Demonstrates the gait manager (inverse kinematics + simple ellipsoid path).",
       "country": "CH",
-      "performance": 4,
-      "date": "2023-01-24T23:10:27Z"
+      "performance": 5,
+      "date": "2023-01-25T15:17:15Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007212462/jobs/6879755975"
     },
     {
       "id": "590147287",
@@ -47,8 +59,9 @@
       "name": "ildsjel",
       "description": "i'm just a little guy",
       "country": "US",
-      "performance": 5,
-      "date": "2023-01-24T23:05:56Z"
+      "performance": 6,
+      "date": "2023-01-25T15:13:45Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007212462/jobs/6879755975"
     },
     {
       "id": "586919026",
@@ -57,16 +70,6 @@
       "name": "Eve",
       "description": "Demonstrates how to use the camera and gives an image processing example to locate the opponent.",
       "country": "CH",
-      "performance": 6,
-      "date": "2023-01-24T23:01:42Z"
-    },
-    {
-      "id": "592926826",
-      "repository": "manul30/NAO-Undertaker",
-      "private": true,
-      "name": "Manuel Carita",
-      "description": "Description of my robot controller program.",
-      "country": "PE",
       "performance": 7,
       "date": "2023-01-25T09:28:48Z"
     },
