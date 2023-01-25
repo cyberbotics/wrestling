@@ -151,23 +151,13 @@
       "date": "2023-01-24T21:29:57Z"
     },
     {
-      "id": "585201575",
-      "repository": "omichel/my-wrestler",
-      "private": true,
-      "name": "Olivier",
-      "description": "I am walking backwards falling off the stage, a perfect loser...",
-      "country": "CH",
-      "performance": 16,
-      "date": "2023-01-25T10:20:20Z"
-    },
-    {
       "id": "592532770",
       "repository": "RamCharanThota/rcbot_cyberbotics_controller",
       "private": true,
       "name": "RamCharanThota",
       "description": "Description of my robot controller program.",
       "country": "AU",
-      "performance": 17,
+      "performance": 16,
       "date": "2023-01-25T10:18:34Z"
     },
     {
@@ -177,7 +167,7 @@
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "performance": 18,
+      "performance": 17,
       "date": "2023-01-25T09:56:37Z"
     }
   ]
