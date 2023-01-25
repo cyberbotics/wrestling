@@ -56,25 +56,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007212462/jobs/6879755975"
     },
     {
-      "id": "590147287",
-      "repository": "StephenWelch/robot-wrestling",
-      "private": true,
-      "name": "ildsjel",
-      "description": "i'm just a little guy",
-      "country": "US",
-      "performance": 6,
-      "date": "2023-01-25T15:13:45Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007212462/jobs/6879755975"
-    },
-    {
       "id": "586919026",
       "repository": "cyberbotics/wrestling-eve",
       "private": false,
       "name": "Eve",
       "description": "Demonstrates how to use the camera and gives an image processing example to locate the opponent.",
       "country": "CH",
+      "performance": 6,
+      "date": "2023-01-25T16:22:22Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007819204/jobs/6881180262"
+    },
+    {
+      "id": "590147287",
+      "repository": "StephenWelch/robot-wrestling",
+      "private": true,
+      "name": "ildsjel",
+      "description": "i'm just a little guy",
+      "country": "US",
       "performance": 7,
-      "date": "2023-01-25T09:28:48Z"
+      "date": "2023-01-25T16:22:17Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007819204/jobs/6881180262"
     },
     {
       "id": "586877702",
