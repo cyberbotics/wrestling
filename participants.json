@@ -1,26 +1,26 @@
 {
   "participants": [
     {
-      "id": "592893244",
-      "repository": "mospaeda/webots_armen",
-      "private": true,
-      "name": "Mospaeda",
-      "description": "Elder Robot Armen.",
-      "country": "FR",
-      "performance": 1,
-      "date": "2023-01-25T19:39:52Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4009327663/jobs/6884544999"
-    },
-    {
       "id": "592926826",
       "repository": "manul30/NAO-Undertaker",
       "private": true,
       "name": "Manuel Carita",
       "description": "Description of my robot controller program.",
       "country": "PE",
+      "performance": 1,
+      "date": "2023-01-25T22:05:40Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010299949/jobs/6886650523"
+    },
+    {
+      "id": "592893244",
+      "repository": "mospaeda/webots_armen",
+      "private": true,
+      "name": "Mospaeda",
+      "description": "Elder Robot Armen.",
+      "country": "FR",
       "performance": 2,
-      "date": "2023-01-25T19:39:52Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4009327663/jobs/6884544999"
+      "date": "2023-01-25T22:05:40Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010299949/jobs/6886650523"
     },
     {
       "id": "592670321",
