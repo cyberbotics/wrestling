@@ -161,23 +161,13 @@
       "date": "2023-01-24T21:28:14Z"
     },
     {
-      "id": "585201575",
-      "repository": "omichel/my-wrestler",
-      "private": true,
-      "name": "Olivier",
-      "description": "I am walking backwards falling off the stage, a perfect loser...",
-      "country": "CH",
-      "performance": 17,
-      "date": "2023-01-24T21:27:01Z"
-    },
-    {
       "id": "591694573",
       "repository": "amirhnourian/WebotsNaoWresteling",
       "private": true,
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "performance": 18,
+      "performance": 17,
       "date": "2023-01-24T21:25:21Z"
     }
   ]
