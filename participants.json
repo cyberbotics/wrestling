@@ -131,15 +131,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008350953/jobs/6882389522"
     },
     {
+      "id": "593386524",
+      "repository": "Baugrems/cyberbotics-wrestling",
+      "private": true,
+      "name": "Shane Copenhagen",
+      "description": "Description of my robot controller program.",
+      "country": "US",
+      "performance": 13,
+      "date": "2023-01-25T22:36:28Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010471655/jobs/6887015136"
+    },
+    {
       "id": "586830620",
       "repository": "cyberbotics/wrestling-bob",
       "private": false,
       "name": "Bob",
       "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
       "country": "CH",
-      "performance": 13,
-      "date": "2023-01-25T17:09:38Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008219659/jobs/6882098792"
+      "performance": 14,
+      "date": "2023-01-25T22:35:04Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010471655/jobs/6887015136"
     },
     {
       "id": "586762611",
@@ -148,9 +159,9 @@
       "name": "Alice",
       "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "performance": 14,
-      "date": "2023-01-25T16:58:59Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008120544/jobs/6881877780"
+      "performance": 15,
+      "date": "2023-01-25T22:34:03Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010471655/jobs/6887015136"
     },
     {
       "id": "593296451",
@@ -159,9 +170,9 @@
       "name": "Brice T.",
       "description": "Just testing.",
       "country": "FR",
-      "performance": 15,
-      "date": "2023-01-25T18:46:07Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008930611/jobs/6883687480"
+      "performance": 16,
+      "date": "2023-01-25T22:32:49Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010471655/jobs/6887015136"
     },
     {
       "id": "590556641",
@@ -170,20 +181,9 @@
       "name": "DH",
       "description": "Description of my robot controller program.",
       "country": "GB",
-      "performance": 16,
-      "date": "2023-01-25T17:46:59Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008492636/jobs/6882710913"
-    },
-    {
-      "id": "593386524",
-      "repository": "Baugrems/cyberbotics-wrestling",
-      "private": true,
-      "name": "Shane Copenhagen",
-      "description": "Description of my robot controller program.",
-      "country": "US",
       "performance": 17,
-      "date": "2023-01-25T22:20:10Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010390898/jobs/6886848033"
+      "date": "2023-01-25T22:30:38Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010471655/jobs/6887015136"
     },
     {
       "id": "585201575",
