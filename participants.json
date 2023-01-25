@@ -12,15 +12,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007671660/jobs/6880833287"
     },
     {
+      "id": "592926826",
+      "repository": "manul30/NAO-Undertaker",
+      "private": true,
+      "name": "Manuel Carita",
+      "description": "Description of my robot controller program.",
+      "country": "PE",
+      "performance": 2,
+      "date": "2023-01-25T17:19:40Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008263553/jobs/6882197393"
+    },
+    {
       "id": "592893244",
       "repository": "mospaeda/webots_armen",
       "private": true,
       "name": "Mospaeda",
       "description": "Elder Robot Armen.",
       "country": "FR",
-      "performance": 2,
-      "date": "2023-01-25T16:05:22Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007671660/jobs/6880833287"
+      "performance": 3,
+      "date": "2023-01-25T17:18:04Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008263553/jobs/6882197393"
     },
     {
       "id": "589709194",
@@ -29,20 +40,9 @@
       "name": "Mohammad Javad Zallaghi",
       "description": "Description of my robot controller program using git.",
       "country": "IR",
-      "performance": 3,
-      "date": "2023-01-25T15:53:22Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4007560386/jobs/6880562233"
-    },
-    {
-      "id": "592926826",
-      "repository": "manul30/NAO-Undertaker",
-      "private": true,
-      "name": "Manuel Carita",
-      "description": "Description of my robot controller program.",
-      "country": "PE",
       "performance": 4,
-      "date": "2023-01-25T17:04:33Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008166506/jobs/6881982684"
+      "date": "2023-01-25T17:14:47Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008263553/jobs/6882197393"
     },
     {
       "id": "587237349",
