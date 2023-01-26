@@ -111,15 +111,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
     },
     {
+      "id": "593567502",
+      "repository": "christopherpeers/real_robot_fighting",
+      "private": true,
+      "name": "Chrake Peith",
+      "description": "",
+      "country": "GB",
+      "performance": 11,
+      "date": "2023-01-26T11:18:39Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
+    },
+    {
       "id": "589663245",
       "repository": "tonynajjar/youcantseeme",
       "private": true,
       "name": "Tony",
       "description": "So far no idea, I'm just looking around...",
       "country": "DE",
-      "performance": 11,
-      "date": "2023-01-26T09:22:01Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
+      "performance": 12,
+      "date": "2023-01-26T11:17:21Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
     },
     {
       "id": "586837559",
@@ -128,9 +139,9 @@
       "name": "Charlie",
       "description": "Demonstrates how to access the LEDs and play a custom motion file. Beats Bob by moving forwards and pushing him to the ground. Doesn't seem to beat Alice though",
       "country": "CH",
-      "performance": 12,
-      "date": "2023-01-26T09:05:27Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
+      "performance": 13,
+      "date": "2023-01-26T11:13:46Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
     },
     {
       "id": "591877549",
@@ -139,9 +150,9 @@
       "name": "Piyush Goenka",
       "description": "Boxing Champion",
       "country": "IN",
-      "performance": 13,
-      "date": "2023-01-26T06:05:55Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4012686429/jobs/6891316024"
+      "performance": 14,
+      "date": "2023-01-26T11:12:57Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
     },
     {
       "id": "586830620",
@@ -150,9 +161,9 @@
       "name": "Bob",
       "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
       "country": "CH",
-      "performance": 14,
-      "date": "2023-01-25T22:35:04Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010471655/jobs/6887015136"
+      "performance": 15,
+      "date": "2023-01-26T11:11:20Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
     },
     {
       "id": "593296451",
@@ -161,9 +172,9 @@
       "name": "Brice T.",
       "description": "Just testing.",
       "country": "FR",
-      "performance": 15,
-      "date": "2023-01-26T10:04:47Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014040668/jobs/6894082505"
+      "performance": 16,
+      "date": "2023-01-26T11:08:01Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
     },
     {
       "id": "586762611",
@@ -172,9 +183,9 @@
       "name": "Alice",
       "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "performance": 16,
-      "date": "2023-01-26T10:02:04Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014040668/jobs/6894082505"
+      "performance": 17,
+      "date": "2023-01-26T11:06:21Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
     },
     {
       "id": "590556641",
@@ -183,9 +194,9 @@
       "name": "DH",
       "description": "Description of my robot controller program.",
       "country": "GB",
-      "performance": 17,
-      "date": "2023-01-25T22:30:38Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010471655/jobs/6887015136"
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872",
+      "date": "2023-01-26T11:03:00Z",
+      "performance": 18
     },
     {
       "id": "585201575",
@@ -194,9 +205,9 @@
       "name": "Olivier",
       "description": "I am walking backwards falling off the stage, a perfect loser...",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010390898/jobs/6886848033",
-      "date": "2023-01-25T22:19:16Z",
-      "performance": 18
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872",
+      "date": "2023-01-26T10:59:11Z",
+      "performance": 19
     },
     {
       "id": "592532770",
@@ -205,9 +216,9 @@
       "name": "RamCharanThota",
       "description": "Description of my robot controller program.",
       "country": "AU",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010390898/jobs/6886848033",
-      "date": "2023-01-25T22:18:47Z",
-      "performance": 19
+      "performance": 20,
+      "date": "2023-01-26T10:55:51Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
     },
     {
       "id": "591694573",
@@ -216,19 +227,8 @@
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "performance": 20,
-      "date": "2023-01-25T22:17:55Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010390898/jobs/6886848033"
-    },
-    {
-      "id": "593567502",
-      "repository": "christopherpeers/real_robot_fighting",
-      "private": true,
-      "name": "Chrake Peith",
-      "description": "",
-      "country": "GB",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014384964/jobs/6894831745",
-      "date": "2023-01-26T10:45:53Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872",
+      "date": "2023-01-26T10:54:41Z",
       "performance": 21
     }
   ]
