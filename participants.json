@@ -12,15 +12,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010550506/jobs/6887176308"
     },
     {
+      "id": "593567502",
+      "repository": "christopherpeers/real_robot_fighting",
+      "private": true,
+      "name": "Chrake Peith",
+      "description": "",
+      "country": "GB",
+      "performance": 2,
+      "date": "2023-01-26T11:50:45Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
+    },
+    {
       "id": "592893244",
       "repository": "mospaeda/webots_armen",
       "private": true,
       "name": "Mospaeda",
       "description": "Elder Robot Armen.",
       "country": "FR",
-      "performance": 2,
-      "date": "2023-01-25T22:05:40Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4010299949/jobs/6886650523"
+      "performance": 3,
+      "date": "2023-01-26T11:49:13Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
       "id": "592670321",
@@ -29,9 +40,9 @@
       "name": "Sagwl",
       "description": "Testing motions",
       "country": "DE",
-      "performance": 3,
-      "date": "2023-01-26T11:27:59Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014658720/jobs/6895441728"
+      "performance": 4,
+      "date": "2023-01-26T11:45:21Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
       "id": "593386524",
@@ -40,9 +51,9 @@
       "name": "Shane Copenhagen",
       "description": "This will be an attempt to use GPT-3 to choose a strategy based on current conditions.",
       "country": "US",
-      "performance": 4,
-      "date": "2023-01-26T09:37:16Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
+      "performance": 5,
+      "date": "2023-01-26T11:43:52Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
       "id": "589709194",
@@ -51,9 +62,9 @@
       "name": "Mohammad Javad Zallaghi",
       "description": "Description of my robot controller program using git.",
       "country": "IR",
-      "performance": 5,
-      "date": "2023-01-26T09:33:33Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
+      "performance": 6,
+      "date": "2023-01-26T11:42:25Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
       "id": "587237349",
@@ -62,9 +73,9 @@
       "name": "Fatima",
       "description": "Demonstrates the gait manager (inverse kinematics + simple ellipsoid path).",
       "country": "CH",
-      "performance": 6,
-      "date": "2023-01-26T09:32:00Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
+      "performance": 7,
+      "date": "2023-01-26T11:40:24Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
       "id": "586919026",
@@ -73,9 +84,9 @@
       "name": "Eve",
       "description": "Demonstrates how to use the camera and gives an image processing example to locate the opponent.",
       "country": "CH",
-      "performance": 7,
-      "date": "2023-01-26T09:28:50Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
+      "performance": 8,
+      "date": "2023-01-26T11:39:22Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
       "id": "590147287",
@@ -84,9 +95,9 @@
       "name": "ildsjel",
       "description": "i'm just a little guy",
       "country": "US",
-      "performance": 8,
-      "date": "2023-01-26T09:27:42Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
+      "performance": 9,
+      "date": "2023-01-26T11:38:40Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
       "id": "586877702",
@@ -95,9 +106,9 @@
       "name": "David",
       "description": "Controller example for the Robot Wrestling Tournament. Demonstrates how to use a sensor, here an accelerometer to detect a fall. Depending on the fall direction, the robot will play a different motion, which is implemented by a simple Finite State Machine. Beats Charlie by getting up after being knocked down.",
       "country": "CH",
-      "performance": 9,
-      "date": "2023-01-26T09:24:13Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
+      "performance": 10,
+      "date": "2023-01-26T11:35:02Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
       "id": "592665845",
@@ -106,20 +117,9 @@
       "name": "JonOsterman",
       "description": "Isaac v1",
       "country": "FR",
-      "performance": 10,
-      "date": "2023-01-26T09:23:26Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4013658974/jobs/6893261339"
-    },
-    {
-      "id": "593567502",
-      "repository": "christopherpeers/real_robot_fighting",
-      "private": true,
-      "name": "Chrake Peith",
-      "description": "",
-      "country": "GB",
       "performance": 11,
-      "date": "2023-01-26T11:18:39Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
+      "date": "2023-01-26T11:34:16Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
       "id": "589663245",
