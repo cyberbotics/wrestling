@@ -12,26 +12,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4015658592/jobs/6897651029"
     },
     {
-      "id": "592670321",
-      "repository": "sagwl96/nao-wrestler-v1",
-      "private": true,
-      "name": "Sagwl",
-      "description": "Testing motions",
-      "country": "DE",
-      "performance": 2,
-      "date": "2023-01-26T14:02:14Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4015802966/jobs/6897986803"
-    },
-    {
       "id": "592926826",
       "repository": "manul30/NAO-Undertaker",
       "private": true,
       "name": "manuxd",
       "description": "The Undertaker",
       "country": "PE",
+      "performance": 2,
+      "date": "2023-01-26T15:26:39Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4016521178/jobs/6899658872"
+    },
+    {
+      "id": "592670321",
+      "repository": "sagwl96/nao-wrestler-v1",
+      "private": true,
+      "name": "Sagwl",
+      "description": "Testing motions",
+      "country": "DE",
       "performance": 3,
-      "date": "2023-01-26T12:54:01Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4015268466/jobs/6896792774"
+      "date": "2023-01-26T15:25:08Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4016521178/jobs/6899658872"
     },
     {
       "id": "592893244",
