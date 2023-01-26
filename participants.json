@@ -1,26 +1,26 @@
 {
   "participants": [
     {
-      "id": "593567502",
-      "repository": "christopherpeers/real_robot_fighting",
-      "private": true,
-      "name": "Chrake Peith",
-      "description": "",
-      "country": "GB",
-      "performance": 1,
-      "date": "2023-01-26T12:04:32Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014900795/jobs/6895984827"
-    },
-    {
       "id": "592670321",
       "repository": "sagwl96/nao-wrestler-v1",
       "private": true,
       "name": "Sagwl",
       "description": "Testing motions",
       "country": "DE",
+      "performance": 1,
+      "date": "2023-01-26T13:14:43Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4015403318/jobs/6897086396"
+    },
+    {
+      "id": "593567502",
+      "repository": "christopherpeers/real_robot_fighting",
+      "private": true,
+      "name": "Chrake Peith",
+      "description": "",
+      "country": "GB",
       "performance": 2,
-      "date": "2023-01-26T13:03:44Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4015337584/jobs/6896943471"
+      "date": "2023-01-26T13:14:43Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4015403318/jobs/6897086396"
     },
     {
       "id": "592926826",
