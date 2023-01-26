@@ -120,26 +120,26 @@
       "date": "2023-01-24T23:26:58Z"
     },
     {
-      "id": "591877549",
-      "repository": "piyush-g0enka/BoxerNAO",
-      "private": true,
-      "name": "Piyush Goenka",
-      "description": "Boxing Champion",
-      "country": "IN",
-      "performance": 12,
-      "date": "2023-01-25T17:24:24Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4008350953/jobs/6882389522"
-    },
-    {
       "id": "593386524",
       "repository": "Baugrems/cyberbotics-wrestling",
       "private": true,
       "name": "Shane Copenhagen",
       "description": "Description of my robot controller program.",
       "country": "US",
+      "performance": 12,
+      "date": "2023-01-26T04:51:32Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4012372066/jobs/6890758864"
+    },
+    {
+      "id": "591877549",
+      "repository": "piyush-g0enka/BoxerNAO",
+      "private": true,
+      "name": "Piyush Goenka",
+      "description": "Boxing Champion",
+      "country": "IN",
       "performance": 13,
-      "date": "2023-01-26T04:40:09Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4012327721/jobs/6890683766"
+      "date": "2023-01-26T04:50:45Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4012372066/jobs/6890758864"
     },
     {
       "id": "586830620",
