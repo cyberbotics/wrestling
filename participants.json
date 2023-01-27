@@ -210,25 +210,25 @@
       "performance": 19
     },
     {
-      "id": "585201575",
-      "repository": "omichel/my-wrestler",
-      "private": true,
-      "name": "Olivier",
-      "description": "I am walking backwards falling off the stage, a perfect loser...",
-      "country": "CH",
-      "performance": 20,
-      "date": "2023-01-26T12:12:04Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014952621/jobs/6896100562"
-    },
-    {
       "id": "592532770",
       "repository": "RamCharanThota/rcbot_cyberbotics_controller",
       "private": true,
       "name": "RamCharanThota",
       "description": "Description of my robot controller program.",
       "country": "AU",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014952621/jobs/6896100562",
-      "date": "2023-01-26T12:11:33Z",
+      "performance": 20,
+      "date": "2023-01-27T06:13:06Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4021988768/jobs/6911325258"
+    },
+    {
+      "id": "585201575",
+      "repository": "omichel/my-wrestler",
+      "private": true,
+      "name": "Olivier",
+      "description": "I am walking backwards falling off the stage, a perfect loser...",
+      "country": "CH",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4021988768/jobs/6911325258",
+      "date": "2023-01-27T06:09:07Z",
       "performance": 21
     },
     {
