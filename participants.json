@@ -177,15 +177,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
     },
     {
+      "id": "592532770",
+      "repository": "RamCharanThota/rcbot_cyberbotics_controller",
+      "private": true,
+      "name": "RamCharanThota",
+      "description": "Description of my robot controller program.",
+      "country": "IN",
+      "performance": 17,
+      "date": "2023-01-27T06:54:01Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022160254/jobs/6911654867"
+    },
+    {
       "id": "586762611",
       "repository": "cyberbotics/wrestling-alice",
       "private": false,
       "name": "Alice",
       "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "performance": 17,
-      "date": "2023-01-26T11:06:21Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022160254/jobs/6911654867",
+      "date": "2023-01-27T06:49:48Z",
+      "performance": 18
     },
     {
       "id": "590556641",
@@ -194,9 +205,9 @@
       "name": "DH",
       "description": "Description of my robot controller program.",
       "country": "GB",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872",
-      "date": "2023-01-26T11:03:00Z",
-      "performance": 18
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022160254/jobs/6911654867",
+      "date": "2023-01-27T06:46:24Z",
+      "performance": 19
     },
     {
       "id": "593592051",
@@ -205,20 +216,9 @@
       "name": "Team Entourage",
       "description": "Oui oui baguette, we're just tring to code something",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4015150105/jobs/6896530622",
-      "date": "2023-01-26T12:39:33Z",
-      "performance": 19
-    },
-    {
-      "id": "592532770",
-      "repository": "RamCharanThota/rcbot_cyberbotics_controller",
-      "private": true,
-      "name": "RamCharanThota",
-      "description": "Description of my robot controller program.",
-      "country": "AU",
       "performance": 20,
-      "date": "2023-01-27T06:22:34Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022055883/jobs/6911459475"
+      "date": "2023-01-27T06:42:47Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022160254/jobs/6911654867"
     },
     {
       "id": "585201575",
