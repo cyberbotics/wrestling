@@ -45,26 +45,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4015092195/jobs/6896407541"
     },
     {
-      "id": "593386524",
-      "repository": "Baugrems/cyberbotics-wrestling",
-      "private": true,
-      "name": "Shane Copenhagen",
-      "description": "This will be an attempt to use GPT-3 to choose a strategy based on current conditions.",
-      "country": "US",
-      "performance": 5,
-      "date": "2023-01-26T11:43:52Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
-    },
-    {
       "id": "589709194",
       "repository": "MJavadZallaghi/wrestlingControllerMJZallaghi",
       "private": true,
       "name": "Mohammad Javad Zallaghi",
       "description": "Description of my robot controller program using git.",
       "country": "IR",
+      "performance": 5,
+      "date": "2023-01-27T08:22:13Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022678265/jobs/6912670523"
+    },
+    {
+      "id": "593386524",
+      "repository": "Baugrems/cyberbotics-wrestling",
+      "private": true,
+      "name": "Shane Copenhagen",
+      "description": "This will be an attempt to use GPT-3 to choose a strategy based on current conditions.",
+      "country": "US",
       "performance": 6,
-      "date": "2023-01-27T07:58:22Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022556259/jobs/6912417322"
+      "date": "2023-01-27T08:19:10Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022678265/jobs/6912670523"
     },
     {
       "id": "587237349",
