@@ -78,15 +78,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
+      "id": "592665845",
+      "repository": "RomainGsd/Isaac-for-ICRA-2023",
+      "private": true,
+      "name": "JonOsterman",
+      "description": "Isaac v1",
+      "country": "FR",
+      "performance": 8,
+      "date": "2023-01-27T16:36:18Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4026267756/jobs/6920560856"
+    },
+    {
       "id": "586919026",
       "repository": "cyberbotics/wrestling-eve",
       "private": false,
       "name": "Eve",
       "description": "Demonstrates how to use the camera and gives an image processing example to locate the opponent.",
       "country": "CH",
-      "performance": 8,
-      "date": "2023-01-26T11:39:22Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
+      "performance": 9,
+      "date": "2023-01-27T16:32:57Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4026267756/jobs/6920560856"
     },
     {
       "id": "590147287",
@@ -95,9 +106,9 @@
       "name": "ildsjel",
       "description": "i'm just a little guy",
       "country": "US",
-      "performance": 9,
-      "date": "2023-01-26T11:38:40Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
+      "performance": 10,
+      "date": "2023-01-27T16:30:04Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4026267756/jobs/6920560856"
     },
     {
       "id": "586877702",
@@ -106,20 +117,9 @@
       "name": "David",
       "description": "Controller example for the Robot Wrestling Tournament. Demonstrates how to use a sensor, here an accelerometer to detect a fall. Depending on the fall direction, the robot will play a different motion, which is implemented by a simple Finite State Machine. Beats Charlie by getting up after being knocked down.",
       "country": "CH",
-      "performance": 10,
-      "date": "2023-01-26T11:35:02Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
-    },
-    {
-      "id": "592665845",
-      "repository": "RomainGsd/Isaac-for-ICRA-2023",
-      "private": true,
-      "name": "JonOsterman",
-      "description": "Isaac v1",
-      "country": "FR",
       "performance": 11,
-      "date": "2023-01-27T16:21:03Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4026212264/jobs/6920434430"
+      "date": "2023-01-27T16:27:12Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4026267756/jobs/6920560856"
     },
     {
       "id": "589663245",
