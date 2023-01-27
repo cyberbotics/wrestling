@@ -1,26 +1,26 @@
 {
   "participants": [
     {
-      "id": "593567502",
-      "repository": "christopherpeers/real_robot_fighting",
-      "private": true,
-      "name": "Chrake Peith",
-      "description": "",
-      "country": "GB",
-      "performance": 1,
-      "date": "2023-01-26T13:43:11Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4015658592/jobs/6897651029"
-    },
-    {
       "id": "592926826",
       "repository": "manul30/NAO-Undertaker",
       "private": true,
       "name": "manuxd",
       "description": "The Undertaker",
       "country": "PE",
+      "performance": 1,
+      "date": "2023-01-27T05:17:10Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4021761188/jobs/6910912341"
+    },
+    {
+      "id": "593567502",
+      "repository": "christopherpeers/real_robot_fighting",
+      "private": true,
+      "name": "Chrake Peith",
+      "description": "",
+      "country": "GB",
       "performance": 2,
-      "date": "2023-01-27T05:06:37Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4021692800/jobs/6910785953"
+      "date": "2023-01-27T05:17:10Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4021761188/jobs/6910912341"
     },
     {
       "id": "592670321",
