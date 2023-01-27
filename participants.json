@@ -166,26 +166,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
     },
     {
-      "id": "593296451",
-      "repository": "brice-t/brice-webot",
-      "private": true,
-      "name": "Brice T.",
-      "description": "Just testing.",
-      "country": "FR",
-      "performance": 16,
-      "date": "2023-01-26T11:08:01Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
-    },
-    {
       "id": "592532770",
       "repository": "RamCharanThota/rcbot_cyberbotics_controller",
       "private": true,
       "name": "RamCharanThota",
       "description": "Description of my robot controller program.",
       "country": "IN",
+      "performance": 16,
+      "date": "2023-01-27T07:05:31Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022260406/jobs/6911838951"
+    },
+    {
+      "id": "593296451",
+      "repository": "brice-t/brice-webot",
+      "private": true,
+      "name": "Brice T.",
+      "description": "Just testing.",
+      "country": "FR",
       "performance": 17,
-      "date": "2023-01-27T06:54:01Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022160254/jobs/6911654867"
+      "date": "2023-01-27T07:02:08Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022260406/jobs/6911838951"
     },
     {
       "id": "586762611",
