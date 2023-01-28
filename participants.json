@@ -221,15 +221,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022160254/jobs/6911654867"
     },
     {
+      "id": "594499027",
+      "repository": "KohlerHECTOR/MbappeOfRL",
+      "private": true,
+      "name": "MbappeOfRL",
+      "description": "If I have time, I will try some RL.",
+      "country": "FR",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033233343/jobs/6933617304",
+      "date": "2023-01-28T19:29:16Z",
+      "performance": 21
+    },
+    {
       "id": "594424920",
       "repository": "cchabanois/wrestling",
       "private": true,
       "name": "aconcagua",
       "description": "",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4032200209/jobs/6931929342",
-      "date": "2023-01-28T14:30:29Z",
-      "performance": 21
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033233343/jobs/6933617304",
+      "date": "2023-01-28T19:28:18Z",
+      "performance": 22
     },
     {
       "id": "585201575",
@@ -238,9 +249,9 @@
       "name": "Olivier",
       "description": "I am walking backwards falling off the stage, a perfect loser...",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4032200209/jobs/6931929342",
-      "date": "2023-01-28T14:29:24Z",
-      "performance": 22
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033233343/jobs/6933617304",
+      "date": "2023-01-28T19:25:31Z",
+      "performance": 23
     },
     {
       "id": "591694573",
@@ -249,9 +260,9 @@
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4032200209/jobs/6931929342",
-      "date": "2023-01-28T14:28:54Z",
-      "performance": 23
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033233343/jobs/6933617304",
+      "date": "2023-01-28T19:24:57Z",
+      "performance": 24
     }
   ]
 }
