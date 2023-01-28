@@ -188,15 +188,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022260406/jobs/6911838951"
     },
     {
+      "id": "594424920",
+      "repository": "cchabanois/wrestling",
+      "private": true,
+      "name": "aconcagua",
+      "description": "",
+      "country": "FR",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033879480/jobs/6934680856",
+      "date": "2023-01-28T22:59:13Z",
+      "performance": 18
+    },
+    {
       "id": "586762611",
       "repository": "cyberbotics/wrestling-alice",
       "private": false,
       "name": "Alice",
       "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022160254/jobs/6911654867",
-      "date": "2023-01-27T06:49:48Z",
-      "performance": 18
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033879480/jobs/6934680856",
+      "date": "2023-01-28T22:54:53Z",
+      "performance": 19
     },
     {
       "id": "590556641",
@@ -205,9 +216,9 @@
       "name": "DH",
       "description": "Description of my robot controller program.",
       "country": "GB",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022160254/jobs/6911654867",
-      "date": "2023-01-27T06:46:24Z",
-      "performance": 19
+      "performance": 20,
+      "date": "2023-01-28T22:51:26Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033879480/jobs/6934680856"
     },
     {
       "id": "593592051",
@@ -216,9 +227,9 @@
       "name": "Team Entourage",
       "description": "Oui oui baguette, we're just tring to code something",
       "country": "FR",
-      "performance": 20,
-      "date": "2023-01-27T06:42:47Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022160254/jobs/6911654867"
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033879480/jobs/6934680856",
+      "date": "2023-01-28T22:46:26Z",
+      "performance": 21
     },
     {
       "id": "594524004",
@@ -227,9 +238,9 @@
       "name": "pemile",
       "description": "Description of my robot controller program.",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033519579/jobs/6934092584",
-      "date": "2023-01-28T20:58:01Z",
-      "performance": 21
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033879480/jobs/6934680856",
+      "date": "2023-01-28T22:42:38Z",
+      "performance": 22
     },
     {
       "id": "594499027",
@@ -238,19 +249,8 @@
       "name": "MbappeOfRL",
       "description": "If I have time, I will try some RL.",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033519579/jobs/6934092584",
-      "date": "2023-01-28T20:57:04Z",
-      "performance": 22
-    },
-    {
-      "id": "594424920",
-      "repository": "cchabanois/wrestling",
-      "private": true,
-      "name": "aconcagua",
-      "description": "",
-      "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033519579/jobs/6934092584",
-      "date": "2023-01-28T20:55:00Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033879480/jobs/6934680856",
+      "date": "2023-01-28T22:40:21Z",
       "performance": 23
     },
     {
