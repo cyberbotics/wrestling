@@ -177,25 +177,25 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033964401/jobs/6934818204"
     },
     {
-      "id": "593296451",
-      "repository": "brice-t/brice-webot",
-      "private": true,
-      "name": "Brice T.",
-      "description": "Just testing.",
-      "country": "FR",
-      "performance": 17,
-      "date": "2023-01-27T07:02:08Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022260406/jobs/6911838951"
-    },
-    {
       "id": "594524004",
       "repository": "pemile29/pemilebot",
       "private": true,
       "name": "pemile",
       "description": "Description of my robot controller program.",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4036208864/jobs/6938648636",
-      "date": "2023-01-29T10:23:16Z",
+      "performance": 17,
+      "date": "2023-01-29T13:28:56Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4036955823/jobs/6939916618"
+    },
+    {
+      "id": "593296451",
+      "repository": "brice-t/brice-webot",
+      "private": true,
+      "name": "Brice T.",
+      "description": "Just testing.",
+      "country": "FR",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4036955823/jobs/6939916618",
+      "date": "2023-01-29T13:27:12Z",
       "performance": 18
     },
     {
