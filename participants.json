@@ -111,15 +111,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
     },
     {
+      "id": "592532770",
+      "repository": "RamCharanThota/rcbot_cyberbotics_controller",
+      "private": true,
+      "name": "RamCharanThota",
+      "description": "Description of my robot controller program.",
+      "country": "IN",
+      "performance": 11,
+      "date": "2023-01-29T20:41:28Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
+    },
+    {
       "id": "590147287",
       "repository": "StephenWelch/robot-wrestling",
       "private": true,
       "name": "ildsjel",
       "description": "i'm just a little guy",
       "country": "US",
-      "performance": 11,
-      "date": "2023-01-29T19:57:32Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
+      "performance": 12,
+      "date": "2023-01-29T20:40:33Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
     },
     {
       "id": "586877702",
@@ -128,9 +139,9 @@
       "name": "David",
       "description": "Controller example for the Robot Wrestling Tournament. Demonstrates how to use a sensor, here an accelerometer to detect a fall. Depending on the fall direction, the robot will play a different motion, which is implemented by a simple Finite State Machine. Beats Charlie by getting up after being knocked down.",
       "country": "CH",
-      "performance": 12,
-      "date": "2023-01-29T19:54:03Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
+      "performance": 13,
+      "date": "2023-01-29T20:39:31Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
     },
     {
       "id": "589663245",
@@ -139,9 +150,9 @@
       "name": "Tony",
       "description": "So far no idea, I'm just looking around...",
       "country": "DE",
-      "performance": 13,
-      "date": "2023-01-29T19:53:14Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
+      "performance": 14,
+      "date": "2023-01-29T20:38:39Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
     },
     {
       "id": "586837559",
@@ -150,9 +161,9 @@
       "name": "Charlie",
       "description": "Demonstrates how to access the LEDs and play a custom motion file. Beats Bob by moving forwards and pushing him to the ground. Doesn't seem to beat Alice though",
       "country": "CH",
-      "performance": 14,
-      "date": "2023-01-29T19:41:05Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
+      "performance": 15,
+      "date": "2023-01-29T20:37:35Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
     },
     {
       "id": "591877549",
@@ -161,9 +172,9 @@
       "name": "Piyush Goenka",
       "description": "Boxing Champion",
       "country": "IN",
-      "performance": 15,
-      "date": "2023-01-29T19:40:10Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
+      "performance": 16,
+      "date": "2023-01-29T20:36:58Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
     },
     {
       "id": "586830620",
@@ -172,20 +183,9 @@
       "name": "Bob",
       "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
       "country": "CH",
-      "performance": 16,
-      "date": "2023-01-29T19:39:11Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
-    },
-    {
-      "id": "592532770",
-      "repository": "RamCharanThota/rcbot_cyberbotics_controller",
-      "private": true,
-      "name": "RamCharanThota",
-      "description": "Description of my robot controller program.",
-      "country": "IN",
       "performance": 17,
-      "date": "2023-01-29T14:29:27Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4037206975/jobs/6940339812"
+      "date": "2023-01-29T20:35:56Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
     },
     {
       "id": "593296451",
