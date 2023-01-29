@@ -67,26 +67,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4022678265/jobs/6912670523"
     },
     {
-      "id": "587237349",
-      "repository": "cyberbotics/wrestling-fatima",
-      "private": false,
-      "name": "Fatima",
-      "description": "Demonstrates the gait manager (inverse kinematics + simple ellipsoid path).",
-      "country": "CH",
-      "performance": 7,
-      "date": "2023-01-26T11:40:24Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
-    },
-    {
       "id": "594524004",
       "repository": "pemile29/pemilebot",
       "private": true,
       "name": "pemile",
       "description": "Description of my robot controller program.",
       "country": "FR",
+      "performance": 7,
+      "date": "2023-01-29T22:17:54Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038860886/jobs/6943157067"
+    },
+    {
+      "id": "587237349",
+      "repository": "cyberbotics/wrestling-fatima",
+      "private": false,
+      "name": "Fatima",
+      "description": "Demonstrates the gait manager (inverse kinematics + simple ellipsoid path).",
+      "country": "CH",
       "performance": 8,
-      "date": "2023-01-29T20:05:24Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
+      "date": "2023-01-29T22:13:43Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038860886/jobs/6943157067"
     },
     {
       "id": "592665845",
