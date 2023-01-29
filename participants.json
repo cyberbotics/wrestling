@@ -78,15 +78,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014716657/jobs/6895575073"
     },
     {
+      "id": "594524004",
+      "repository": "pemile29/pemilebot",
+      "private": true,
+      "name": "pemile",
+      "description": "Description of my robot controller program.",
+      "country": "FR",
+      "performance": 8,
+      "date": "2023-01-29T20:05:24Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
+    },
+    {
       "id": "592665845",
       "repository": "RomainGsd/Isaac-for-ICRA-2023",
       "private": true,
       "name": "JonOsterman",
       "description": "Isaac v1",
       "country": "FR",
-      "performance": 8,
-      "date": "2023-01-27T16:36:18Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4026267756/jobs/6920560856"
+      "performance": 9,
+      "date": "2023-01-29T20:01:48Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
     },
     {
       "id": "586919026",
@@ -95,9 +106,9 @@
       "name": "Eve",
       "description": "Demonstrates how to use the camera and gives an image processing example to locate the opponent.",
       "country": "CH",
-      "performance": 9,
-      "date": "2023-01-27T16:32:57Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4026267756/jobs/6920560856"
+      "performance": 10,
+      "date": "2023-01-29T19:59:44Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
     },
     {
       "id": "590147287",
@@ -106,9 +117,9 @@
       "name": "ildsjel",
       "description": "i'm just a little guy",
       "country": "US",
-      "performance": 10,
-      "date": "2023-01-27T16:30:04Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4026267756/jobs/6920560856"
+      "performance": 11,
+      "date": "2023-01-29T19:57:32Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
     },
     {
       "id": "586877702",
@@ -117,9 +128,9 @@
       "name": "David",
       "description": "Controller example for the Robot Wrestling Tournament. Demonstrates how to use a sensor, here an accelerometer to detect a fall. Depending on the fall direction, the robot will play a different motion, which is implemented by a simple Finite State Machine. Beats Charlie by getting up after being knocked down.",
       "country": "CH",
-      "performance": 11,
-      "date": "2023-01-27T16:27:12Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4026267756/jobs/6920560856"
+      "performance": 12,
+      "date": "2023-01-29T19:54:03Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
     },
     {
       "id": "589663245",
@@ -128,9 +139,9 @@
       "name": "Tony",
       "description": "So far no idea, I'm just looking around...",
       "country": "DE",
-      "performance": 12,
-      "date": "2023-01-26T11:17:21Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
+      "performance": 13,
+      "date": "2023-01-29T19:53:14Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
     },
     {
       "id": "586837559",
@@ -139,9 +150,9 @@
       "name": "Charlie",
       "description": "Demonstrates how to access the LEDs and play a custom motion file. Beats Bob by moving forwards and pushing him to the ground. Doesn't seem to beat Alice though",
       "country": "CH",
-      "performance": 13,
-      "date": "2023-01-26T11:13:46Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
+      "performance": 14,
+      "date": "2023-01-29T19:41:05Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
     },
     {
       "id": "591877549",
@@ -150,9 +161,9 @@
       "name": "Piyush Goenka",
       "description": "Boxing Champion",
       "country": "IN",
-      "performance": 14,
-      "date": "2023-01-26T16:16:02Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4016970801/jobs/6900709659"
+      "performance": 15,
+      "date": "2023-01-29T19:40:10Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
     },
     {
       "id": "586830620",
@@ -161,20 +172,9 @@
       "name": "Bob",
       "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
       "country": "CH",
-      "performance": 15,
-      "date": "2023-01-26T11:11:20Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4014441416/jobs/6894961872"
-    },
-    {
-      "id": "594524004",
-      "repository": "pemile29/pemilebot",
-      "private": true,
-      "name": "pemile",
-      "description": "Description of my robot controller program.",
-      "country": "FR",
       "performance": 16,
-      "date": "2023-01-29T19:20:37Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038255510/jobs/6942126680"
+      "date": "2023-01-29T19:39:11Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
     },
     {
       "id": "592532770",
