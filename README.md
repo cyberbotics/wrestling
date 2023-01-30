@@ -24,7 +24,7 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 - Robot: NAO
 - Programming Language: any
 - Commitment: a few weeks
-- Prize: [1 Ethereum](https://www.google.com/search?q=ethereum+price)
+- Prize: [1 Ether](https://www.google.com/search?q=ethereum+price)
 
 </span>
 
@@ -44,7 +44,7 @@ Remote participation will be possible.
 
 ## Prize
 
-The winning team will receive [one Ethereum](https://www.google.com/search?q=ethereum+price) crypto-currency (priced around USD 1'547 on January 16th, 2023).
+The winning team will receive [one Ether](https://www.google.com/search?q=ethereum+price) crypto-currency (priced around USD 1'547 on January 16th, 2023).
 
 ## Participation Conditions
 
