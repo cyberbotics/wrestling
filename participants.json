@@ -89,26 +89,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038860886/jobs/6943157067"
     },
     {
+      "id": "586919026",
+      "repository": "cyberbotics/wrestling-eve",
+      "private": false,
+      "name": "Eve (Python)",
+      "description": "Demonstrates how to use the camera and gives an image processing example to locate the opponent.",
+      "country": "CH",
+      "performance": 9,
+      "date": "2023-01-30T11:32:04Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043347472/jobs/6952157478"
+    },
+    {
       "id": "592665845",
       "repository": "RomainGsd/Isaac-for-ICRA-2023",
       "private": true,
       "name": "JonOsterman",
       "description": "Isaac v1",
       "country": "FR",
-      "performance": 9,
-      "date": "2023-01-29T20:01:48Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
-    },
-    {
-      "id": "586919026",
-      "repository": "cyberbotics/wrestling-eve",
-      "private": false,
-      "name": "Eve",
-      "description": "Demonstrates how to use the camera and gives an image processing example to locate the opponent.",
-      "country": "CH",
       "performance": 10,
-      "date": "2023-01-29T19:59:44Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038318417/jobs/6942230652"
+      "date": "2023-01-30T11:28:43Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043347472/jobs/6952157478"
     },
     {
       "id": "586877702",
