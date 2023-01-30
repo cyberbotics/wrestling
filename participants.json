@@ -296,6 +296,17 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043435913/jobs/6952346358",
       "date": "2023-01-30T11:39:12Z",
       "performance": 27
+    },
+    {
+      "id": "595163426",
+      "repository": "cyberbotics/wrestling-alice-java",
+      "private": false,
+      "name": "Alice (Java)",
+      "description": "Minimalist Java controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
+      "country": "CH",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045730786/jobs/6957595562",
+      "date": "2023-01-30T16:06:46Z",
+      "performance": 28
     }
   ]
 }
