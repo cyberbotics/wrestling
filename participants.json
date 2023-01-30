@@ -1,15 +1,26 @@
 {
   "participants": [
     {
+      "id": "594524004",
+      "repository": "pemile29/pemilebot",
+      "private": true,
+      "name": "pemile",
+      "description": "Description of my robot controller program.",
+      "country": "FR",
+      "performance": 1,
+      "date": "2023-01-30T09:19:55Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4042262852/jobs/6949759998"
+    },
+    {
       "id": "592926826",
       "repository": "manul30/NAO-Undertaker",
       "private": true,
       "name": "manuxd",
       "description": "The Undertaker",
       "country": "PE",
-      "performance": 1,
-      "date": "2023-01-27T05:17:10Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4021761188/jobs/6910912341"
+      "performance": 2,
+      "date": "2023-01-30T09:19:55Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4042262852/jobs/6949759998"
     },
     {
       "id": "593567502",
@@ -18,9 +29,9 @@
       "name": "Chrake Peith",
       "description": "",
       "country": "GB",
-      "performance": 2,
-      "date": "2023-01-27T05:17:10Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4021761188/jobs/6910912341"
+      "performance": 3,
+      "date": "2023-01-30T09:18:49Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4042262852/jobs/6949759998"
     },
     {
       "id": "592893244",
@@ -29,20 +40,9 @@
       "name": "Mospaeda",
       "description": "Elder Robot Armen.",
       "country": "FR",
-      "performance": 3,
-      "date": "2023-01-27T22:47:05Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4028716365/jobs/6925888365"
-    },
-    {
-      "id": "594524004",
-      "repository": "pemile29/pemilebot",
-      "private": true,
-      "name": "pemile",
-      "description": "Description of my robot controller program.",
-      "country": "FR",
       "performance": 4,
-      "date": "2023-01-30T09:02:05Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4042151089/jobs/6949510331"
+      "date": "2023-01-30T09:15:14Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4042262852/jobs/6949759998"
     },
     {
       "id": "592670321",
