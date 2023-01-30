@@ -199,15 +199,26 @@
       "performance": 18
     },
     {
+      "id": "595209458",
+      "repository": "guillaumemichel/webots-wrestling-2023",
+      "private": true,
+      "name": "guissou",
+      "description": "",
+      "country": "CH",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T17:04:56Z",
+      "performance": 19
+    },
+    {
       "id": "594424920",
       "repository": "cchabanois/wrestling",
       "private": true,
       "name": "aconcagua",
       "description": "",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4036208864/jobs/6938648636",
-      "date": "2023-01-29T10:19:05Z",
-      "performance": 19
+      "performance": 20,
+      "date": "2023-01-30T17:02:37Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171"
     },
     {
       "id": "586762611",
@@ -216,9 +227,9 @@
       "name": "Alice (Python)",
       "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "performance": 20,
-      "date": "2023-01-30T11:16:34Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043222991/jobs/6951890915"
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T16:57:30Z",
+      "performance": 21
     },
     {
       "id": "595061828",
@@ -227,9 +238,9 @@
       "name": "Alice (C)",
       "description": "Minimalist C controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4044048667/jobs/6953722120",
-      "date": "2023-01-30T13:01:33Z",
-      "performance": 21
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T16:54:12Z",
+      "performance": 22
     },
     {
       "id": "595079341",
@@ -238,9 +249,9 @@
       "name": "Alice (C++)",
       "description": "Minimalist C++ controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4044082670/jobs/6953798355",
-      "date": "2023-01-30T13:05:51Z",
-      "performance": 22
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T16:50:54Z",
+      "performance": 23
     },
     {
       "id": "595163426",
@@ -249,9 +260,9 @@
       "name": "Alice (Java)",
       "description": "Minimalist Java controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045781505/jobs/6957712648",
-      "date": "2023-01-30T16:26:56Z",
-      "performance": 23
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T16:47:35Z",
+      "performance": 24
     },
     {
       "id": "590556641",
@@ -260,9 +271,9 @@
       "name": "DH",
       "description": "Description of my robot controller program.",
       "country": "GB",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045781505/jobs/6957712648",
-      "date": "2023-01-30T16:23:38Z",
-      "performance": 24
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T16:44:15Z",
+      "performance": 25
     },
     {
       "id": "593592051",
@@ -271,9 +282,9 @@
       "name": "Team Entourage",
       "description": "Oui oui baguette, we're just tring to code something",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045781505/jobs/6957712648",
-      "date": "2023-01-30T16:20:02Z",
-      "performance": 25
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T16:40:41Z",
+      "performance": 26
     },
     {
       "id": "594499027",
@@ -282,9 +293,9 @@
       "name": "MbappeOfRL",
       "description": "If I have time, I will try some RL.",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045781505/jobs/6957712648",
-      "date": "2023-01-30T16:16:27Z",
-      "performance": 26
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T16:37:02Z",
+      "performance": 27
     },
     {
       "id": "585201575",
@@ -293,9 +304,9 @@
       "name": "Olivier",
       "description": "I am walking backwards falling off the stage, a perfect loser...",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045781505/jobs/6957712648",
-      "date": "2023-01-30T16:14:20Z",
-      "performance": 27
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T16:34:52Z",
+      "performance": 28
     },
     {
       "id": "591694573",
@@ -304,9 +315,9 @@
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045781505/jobs/6957712648",
-      "date": "2023-01-30T16:11:00Z",
-      "performance": 28
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045947327/jobs/6958102171",
+      "date": "2023-01-30T16:31:34Z",
+      "performance": 29
     }
   ]
 }
