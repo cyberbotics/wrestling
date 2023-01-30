@@ -81,12 +81,12 @@
       "id": "587237349",
       "repository": "cyberbotics/wrestling-fatima",
       "private": false,
-      "name": "Fatima",
+      "name": "Fatima (Python)",
       "description": "Demonstrates the gait manager (inverse kinematics + simple ellipsoid path).",
       "country": "CH",
       "performance": 8,
-      "date": "2023-01-29T22:13:43Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038860886/jobs/6943157067"
+      "date": "2023-01-30T11:37:10Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043395994/jobs/6952262799"
     },
     {
       "id": "586919026",
