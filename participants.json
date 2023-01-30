@@ -224,11 +224,11 @@
       "id": "595061828",
       "repository": "cyberbotics/wrestling-alice-c",
       "private": false,
-      "name": "Alice [C]",
+      "name": "Alice (C)",
       "description": "Minimalist C controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043187419/jobs/6951812290",
-      "date": "2023-01-30T11:10:17Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4044048667/jobs/6953722120",
+      "date": "2023-01-30T13:01:33Z",
       "performance": 21
     },
     {
