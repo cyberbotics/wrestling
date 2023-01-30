@@ -144,26 +144,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
     },
     {
+      "id": "586837559",
+      "repository": "cyberbotics/wrestling-charlie",
+      "private": false,
+      "name": "Charlie (Python)",
+      "description": "Demonstrates how to access the LEDs and play a custom motion file. Beats Bob by moving forwards and pushing him to the ground. Doesn't seem to beat Alice though",
+      "country": "CH",
+      "performance": 14,
+      "date": "2023-01-30T11:21:40Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043294594/jobs/6952044321"
+    },
+    {
       "id": "589663245",
       "repository": "tonynajjar/youcantseeme",
       "private": true,
       "name": "Tony",
       "description": "So far no idea, I'm just looking around...",
       "country": "DE",
-      "performance": 14,
-      "date": "2023-01-29T20:38:39Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
-    },
-    {
-      "id": "586837559",
-      "repository": "cyberbotics/wrestling-charlie",
-      "private": false,
-      "name": "Charlie",
-      "description": "Demonstrates how to access the LEDs and play a custom motion file. Beats Bob by moving forwards and pushing him to the ground. Doesn't seem to beat Alice though",
-      "country": "CH",
       "performance": 15,
-      "date": "2023-01-29T20:37:35Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
+      "date": "2023-01-30T11:21:04Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043294594/jobs/6952044321"
     },
     {
       "id": "586830620",
