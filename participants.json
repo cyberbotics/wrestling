@@ -213,12 +213,12 @@
       "id": "586762611",
       "repository": "cyberbotics/wrestling-alice",
       "private": false,
-      "name": "Alice",
+      "name": "Alice (Python)",
       "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
       "performance": 20,
-      "date": "2023-01-29T10:13:35Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4036208864/jobs/6938648636"
+      "date": "2023-01-30T11:16:34Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043222991/jobs/6951890915"
     },
     {
       "id": "595061828",
