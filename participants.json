@@ -235,11 +235,11 @@
       "id": "595079341",
       "repository": "cyberbotics/wrestling-alice-cpp",
       "private": false,
-      "name": "Alice [C++]",
+      "name": "Alice (C++)",
       "description": "Minimalist C++ controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043435913/jobs/6952346358",
-      "date": "2023-01-30T11:55:23Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4044082670/jobs/6953798355",
+      "date": "2023-01-30T13:05:51Z",
       "performance": 22
     },
     {
