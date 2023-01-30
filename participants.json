@@ -221,15 +221,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4036208864/jobs/6938648636"
     },
     {
+      "id": "595061828",
+      "repository": "cyberbotics/wrestling-alice-c",
+      "private": false,
+      "name": "Alice",
+      "description": "Minimalist controller example for the Robot Wrestling Tournament. Demonstrates how to play a simple motion file.",
+      "country": "CH",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043049962/jobs/6951501676",
+      "date": "2023-01-30T11:05:52Z",
+      "performance": 21
+    },
+    {
       "id": "590556641",
       "repository": "dennisushi/WrestleBot-CharlieXXX",
       "private": true,
       "name": "DH",
       "description": "Description of my robot controller program.",
       "country": "GB",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4036208864/jobs/6938648636",
-      "date": "2023-01-29T10:10:18Z",
-      "performance": 21
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043049962/jobs/6951501676",
+      "date": "2023-01-30T11:02:35Z",
+      "performance": 22
     },
     {
       "id": "593592051",
@@ -238,9 +249,9 @@
       "name": "Team Entourage",
       "description": "Oui oui baguette, we're just tring to code something",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4036208864/jobs/6938648636",
-      "date": "2023-01-29T10:06:36Z",
-      "performance": 22
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043049962/jobs/6951501676",
+      "date": "2023-01-30T10:59:03Z",
+      "performance": 23
     },
     {
       "id": "594499027",
@@ -249,9 +260,9 @@
       "name": "MbappeOfRL",
       "description": "If I have time, I will try some RL.",
       "country": "FR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033879480/jobs/6934680856",
-      "date": "2023-01-28T22:40:21Z",
-      "performance": 23
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043049962/jobs/6951501676",
+      "date": "2023-01-30T10:55:03Z",
+      "performance": 24
     },
     {
       "id": "585201575",
@@ -260,9 +271,9 @@
       "name": "Olivier",
       "description": "I am walking backwards falling off the stage, a perfect loser...",
       "country": "CH",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033519579/jobs/6934092584",
-      "date": "2023-01-28T20:52:35Z",
-      "performance": 24
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043049962/jobs/6951501676",
+      "date": "2023-01-30T10:52:52Z",
+      "performance": 25
     },
     {
       "id": "591694573",
@@ -271,9 +282,9 @@
       "name": "Amir Hossein Nourian",
       "description": "Wresteling Robot Controler using Reinforcement Learning",
       "country": "IR",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4033519579/jobs/6934092584",
-      "date": "2023-01-28T20:52:01Z",
-      "performance": 25
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043049962/jobs/6951501676",
+      "date": "2023-01-30T10:49:33Z",
+      "performance": 26
     }
   ]
 }
