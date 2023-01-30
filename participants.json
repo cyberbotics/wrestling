@@ -166,26 +166,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
     },
     {
+      "id": "586830620",
+      "repository": "cyberbotics/wrestling-bob",
+      "private": false,
+      "name": "Bob (Python)",
+      "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
+      "country": "CH",
+      "performance": 16,
+      "date": "2023-01-30T11:19:09Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043274200/jobs/6952000793"
+    },
+    {
       "id": "591877549",
       "repository": "piyush-g0enka/BoxerNAO",
       "private": true,
       "name": "Piyush Goenka",
       "description": "Boxing Champion",
       "country": "IN",
-      "performance": 16,
-      "date": "2023-01-29T20:36:58Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
-    },
-    {
-      "id": "586830620",
-      "repository": "cyberbotics/wrestling-bob",
-      "private": false,
-      "name": "Bob",
-      "description": "Demonstrates how to use the Motion_library class to play a motion file. Beats Alice by moving forwards and therefore having a higher coverage.",
-      "country": "CH",
       "performance": 17,
-      "date": "2023-01-29T20:35:56Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4038534770/jobs/6942598598"
+      "date": "2023-01-30T11:18:30Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4043274200/jobs/6952000793"
     },
     {
       "id": "593296451",
