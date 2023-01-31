@@ -1,15 +1,26 @@
 {
   "participants": [
     {
+      "id": "592670321",
+      "repository": "sagwl96/nao-wrestler-v1",
+      "private": true,
+      "name": "Sagwl",
+      "description": "Testing motions",
+      "country": "DE",
+      "performance": 1,
+      "date": "2023-01-31T13:10:52Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054283160/jobs/6975924577"
+    },
+    {
       "id": "592926826",
       "repository": "manul30/NAO-Undertaker",
       "private": true,
       "name": "manuxd",
       "description": "The Undertaker",
       "country": "PE",
-      "performance": 1,
-      "date": "2023-01-30T15:52:51Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045577859/jobs/6957232054"
+      "performance": 2,
+      "date": "2023-01-31T13:10:52Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054283160/jobs/6975924577"
     },
     {
       "id": "594524004",
@@ -18,9 +29,9 @@
       "name": "pemile",
       "description": "Description of my robot controller program.",
       "country": "FR",
-      "performance": 2,
-      "date": "2023-01-30T15:52:51Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4045577859/jobs/6957232054"
+      "performance": 3,
+      "date": "2023-01-31T13:09:55Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054283160/jobs/6975924577"
     },
     {
       "id": "593567502",
@@ -29,9 +40,9 @@
       "name": "Chrake Peith",
       "description": "",
       "country": "GB",
-      "performance": 3,
-      "date": "2023-01-30T09:18:49Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4042262852/jobs/6949759998"
+      "performance": 4,
+      "date": "2023-01-31T13:04:55Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054283160/jobs/6975924577"
     },
     {
       "id": "592893244",
@@ -40,20 +51,9 @@
       "name": "Mospaeda",
       "description": "Elder Robot Armen.",
       "country": "FR",
-      "performance": 4,
-      "date": "2023-01-30T09:15:14Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4042262852/jobs/6949759998"
-    },
-    {
-      "id": "592670321",
-      "repository": "sagwl96/nao-wrestler-v1",
-      "private": true,
-      "name": "Sagwl",
-      "description": "Testing motions",
-      "country": "DE",
       "performance": 5,
-      "date": "2023-01-31T12:28:25Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054030043/jobs/6975358677"
+      "date": "2023-01-31T13:01:21Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054283160/jobs/6975924577"
     },
     {
       "id": "589709194",
