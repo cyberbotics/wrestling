@@ -12,26 +12,26 @@
       "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054283160/jobs/6975924577"
     },
     {
-      "id": "592926826",
-      "repository": "manul30/NAO-Undertaker",
-      "private": true,
-      "name": "manuxd",
-      "description": "The Undertaker",
-      "country": "PE",
-      "performance": 2,
-      "date": "2023-01-31T13:10:52Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054283160/jobs/6975924577"
-    },
-    {
       "id": "594524004",
       "repository": "pemile29/pemilebot",
       "private": true,
       "name": "pemile",
       "description": "Description of my robot controller program.",
       "country": "FR",
+      "performance": 2,
+      "date": "2023-01-31T14:00:39Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054765383/jobs/6977001479"
+    },
+    {
+      "id": "592926826",
+      "repository": "manul30/NAO-Undertaker",
+      "private": true,
+      "name": "manuxd",
+      "description": "The Undertaker",
+      "country": "PE",
       "performance": 3,
-      "date": "2023-01-31T13:09:55Z",
-      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054283160/jobs/6975924577"
+      "date": "2023-01-31T13:56:51Z",
+      "log": "https://github.com/cyberbotics/wrestling/actions/runs/4054765383/jobs/6977001479"
     },
     {
       "id": "593567502",
