@@ -9,10 +9,10 @@ textFiles: 0 "controllers/participant/participant.py"
 consoles: Console:referee;All Webots:All
 consoles: Console:wrestler red;participant:All
 consoles: Console:wrestler blue;opponent:All
-renderingDevicePerspectives: opponent:CameraBottom;1;1;0;0.832187
-renderingDevicePerspectives: opponent:CameraTop;1;1.00833;0.819919;0.662998
-renderingDevicePerspectives: participant:CameraBottom;1;1.00833;0.819919;0.830812
-renderingDevicePerspectives: participant:CameraTop;1;1;0;0.665749
+renderingDevicePerspectives: opponent:CameraBottom;1;1;0.8;0.8
+renderingDevicePerspectives: opponent:CameraTop;1;1;0.8;0.62
+renderingDevicePerspectives: participant:CameraBottom;1;1;0;0.8
+renderingDevicePerspectives: participant:CameraTop;1;1;0;0.62
 renderingDevicePerspectives: wreslter red:CameraBottom;1;1;0;0
 renderingDevicePerspectives: wreslter red:CameraTop;1;1;0;0
 renderingDevicePerspectives: wrestler blue:CameraBottom;1;1;0;0
