@@ -28,8 +28,8 @@ class Referee (Supervisor):
                 self.digit[j][i] = self.getDevice('digit ' + str(j) + str(i))
         self.current_digit = [0, 0, 0]  # 0:00
         self.robot = [0] * 2
-        self.robot[0] = self.getFromDef('WRESTLER_RED')
-        self.robot[1] = self.getFromDef('WRESTLER_BLUE')
+        self.robot[0] = self.getFromDef('WRESTLER_RED').getFromProtoDef('HEAD_SLOT')
+        self.robot[1] = self.getFromDef('WRESTLER_BLUE').getFromProtoDef('HEAD_SLOT')
         self.min = [[0] * 3 for i in range(2)]
         self.max = [[0] * 3 for i in range(2)]
         for i in range(2):
@@ -94,7 +94,7 @@ class Referee (Supervisor):
                         if string != coverage_labels[i]:
                             self.setLabel(4 + i, string, 0.8, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
                         coverage_labels[i] = string
-                    if position[2] < 0.75:  # low position threshold
+                    if position[2] < 0.9:  # low position threshold
                         self.ko_count[i] = self.ko_count[i] + 200
                         if self.ko_count[i] > 10000:  # 10 seconds
                             ko = i
