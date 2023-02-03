@@ -41,6 +41,7 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 
 The finals will take place at the [ICRA 2023](https://www.icra2023.org) conference in London and will be broadcasted online in real time.
 Remote participation will be possible.
+The 32 best ranked participants will receive an official certificate mentionning the team name and all the team members, as described respectively in the name and description fields of their [participant.json](controllers/participant/participant.json) file.
 
 ## Prize
 
@@ -48,8 +49,11 @@ The winning team will receive [one Ether](https://www.google.com/search?q=ethere
 
 ## Participation Conditions
 
-Anyone can participate: there is absolutely no restriction on the quality and number of team members.
 Participation is free of charge, including the finals.
+Anyone can participate: there is absolutely no restriction on the quality and number of team members.
+A team may perfectly have only one single member.
+However, an individual cannot be a member of several teams in the [leaderboard][1].
+Any team suspected to break this rule teams will be removed.
 
 ## Get Started Now
 
