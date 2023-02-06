@@ -107,25 +107,11 @@ coverage = X_max + Y_max - X_min - Y_min
 
 ### Demo Robot Controllers
 
-A series of sample Python demo robot controllers with increasing complexity and performance is provided as examples:
-
-- [Alice](https://github.com/cyberbotics/wrestling-alice) plays a simple motion file.
-- [Bob](https://github.com/cyberbotics/wrestling-bob) sends position commands to some motors and plays a motion file.
-- [Charlie](https://github.com/cyberbotics/wrestling-charlie) plays a custom motion file and uses the LEDs.
-- [David](https://github.com/cyberbotics/wrestling-david) is able to detect when he falls down and to recover.
-- [Eve](https://github.com/cyberbotics/wrestling-eve) processes camera images to detect her opponent and targets him.
-- [Fatima](https://github.com/cyberbotics/wrestling-fatima) uses an advanced gait manager with inverse kinematics.
-
-Similarly a series of simple examples are provided using different programming languages or frameworks:
+A series of simple examples are provided using different programming languages or frameworks and different complexity levels:
 
 | Language / Framework | Example |
 |---|---|
-| Python | [Alice](https://github.com/cyberbotics/wrestling-alice "Alice plays a simple motion file."),
-           [Bob](https://github.com/cyberbotics/wrestling-bob "Bob sends position commands to some motors and plays a motion file."),
-           [Charlie](https://github.com/cyberbotics/wrestling-charlie, "Charlie plays a custom motion file and uses the LEDs."),
-           [David](https://github.com/cyberbotics/wrestling-david "David is able to detect when he falls down and to recover."),
-           [Eve](https://github.com/cyberbotics/wrestling-eve "Eve processes camera images to detect her opponent and targets him."),
-           [Fatima](https://github.com/cyberbotics/wrestling-fatima, "Fatima uses an advanced gait manager with inverse kinematics.") |
+| Python | [Alice](https://github.com/cyberbotics/wrestling-alice "Alice plays a simple motion file."), [Bob](https://github.com/cyberbotics/wrestling-bob "Bob sends position commands to some motors and plays a motion file."), [Charlie](https://github.com/cyberbotics/wrestling-charlie, "Charlie plays a custom motion file and uses the LEDs."), [David](https://github.com/cyberbotics/wrestling-david "David is able to detect when he falls down and to recover.") [Eve](https://github.com/cyberbotics/wrestling-eve "Eve processes camera images to detect her opponent and targets him."), [Fatima](https://github.com/cyberbotics/wrestling-fatima, "Fatima uses an advanced gait manager with inverse kinematics.") |
 | C      | [Alice](https://github.com/cyberbotics/wrestling-alice-c "Alice plays a simple motion file.")    |
 | C++    | [Alice](https://github.com/cyberbotics/wrestling-alice-cpp "Alice plays a simple motion file.")  |
 | Java   | [Alice](https://github.com/cyberbotics/wrestling-alice-java "Alice plays a simple motion file.") |
