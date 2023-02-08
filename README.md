@@ -154,7 +154,7 @@ It will run 3 docker containers:
 2. One with the controller of the red player (participant).
 3. One with the controller of the blue player (opponent).
 
-Each docker container running a player controller will be allocated 3 virtual CPU cores, 6 GB of RAM and shared access to the GPU hardware. 
+Each docker container running a player controller has 3 virtual CPU cores, 6 GB of RAM and shared access to the GPU hardware. 
 The runner machine configuration is the following:
 - CPU: [Intel core i7-6700K @ 4.00 Ghz](https://www.cpubenchmark.net/cpu.php?id=2565).
 - RAM: 16 GB.
