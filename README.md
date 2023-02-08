@@ -141,7 +141,7 @@ This will be repeated as long as you win until you reach the first rank of the l
 ### Checking the Log File of an Evaluation Run
 
 When there is a problem with your repository, an issue is opened automatically on your repository to invite you to check the log of the evaluation run.
-However, if your controller crashes for some reason, no error is reported to you, but the animation of your robot will show your robot not moving at all (and your robot will likely loose the game).
+However, if your controller crashes for some reason, no error will be reported to you, but the animation of your robot will show your robot not moving at all (and your robot will likely loose the game).
 It that case, you should check the log file of the evaluation run to understand why your controller crashed.
 All the log files are available on https://github.com/cyberbotics/wrestling/actions
 
