@@ -45,7 +45,7 @@ The 32 best ranked participants will receive an official certificate mentionning
 
 ## Prize
 
-The winning team will receive [one Ether](https://www.google.com/search?q=ethereum+price) crypto-currency (priced around USD 1'547 on January 16th, 2023).
+The winning team will receive [one Ether](https://www.google.com/search?q=ethereum+price) crypto-currency (priced around USD 1'674 on February 8th, 2023).
 
 ## Participation Conditions
 
