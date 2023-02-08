@@ -22,8 +22,8 @@ WorldInfo {
   basicTimeStep 20
 }
 Viewpoint {
-  orientation 0.19498090561580528 -0.2764227505822969 -0.9410488347613836 5.405573313424377
-  position -2.691780750858717 -2.734811659479189 1.4547104403271727
+  orientation 0.1777691171174525 -0.27280408003171913 -0.9455030803320151 5.441229634710951
+  position -2.6496727141720293 -2.7212331857085665 1.6907279951390781
   follow "wrestler_red"
   followType "Pan and Tilt Shot"
   ambientOcclusionRadius 0.2
@@ -116,9 +116,9 @@ DEF WRESTLER_RED Nao {
   translation -0.88 0 0.834
   name "participant"
   controller "participant"
+  window "competition_description"
   synchronization FALSE
   selfCollision TRUE
-  window "competition_description"
 }
 DEF WRESTLER_BLUE Nao {
   translation 0.88 0 0.834
