@@ -1,0 +1,22 @@
+name: Merge main into competition
+on:
+  push:
+    branches:
+      - main
+jobs:
+  merge-main-into-competition:
+    if: github.repository == 'cyberbotics/wrestling'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set git config
+      run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Github Actions"
+    - name: Merge main into competition
+      run: |
+          git fetch --unshallow
+          git checkout competition
+          git pull
+          git merge --no-ff main -m "Auto-merge main into competition"
+          git push
