@@ -27,6 +27,6 @@ jobs:
           git reset HEAD participants.yml
           git reset HEAD Dockerfile
           git reset HEAD .github/workflows/run.yml
-          rm .github/workflows/run.yml
+          rm -f .github/workflows/run.yml
           git commit -m"Auto-merge main into competition"
           git push
