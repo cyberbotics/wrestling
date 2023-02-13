@@ -1,0 +1,9 @@
+publish: true
+type: competition
+world:
+  file: worlds/wrestling.wbt
+  max-duration: 300
+  metric: ranking
+  qualification: 32
+  higher-is-better: false
+dockerCompose: competition:../../../usr/local/webots-project/controllers/
