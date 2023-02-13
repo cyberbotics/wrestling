@@ -53,7 +53,7 @@ Participation is free of charge, including the finals.
 Anyone can participate: there is absolutely no restriction on the quality and number of team members.
 A team may perfectly have only one single member.
 However, an individual cannot be a member of several teams in the [leaderboard][1].
-Any team suspected to break this rule teams will be removed.
+Any team suspected to break this rule will be removed.
 
 ## Get Started Now
 
