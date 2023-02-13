@@ -23,7 +23,6 @@ jobs:
           git checkout -- storage
           git reset HEAD preview
           git checkout -- preview
-          git reset HEAD webots.yml
           git reset HEAD participants.yml
           git reset HEAD Dockerfile
           git reset HEAD .github/workflows/run.yml
