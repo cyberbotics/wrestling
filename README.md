@@ -39,7 +39,7 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 | **June 1st, 2023** | **1/4 finals**                                   |
 | **June 2nd, 2023** | **semifinals, third place game and final**       |
 
-The finals will take place at the [ICRA 2023](https://www.icra2023.org) conference in London and will be broadcasted online in real time.
+The finals will take place during the [ICRA 2023](https://www.icra2023.org) conference in London and will be broadcasted online in real time.
 Remote participation will be possible.
 The 32 best ranked participants will receive an official certificate mentionning the team name and all the team members, as described respectively in the name and description fields of their [participant.json](controllers/participant/participant.json) file.
 
