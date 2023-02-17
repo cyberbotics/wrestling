@@ -115,8 +115,8 @@ class Referee (Supervisor):
             performance = 1
         else:
             if self.ko_count[0] > 10000:
-                print('Both robots are KO!')
-            if self.coverage[0] > self.coverage[1]:  # in case of no KO or KO equality, coverage rules
+                print('Both robots are KO! Coverage rule applies.')
+            if self.coverage[0] > self.coverage[1]:
                 print('Red wins coverage: %s > %s' % (self.coverage[0], self.coverage[1]))
                 performance = 1
             else:  # in case of coverage equality, blue wins
