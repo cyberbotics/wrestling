@@ -107,18 +107,21 @@ class Referee (Supervisor):
             if self.step(time_step) == -1 or time > game_duration or self.ko_count[0] > 10000 or self.ko_count[1] > 10000:
                 break
             time += time_step
-        if self.ko_count[0] > 10000 and self.ko_count[0] > self_ko_count[1]:
+        if self.ko_count[0] > 10000 and self.ko_count[0] > self.ko_count[1]:
             print('Red is KO. Blue wins!')
             performance = 0
-        elif self.ko_count[1] > 10000:
+        elif self.ko_count[1] > 10000 and self.ko_count[1] > self.ko_count[0]:
             print('Blue is KO. Red wins!')
             performance = 1
-        elif self.coverage[0] > self.coverage[1]:
-            print('Red wins coverage: %s > %s' % (self.coverage[0], self.coverage[1]))
-            performance = 1
-        else:  # in case of coverage equality, blue wins
-            print('Blue wins coverage: %s >= %s' % (self.coverage[1], self.coverage[0]))
-            performance = 0
+        else:
+            if self.ko_count[0] > 10000:
+                print('Both robots are KO!')
+            if self.coverage[0] > self.coverage[1]:  # in case of no KO or KO equality, coverage rules
+                print('Red wins coverage: %s > %s' % (self.coverage[0], self.coverage[1]))
+                performance = 1
+            else:  # in case of coverage equality, blue wins
+                print('Blue wins coverage: %s >= %s' % (self.coverage[1], self.coverage[0]))
+                performance = 0
         self.setLabel(7 - performance, 'WIN', 0.673, 0.051 - 0.048 * performance,
                       0.08, 0x0000ff if performance == 0 else 0xff0000, 0, 'Arial')
         if CI:
