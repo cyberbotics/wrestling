@@ -68,7 +68,7 @@ class Referee (Supervisor):
         ko_labels = [''] * 2
         coverage_labels = [''] * 2
         while True:
-            if time % (10 * time_step) == 0:
+            if time % (1000) == 0:
                 s = int(time / 1000) % 60
                 if seconds != s:
                     seconds = s
