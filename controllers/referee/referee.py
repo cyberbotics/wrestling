@@ -16,7 +16,7 @@
 
 import math
 import os
-from controller import Supervisor, AnsiCodes
+from controller import Supervisor
 
 
 class Referee (Supervisor):
@@ -58,7 +58,6 @@ class Referee (Supervisor):
         time_step = int(self.getBasicTimeStep())
         time = 0
         seconds = -1
-        ko = -1
         participant = os.environ['PARTICIPANT_NAME'] if 'PARTICIPANT_NAME' in os.environ else 'Participant'
         opponent = os.environ['OPPONENT_NAME'] if 'OPPONENT_NAME' in os.environ else 'Opponent'
         self.setLabel(0, '█' * 100, 0, 0, 0.1, 0xffffff, 0.3, 'Lucida Console')
