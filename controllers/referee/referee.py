@@ -75,7 +75,6 @@ class Referee (Supervisor):
                     minutes = int(time / 60000)
                     self.display_time(minutes, seconds)
             box = [0] * 3
-            ko = [False, False]
             for i in range(2):
                 position = self.robot[i].getPosition()
                 color = 0xff0000 if i == 0 else 0x0000ff
