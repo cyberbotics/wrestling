@@ -65,61 +65,59 @@ class Referee (Supervisor):
         self.setLabel(1, '█' * 100, 0, 0.048, 0.1, 0xffffff, 0.3, 'Lucida Console')
         self.setLabel(2, participant, 0.01, 0.003, 0.08, 0xff0000, 0, 'Arial')
         self.setLabel(3, opponent, 0.01, 0.051, 0.08, 0x0000ff, 0, 'Arial')
-        ko_labels = ['', '']
-        coverage_labels = ['', '']
+        ko_labels = [''] * 2
+        coverage_labels = [''] * 2
         while True:
-            if time % 200 == 0:
+            if time % (10 * time_step) == 0:
                 s = int(time / 1000) % 60
                 if seconds != s:
                     seconds = s
                     minutes = int(time / 60000)
                     self.display_time(minutes, seconds)
-                box = [0] * 3
-                for i in range(2):
-                    position = self.robot[i].getPosition()
-                    color = 0xff0000 if i == 0 else 0x0000ff
-                    if abs(position[0]) < 1 and abs(position[1]) < 1:  # inside the ring
-                        coverage = 0
-                        for j in range(2):
-                            if position[j] < self.min[i][j]:
-                                self.min[i][j] = position[j]
-                            elif position[j] > self.max[i][j]:
-                                self.max[i][j] = position[j]
-                            box[j] = self.max[i][j] - self.min[i][j]
-                            coverage += box[j] * box[j]
-                        coverage = math.sqrt(coverage)
-                        self.coverage[i] = coverage
-                        self.indicator[i].setPosition(self.coverage[i] / 7)
-                        string = '{:.3f}'.format(coverage)
-                        if string != coverage_labels[i]:
-                            self.setLabel(4 + i, string, 0.8, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
-                        coverage_labels[i] = string
-                    if position[2] < 0.9:  # low position threshold
-                        self.ko_count[i] = self.ko_count[i] + 200
-                        if self.ko_count[i] > 10000:  # 10 seconds
-                            ko = i
-                    else:
-                        self.ko_count[i] = 0
-                    counter = 10 - self.ko_count[i] // 1000
-                    string = '' if self.ko_count[i] == 0 else str(counter) if counter > 0 else 'KO'
-                    if string != ko_labels[i]:
-                        self.setLabel(6 + i, string, 0.7 - len(string) * 0.01, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
-                    ko_labels[i] = string
+            box = [0] * 3
+            ko = [False, False]
+            for i in range(2):
+                position = self.robot[i].getPosition()
+                color = 0xff0000 if i == 0 else 0x0000ff
+                if abs(position[0]) < 1 and abs(position[1]) < 1:  # inside the ring
+                    coverage = 0
+                    for j in range(2):
+                        if position[j] < self.min[i][j]:
+                            self.min[i][j] = position[j]
+                        elif position[j] > self.max[i][j]:
+                            self.max[i][j] = position[j]
+                        box[j] = self.max[i][j] - self.min[i][j]
+                        coverage += box[j] * box[j]
+                    coverage = math.sqrt(coverage)
+                    self.coverage[i] = coverage
+                    self.indicator[i].setPosition(self.coverage[i] / 7)
+                    string = '{:.3f}'.format(coverage)
+                    if string != coverage_labels[i]:
+                        self.setLabel(4 + i, string, 0.8, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
+                    coverage_labels[i] = string
+                if position[2] < 0.9:  # low position threshold
+                    self.ko_count[i] = self.ko_count[i] + time_step
+                else:
+                    self.ko_count[i] = 0
+                counter = 10 - self.ko_count[i] // 1000
+                string = '' if self.ko_count[i] == 0 else str(counter) if counter > 0 else 'KO'
+                if string != ko_labels[i]:
+                    self.setLabel(6 + i, string, 0.7 - len(string) * 0.01, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
+                ko_labels[i] = string
 
-            if self.step(time_step) == -1 or time > game_duration or ko != -1:
+            if self.step(time_step) == -1 or time > game_duration or self.ko_count[0] > 10000 or self.ko_count[1] > 10000:
                 break
             time += time_step
-        if ko == 0:
+        if self.ko_count[0] > 10000 and self.ko_count[0] > self_ko_count[1]:
             print('Red is KO. Blue wins!')
             performance = 0
-        elif ko == 1:
+        elif self.ko_count[1] > 10000:
             print('Blue is KO. Red wins!')
             performance = 1
-        # in case of coverage equality, blue wins
         elif self.coverage[0] > self.coverage[1]:
             print('Red wins coverage: %s > %s' % (self.coverage[0], self.coverage[1]))
             performance = 1
-        else:
+        else:  # in case of coverage equality, blue wins
             print('Blue wins coverage: %s >= %s' % (self.coverage[1], self.coverage[0]))
             performance = 0
         self.setLabel(7 - performance, 'WIN', 0.673, 0.051 - 0.048 * performance,
