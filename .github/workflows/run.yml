@@ -1,0 +1,76 @@
+# run the evaluation of a robot controller and store the result in the participants.json file
+
+name: Run Evaluation
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+
+jobs:
+  evaluation:
+    name: Evaluation Requested by a Participant
+    runs-on: self-hosted
+    # runs-on: ubuntu-20.04
+    steps:
+      - name: Is repo link actually a repo?
+        id: repo_check
+        env:
+          GH_TOKEN: ${{ secrets.REPO_TOKEN }}
+        run: |
+          gh api --silent -H "Accept: application/vnd.github+json" /repos/${{ github.event.client_payload.repository }}
+        continue-on-error: true
+      - name: If repo not visible, is there a collaboration invite?
+        if: steps.repo_check.outcome == 'failure'
+        id: invites_check
+        env:
+          GH_TOKEN: ${{ secrets.REPO_TOKEN }}
+        run: |
+          invite_id=$( \
+            gh api -H "Accept: application/vnd.github+json" \
+              /user/repository_invitations | jq '.[] | select(.repository.full_name=="${{ github.event.client_payload.repository }}") | .id' \
+          )
+          echo $invite_id
+          gh api --silent --method PATCH -H "Accept: application/vnd.github+json" /user/repository_invitations/$invite_id
+      - name: Get Participant Repository ID
+        env:
+          GH_TOKEN: ${{ secrets.REPO_TOKEN }}
+        run: |
+          gh api -H "Accept: application/vnd.github+json" /repos/${{ github.event.client_payload.repository }} > repo.json
+          repo_id=$( jq '.id' repo.json )
+          repo_private=$( jq '.private' repo.json )
+          rm repo.json
+          log_url=$( gh api -H "Accept: application/vnd.github+json" /repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq -r '.jobs[0].html_url')
+          echo "participant repository: https://github.com/${{ github.event.client_payload.repository }}"
+          echo "LOG_URL=$log_url" >> $GITHUB_ENV
+          echo "PARTICIPANT_REPO_ID=$repo_id" >> $GITHUB_ENV
+          echo "PARTICIPANT_REPO_PRIVATE=$repo_private" >> $GITHUB_ENV
+          echo "PARTICIPANT_REPO_ID=$repo_id"
+          echo "PARTICIPANT_REPO_PRIVATE=$repo_private"
+          echo "LOG_URL=$log_url"
+      - name: Checkout the Organizer Repository
+        uses: actions/checkout@v3
+        with:
+          ref: competition
+      - name: Record Animation and Update Performance
+        id: webots_test
+        uses: cyberbotics/competition-record-action@main
+        env:
+          INPUT_INDIVIDUAL_EVALUATION: ${{ format('{0}:{1}:{2}', env.PARTICIPANT_REPO_ID, github.event.client_payload.repository, env.PARTICIPANT_REPO_PRIVATE) }}
+          INPUT_REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+          INPUT_ALLOW_PUSH: True
+          LOG_URL: ${{ env.LOG_URL }}
+      - name: Feedback on Failure
+        if: failure() || cancelled()
+        uses: actions-ecosystem/action-create-issue@v1.0.0
+        with:
+          repo: ${{ github.event.client_payload.repository }}
+          github_token: ${{ secrets.REPO_TOKEN }}
+          title: Failure
+          body: |
+            There was a problem with your controller program.
+            Look at the [action logs](${{ env.LOG_URL }}) for more details.
+          labels: bug
+      - name: Free Queue and Possibly Trigger New Workflow
+        if: always()
+        run: |
+          curl -s -X POST -F 'organizer=${{ github.repository }}' -F'participant=${{ github.event.client_payload.repository }}' -F'organizer_repo_token=${{ github.token }}' https://webots.cloud/run_competition.php

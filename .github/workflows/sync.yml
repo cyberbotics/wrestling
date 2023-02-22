@@ -1,0 +1,32 @@
+name: Merge main into competition
+on:
+  push:
+    branches:
+      - main
+jobs:
+  merge-main-into-competition:
+    if: github.repository == 'cyberbotics/wrestling'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set git config
+      run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Github Actions"
+    - name: Merge main into competition
+      run: |
+          git fetch --unshallow
+          git checkout competition
+          git pull
+          git merge --no-ff --no-commit origin/main
+          git reset HEAD storage
+          git checkout -- storage
+          git reset HEAD preview
+          git checkout -- preview
+          git reset HEAD participants.yml
+          git reset HEAD Dockerfile
+          git reset HEAD .github/workflows/run.yml
+          git reset HEAD webots.yml
+          rm -f .github/workflows/run.yml
+          git commit -m"Auto-merge main into competition"
+          git push
