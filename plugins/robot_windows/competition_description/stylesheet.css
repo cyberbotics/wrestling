@@ -1,0 +1,133 @@
+/* Inspired from https://codepen.io/Wendy-Ho/pen/MWWBvmd */
+body {
+  font-family: arial, sans-serif;
+  font-size: 10pt;
+}
+
+p,
+h2,
+h3,
+code {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+li {
+  padding: 5px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0px 2px;
+  background: #000;
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px 3px 0px 0px;
+  position: relative;
+  align-self: center;
+}
+
+.panel {
+  background: #fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height: 200px;
+  width: 90%;
+  border-radius: 3px;
+  padding: 20px;
+  display: none;
+  animation: fadein .8s;
+  position: absolute;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked+.tab+.panel {
+  display: block
+}
+
+.radio:checked+.tab {
+  background: #fffffff6;
+  color: #000;
+  border-top: 3px solid #000;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.wwi-image {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  width: auto;
+  height: 240px;
+  /* The camera height is 120px*/
+}

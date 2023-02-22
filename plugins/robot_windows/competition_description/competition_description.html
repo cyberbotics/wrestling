@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="https://cyberbotics.com/assets/images/webots.png">
+  </head>
+  <body>
+    <div id='infotabs' class='wrapper webotsTabs'>
+      <div>
+        <input class="radio" id="overview" name="group" type="radio" checked>
+        <label class="tab" for="overview">Overview</label>
+        <div class="panel">
+          <p>
+            <h2>ICRA 2023 Humanoid Robot Wrestling Competition</h2>
+          </p>
+          <p>
+            This competition focuses on the development of advanced humanoid robot control software for a wrestling game. 
+            It relies on a calibrated simulation model of the NAO robot, running in the Webots simulator with realistic physics, 
+            sensor and actuator simulation.
+          </p>
+          <p>
+            <b>To edit the source code:</b> click on the source code editor icon <img src='code_editor.png' alt='&lt &bt'>.
+            In the window that was just opened, click on the Explorer icon <img src='explorer.png' alt='explorer'>.
+            Under the WEBOTS-PROJECT tab, open the "participant" folder.
+            Finally, you can access the controller code in the <code>participant.py</code> file.
+          </p>
+        </div>
+        <input class="radio" id="rules" name="group" type="radio">
+        <label class="tab" for="rules">Rules</label>
+        <div class="panel">
+          <p>
+            A game lasts until one of these two conditions occurs:
+            <ul>
+              <li>
+                <b>Knock-out:</b> If the altitude (along Z axis) of the center of mass of one robot remains below a given threshold for more than 10 seconds, 
+                then the other robot is declared the winner and the game is immediately over. 
+                This may happen if a robot falls down and cannot recover quickly or if it falls off the ring.
+              </li>
+              <li>
+                <b>Time-out:</b> If no knock-out happened after 3 minutes, the robot having the greater ring coverage is declared the winner and the game is over. 
+                In the unlikely case of coverage equality, the winner is determined randomly.
+              </li>
+            </ul>
+        
+            The coverage reflects how far a robot has moved inside the ring. It is computed over the time frame of a game from its maximum and minimum positions along the X and Y axes, respectively X_max, X_min, Y_max and Y_min, using the following formula:
+            <br>
+            <code>coverage = X_max + Y_max - X_min - Y_min</code>
+          </p>
+        </div>
+        <input class="radio" id="library" name="group" type="radio">
+        <label class="tab" for="library">utils library</label>
+        <div class="panel">
+          <p>
+            We provide a <code>utils</code> library that contains useful classes to control the robot:
+            <ul>
+              <li><b>Accelerometer:</b> This class provides access to the accelerometer data with a running average to filter the values.</li>
+              <li><b>Camera:</b> This class can retrieve OpenCV compatible images from the camera and send images to the robot window.</li>
+              <li><b>CurrentMotionManager:</b> This class manages which motion file is currently playing.</li>
+              <li><b>EllipsoidGaitGenerator:</b> This class generates an ellipsoid path for the feet.</li>
+              <li><b>FallDetection:</b> This class detects if the robot has fallen down and plays the correct routine to get back up.</li>
+              <li><b>FiniteStateMachine:</b> This class implements a simple finite state machine.</li>
+              <li><b>GaitManager:</b> This high level class calls EllipsoidGaitGenerator and Kinematics together to make the robot walk. It has the function command_to_motors(desired_radius, heading_angle) to easily control the robot.</li>
+              <li><b>ImageProcessing:</b> This class provides access to image processing functions. It has the function locate_opponent(img) which is a crude example of opponent localisation.</li>
+              <li><b>Kinematics:</b> This class provides access to kinematics functions, notably the inverse kinematics computation for the legs.</li>
+              <li><b>MotionLibrary:</b> This class load all the motion files inside the motions folder and provides an easy way of playing them.</li>
+              <li><b>PoseEstimator:</b> This class estimates the robot pose with a range of different algorithms provided by the ahrs Python module.</li>
+              <li><b>RunningAverage:</b> This class provides a running average for a desired history length which can be used for vectors.</li>
+            </ul>
+          </p>
+        </div>
+        <input class="radio" id="image-feed" name="group" type="radio">
+        <label class="tab" for="image-feed">Image feed</label>
+        <div class="panel">
+          <p>
+            <h2>Image feed from the Camera module</h2>
+          </p>
+          <img class="wwi-image" id='robot-camera' alt="No image received.">
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <span class="text"></span>
+      </div>
+    </div>
+    <script type="module" src="competition_description.js"></script>
+    <script>
+      let height;
+      function adaptPositionOfText() {
+        let tabs = document.getElementsByClassName('tab')
+        if(!tabs.length > 0)
+          return
+        let newHeight = tabs[tabs.length - 1].getBoundingClientRect().top + tabs[tabs.length - 1].getBoundingClientRect().height;
+        if(newHeight === height)
+          return;
+        height = newHeight;
+        let panels = document.getElementsByClassName('panel');
+        Array.from(panels).forEach((panel) => {
+          panel.style.top = height + 'px';
+        });
+      }
+      window.addEventListener('resize', adaptPositionOfText);
+      adaptPositionOfText();
+    </script>
+  </body>
+</html>
