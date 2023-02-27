@@ -93,7 +93,8 @@ class Referee (Supervisor):
                     if string != coverage_labels[i]:
                         self.setLabel(4 + i, string, 0.8, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
                     coverage_labels[i] = string
-                if position[2] < 0.9:  # low position threshold
+                # low position threshold (0.9) or exploded robot (any coordinate above 1.5)
+                if position[2] < 0.9 or position[2] > 1.5 or abs(position[0]) > 1.5 or abs(position[1]) > 1.5:
                     self.ko_count[i] = self.ko_count[i] + time_step
                 else:
                     self.ko_count[i] = 0
