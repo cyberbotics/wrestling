@@ -21,7 +21,7 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 <span id="information">
 
 - Difficulty: Master or PhD
-- Robot: NAO
+- Robot: [NAO](https://webots.cloud/run?version=R2023b&url=https://github.com/cyberbotics/webots/blob/develop/projects/robots/softbank/nao/protos/Nao.proto)
 - Programming Language: any
 - Commitment: a few weeks
 - Prize: [1 Ether](https://www.google.com/search?q=ethereum+price)
