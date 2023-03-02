@@ -54,11 +54,13 @@ jobs:
       - name: Record Animation and Update Performance
         id: webots_test
         uses: cyberbotics/competition-record-action@main
-        env:
-          INPUT_INDIVIDUAL_EVALUATION: ${{ format('{0}:{1}:{2}', env.PARTICIPANT_REPO_ID, github.event.client_payload.repository, env.PARTICIPANT_REPO_PRIVATE) }}
-          INPUT_REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
-          INPUT_ALLOW_PUSH: True
-          LOG_URL: ${{ env.LOG_URL }}
+        with:
+          participant_repo_id: ${{ env.PARTICIPANT_REPO_ID }}
+          participant_repo_name: ${{github.event.client_payload.repository}}
+          participant_repo_private: ${{env.PARTICIPANT_REPO_PRIVATE}}
+          log_url: ${{ env.LOG_URL }}
+          repo_token: ${{ secrets.REPO_TOKEN }}
+          upload_performance: true
       - name: Feedback on Failure
         if: failure() || cancelled()
         uses: actions-ecosystem/action-create-issue@v1.0.0
