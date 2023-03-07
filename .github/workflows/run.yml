@@ -49,8 +49,6 @@ jobs:
           echo "LOG_URL=$log_url"
       - name: Checkout the Organizer Repository
         uses: actions/checkout@v3
-        with:
-          ref: competition
       - name: Record Animation and Update Performance
         id: webots_test
         uses: cyberbotics/competition-record-action@main
