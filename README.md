@@ -1,6 +1,6 @@
 <span id="title">
 
-# [ICRA 2023 Humanoid Robot Wrestling Competition][1]
+# ICRA 2023 Humanoid Robot Wrestling Competition
 
 </span>
 
