@@ -115,7 +115,7 @@ A series of simple examples are provided using different programming languages o
 | C      | [Alice](https://github.com/cyberbotics/wrestling-alice-c "Alice plays a simple motion file.")    |
 | C++    | [Alice](https://github.com/cyberbotics/wrestling-alice-cpp "Alice plays a simple motion file.")  |
 | Java   | [Alice](https://github.com/cyberbotics/wrestling-alice-java "Alice plays a simple motion file.") |
-| ROS    | [Alice](https://github.com/cyberbotics/wrestling-alice-ros-2 "Alice sends position commands to some motor.")  |
+| ROS    | [Alice](https://github.com/cyberbotics/wrestling-alice-ros-2 "Alice plays a simple motion file."), [Bob](https://github.com/cyberbotics/wrestling-bob-ros-2 "Bob sends position commands to some motors and plays a motion file.")  |
 | Rust   | [Ferris](https://github.com/katharostech/icra-2023-robot-wrestling-rust-template "Ferris sends position commands to some motor.") |
 
 ### Recommendation to Competitors
