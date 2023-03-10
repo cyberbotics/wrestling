@@ -51,7 +51,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Record Animation and Update Performance
         id: webots_test
-        uses: cyberbotics/competition-record-action@main
+        uses: cyberbotics/competition-record-action@v1
         with:
           participant_repo_id: ${{ env.PARTICIPANT_REPO_ID }}
           participant_repo_name: ${{github.event.client_payload.repository}}
