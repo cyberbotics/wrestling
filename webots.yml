@@ -6,4 +6,6 @@ world:
   metric: ranking
   qualification: 32
   higher-is-better: false
+  cpus: 3
+  memory: 6g
 dockerCompose: theia:webots-project/controllers/
