@@ -743,7 +743,7 @@ PROTO Nao [
           0.25 0.25 0, 2.55 2.55 0
         ]
         type "sonar"
-        numberOfRays 6
+        numberOfRays 18
         aperture 1.04
       }
       DEF US3 Transform {
@@ -764,7 +764,7 @@ PROTO Nao [
           0.25 0.25 0, 2.55 2.55 0
         ]
         type "sonar"
-        numberOfRays 6
+        numberOfRays 18
         aperture 1.04
       }
       DEF HeadYaw Hinge2Joint {
