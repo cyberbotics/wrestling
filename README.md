@@ -41,6 +41,8 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 
 The finals will take place during the [ICRA 2023](https://www.icra2023.org) conference in London and will be broadcasted online in real time.
 Remote participation will be possible.
+On May 23rd, between 2:00pm and 4:00pm (BST), we will checkout the current version of the robot controller for each participant ranked between 1 and 32.
+We will use exclusively this version for running all the final games from the 1/16 finals until the final.
 The 32 best ranked participants will receive an official certificate mentionning the team name and all the team members, as described respectively in the name and description fields of their [participant.json](controllers/participant/participant.json) file.
 
 ## Prize
