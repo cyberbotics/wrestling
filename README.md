@@ -55,7 +55,9 @@ Participation is free of charge, including the finals.
 Anyone can participate: there is absolutely no restriction on the quality and number of team members.
 A team may perfectly have only one single member.
 However, an individual cannot be a member of several teams in the [leaderboard][1].
-Any team suspected to break this rule will be removed.
+Also, sharing code privately with another team is not allowed.
+But, sharing code publicly is allowed as long as it is immediately announced on [this GitHub Discussions](https://github.com/cyberbotics/wrestling/discussions/).
+Any team suspected to break any of the rules will be removed.
 
 ## Get Started Now
 
