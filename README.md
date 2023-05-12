@@ -52,7 +52,7 @@ We will use exclusively this version for running all the final games from the 1/
 
 ### Finals Games
 
-All the finals games will be played in sets, in a best-of-three format, which means that players need to win 2 sets to win the game (like in most tennis tournaments). Therefore a finals game will have between two and three sets.
+All the finals games will be played in sets, in a best-of-three format, which means that players need to win 2 sets to win the game (like in most tennis tournaments). Therefore a finals game will have between two and three sets and the final score will be either 2-0 or 2-1.
 
 Here is the [result](result.md) page that will reflect in real-time the finals games, so that online competitors can follow the finals remotely.
 
