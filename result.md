@@ -39,10 +39,10 @@ June 1st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 
 | Game | Red Player | Blue Player | Set 1 | Set 2 | Set 3 | Score  | Winner |
 |------|------------|-------------|-------|-------|-------|--------|--------|
-| 1    | *#B1*      | *#B8*       |        | *#C1*  |
-| 2    | *#B2*      | *#B7*       |        | *#C2*  |
-| 3    | *#B3*      | *#B6*       |        | *#C3*  |
-| 4    | *#B4*      | *#B5*       |        | *#C4*  |
+| 1    | *#B1*      | *#B8*       |       |       |       |        | *#C1*  |
+| 2    | *#B2*      | *#B7*       |       |       |       |        | *#C2*  |
+| 3    | *#B3*      | *#B6*       |       |       |       |        | *#C3*  |
+| 4    | *#B4*      | *#B5*       |       |       |       |        | *#C4*  |
 
 # Semifinals, Third Place Game and Final
 June 2st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-06-01)
