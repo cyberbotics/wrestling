@@ -47,14 +47,20 @@ June 1st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 # Semifinals, Third Place Game and Final
 June 2st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-06-01)
 
+## Semifinals
+
 | Game | Red Player | Blue Player | Score  | Winner | Looser |
 |------|------------|-------------|--------|--------|--------|
 | 1    | #C1        | #C4         |        | #D1    | #E1    |
 | 2    | #C2        | #C3         |        | #D2    | #E2    |
 
+## Third Place Game
+
 | Game | Red Player | Blue Player | Score  | Bronze Medal (3rd place) |
 |------|------------|-------------|--------|--------------------------|
 | 1    | #E1        | #E2         |        |                        ? |
+
+## Final
 
 | Game | Red Player | Blue Player | Score  | Gold Medal (1st place) | Silver Medal (2nd place) |
 |------|------------|-------------|--------|------------------------|--------------------------|
