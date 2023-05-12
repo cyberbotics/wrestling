@@ -30,14 +30,14 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 
 ## Important Dates
 
-| date                                                                  | description                                      |
-|-----------------------------------------------------------------------|--------------------------------------------------|
-| January 16th, 2023                                                    | registration opens and qualification games start |
-| May 23rd, 2023                                                        | selection of the best 32 teams                   |
-| **May 30th, 2023** - [10am BST]([https://timebie.com/std/bst.php?q=10](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-05-30)) | **1/16 finals**                                  |
-| **May 31th, 2023** - [10am BST]([https://timebie.com/std/bst.php?q=10](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-05-31)) | **1/8 finals**                                   |
-| **June 1st, 2023** - [10am BST]([https://timebie.com/std/bst.php?q=10](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-06-01)) | **1/4 finals**                                   |
-| **June 2nd, 2023** - [10am BST]([https://timebie.com/std/bst.php?q=10](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-06-02)) | **semifinals, third place game and final**       |
+| date                                                                                                   | description                                      |
+|--------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| January 16th, 2023                                                                                     | registration opens and qualification games start |
+| May 23rd, 2023                                                                                         | selection of the best 32 teams                   |
+| **May 30th, 2023** - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-05-30) | **1/16 finals**                                  |
+| **May 31th, 2023** - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-05-31) | **1/8 finals**                                   |
+| **June 1st, 2023** - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-06-01) | **1/4 finals**                                   |
+| **June 2nd, 2023** - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-06-02) | **semifinals, third place game and final**       |
 
 ### Finals
 
@@ -46,7 +46,7 @@ Remote participation will be possible.
 
 ### Selection for the Finals
 
-On May 23rd, between [2pm BST]([https://timebie.com/std/bst.php?q=14](https://dateful.com/convert/british-summer-time-bst?t=14&d=2023-05-23)) and [4pm BST](https://dateful.com/convert/british-summer-time-bst?t=16&d=2023-05-23), we will checkout the current version of the robot controller for each participant ranked between 1 and 32.
+On May 23rd, between [2pm BST](https://dateful.com/convert/british-summer-time-bst?t=14&d=2023-05-23) and [4pm BST](https://dateful.com/convert/british-summer-time-bst?t=16&d=2023-05-23), we will checkout the current version of the robot controller for each participant ranked between 1 and 32.
 Please refrain from making any commit to your main branch during this period as it may have unexpected consequences on your controller.
 We will use exclusively this version for running all the final games from the 1/16 finals until the final.
 
