@@ -30,20 +30,37 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 
 ## Important Dates
 
-| date               | description                                      |
-|--------------------|--------------------------------------------------|
-| January 16th, 2023 | registration opens and qualification games start |
-| May 23rd, 2023     | selection of the best 32 teams                   |
-| **May 30th, 2023** | **1/16 finals**                                  |
-| **May 31th, 2023** | **1/8 finals**                                   |
-| **June 1st, 2023** | **1/4 finals**                                   |
-| **June 2nd, 2023** | **semifinals, third place game and final**       |
+| date                                                                  | description                                      |
+|-----------------------------------------------------------------------|--------------------------------------------------|
+| January 16th, 2023                                                    | registration opens and qualification games start |
+| May 23rd, 2023                                                        | selection of the best 32 teams                   |
+| **May 30th, 2023** - [10am BST](https://timebie.com/std/bst.php?q=10) | **1/16 finals**                                  |
+| **May 31th, 2023** - [10am BST](https://timebie.com/std/bst.php?q=10) | **1/8 finals**                                   |
+| **June 1st, 2023** - [10am BST](https://timebie.com/std/bst.php?q=10) | **1/4 finals**                                   |
+| **June 2nd, 2023** - [10am BST](https://timebie.com/std/bst.php?q=10) | **semifinals, third place game and final**       |
+
+### Finals
 
 The finals will take place during the [ICRA 2023](https://www.icra2023.org) conference in London and will be broadcasted online in real time.
 Remote participation will be possible.
-On May 23rd, between 2:00pm and 4:00pm (BST), we will checkout the current version of the robot controller for each participant ranked between 1 and 32.
+
+### Selection for the Finals
+
+On May 23rd, between [2:00pm BST](https://timebie.com/std/bst.php?q=14) and [4:00pm BST](https://timebie.com/std/bst.php?q=16), we will checkout the current version of the robot controller for each participant ranked between 1 and 32.
+Please refrain from making any commit to your main branch during this period as it may have unexpected consequences on your controller.
 We will use exclusively this version for running all the final games from the 1/16 finals until the final.
+
+### Finals Games
+
+All the finals games will be played in sets, in a best-of-three format, which means that players need to win 2 sets to win the game (like in most tennis tournaments). Therefore a finals game will have between two and three sets.
+
+Here is the [result](result.md) page that will reflect in real-time the finals games, so that online competitors can follow the finals remotely.
+
+### Certificates
+
 The 32 best ranked participants will receive an official certificate mentionning the team name and all the team members, as described respectively in the name and description fields of their [participant.json](controllers/participant/participant.json) file.
+
+
 
 ## Prize
 
