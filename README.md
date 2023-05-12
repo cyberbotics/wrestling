@@ -59,7 +59,7 @@ The **Set** columns will contain links to 3D playbacks of the sets.
 
 ### Certificates
 
-The 32 best ranked participants will receive an official certificate mentionning the team name and all the team members, as described respectively in the name and description fields of their [participant.json](controllers/participant/participant.json) file.
+The 32 best ranked participants will receive an official ICRA certificate mentionning the team name and all the team members, as described respectively in the name and description fields of their [participant.json](controllers/participant/participant.json) file.
 
 
 
