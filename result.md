@@ -52,12 +52,12 @@ June 2st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 | 1    | #C1        | #C4         |        | #D1    | #E1    |
 | 2    | #C2        | #C3         |        | #D2    | #E2    |
 
-| Game | Red Player | Blue Player | Score  | Winner                   |
+| Game | Red Player | Blue Player | Score  | Bronze Medal (3rd place) |
 |------|------------|-------------|--------|--------------------------|
-| 1    | #E1        | #E2         |        | Bronze Medal (3rd place) |
+| 1    | #E1        | #E2         |        |                        ? |
 
-| Game | Red Player | Blue Player | Score  | Winner                 | Looser                   |
+| Game | Red Player | Blue Player | Score  | Gold Medal (1st place) | Silver Medal (2nd place) |
 |------|------------|-------------|--------|------------------------|--------------------------|
-| 1    | #D1        | #D2         |        | Gold Medal (1st place) | Silver Medal (2nd place) |
+| 1    | #D1        | #D2         |        |                      ? |                        ? |
 
 
