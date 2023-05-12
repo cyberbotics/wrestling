@@ -46,7 +46,7 @@ Remote participation will be possible.
 
 ### Selection for the Finals
 
-On May 23rd, between [2:00pm BST](https://timebie.com/std/bst.php?q=14) and [4:00pm BST](https://timebie.com/std/bst.php?q=16), we will checkout the current version of the robot controller for each participant ranked between 1 and 32.
+On May 23rd, between [2pm BST](https://timebie.com/std/bst.php?q=14) and [4pm BST](https://timebie.com/std/bst.php?q=16), we will checkout the current version of the robot controller for each participant ranked between 1 and 32.
 Please refrain from making any commit to your main branch during this period as it may have unexpected consequences on your controller.
 We will use exclusively this version for running all the final games from the 1/16 finals until the final.
 
