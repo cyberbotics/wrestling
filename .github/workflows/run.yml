@@ -10,6 +10,7 @@ jobs:
   evaluation:
     name: Evaluation Requested by a Participant
     runs-on: self-hosted
+    timeout-minutes: 60
     # runs-on: ubuntu-20.04
     steps:
       - name: Is repo link actually a repo?
