@@ -1,24 +1,24 @@
 # 1/16 Finals
 May 30th, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-05-30)
 
-| Game | Red Player | Blue Player | Set 1 | Set 2 | Set 3 | Score  | Winner |
-|------|------------|-------------|-------|-------|-------|--------|--------|
-| 1    | *#1*       | *#32*       |       |       |       |        | *#A1*  |
-| 2    | *#2*       | *#31*       |       |       |       |        | *#A2*  |
-| 3    | *#3*       | *#30*       |       |       |       |        | *#A3*  |
-| 4    | *#4*       | *#29*       |       |       |       |        | *#A4*  |
-| 5    | *#5*       | *#28*       |       |       |       |        | *#A5*  |
-| 6    | *#6*       | *#27*       |       |       |       |        | *#A6*  |
-| 7    | *#7*       | *#26*       |       |       |       |        | *#A7*  |
-| 8    | *#8*       | *#25*       |       |       |       |        | *#A8*  |
-| 9    | *#9*       | *#24*       |       |       |       |        | *#A9*  |
-| 10   | *#10*      | *#23*       |       |       |       |        | *#A10* |
-| 11   | *#11*      | *#22*       |       |       |       |        | *#A11* |
-| 12   | *#12*      | *#21*       |       |       |       |        | *#A12* |
-| 13   | *#13*      | *#20*       |       |       |       |        | *#A13* |
-| 14   | *#14*      | *#19*       |       |       |       |        | *#A14* |
-| 15   | *#15*      | *#18*       |       |       |       |        | *#A15* |
-| 16   | *#16*      | *#17*       |       |       |       |        | *#A16* |
+| Game | Red Player          | Blue Player                            | Set 1 | Set 2 | Set 3 | Score  | Winner |
+|------|---------------------|----------------------------------------|-------|-------|-------|--------|--------|
+| 1    | MechaCheetahs       | manuxd                                 |       |       |       |        | *#A1*  |
+| 2    | Chrake Peith        | Amir Hossein Nourian                   |       |       |       |        | *#A2*  |
+| 3    | Andrej Orsula       | GCM                                    |       |       |       |        | *#A3*  |
+| 4    | Team Humanoid, IITK | BVBDort                                |       |       |       |        | *#A4*  |
+| 5    | HexHowells          | Kalash Jain                            |       |       |       |        | *#A5*  |
+| 6    | Yeti                | IRT-Suplexupéry                        |       |       |       |        | *#A6*  |
+| 7    | KAIZEN              | pemile                                 |       |       |       |        | *#A7*  |
+| 8    | Titan               | Aditya Kameswara Rao Nandula (IIT KGP) |       |       |       |        | *#A8*  |
+| 9    | LHL-bot             | Thomas Reinhardt                       |       |       |       |        | *#A9*  |
+| 10   | xrobot              | Sagwl                                  |       |       |       |        | *#A10* |
+| 11   | El Santo Bot        | RamCharanThota                         |       |       |       |        | *#A11* |
+| 12   | Syahmi Ahmad        | LDO_unlimited_power                    |       |       |       |        | *#A12* |
+| 13   | Wrestler Zhang      | Dumul                                  |       |       |       |        | *#A13* |
+| 14   | Toddler             | Team Saitama                           |       |       |       |        | *#A14* |
+| 15   | Milo_of_Croton      | Javier Melero Deza                     |       |       |       |        | *#A15* |
+| 16   | SugarSkull          | Dangal                                 |       |       |       |        | *#A16* |
 
 # 1/8 Finals
 May 31st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-05-31)
