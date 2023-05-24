@@ -3,7 +3,7 @@ May 30th, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 
 | Game | Red Player          | Blue Player                            | Game 1 | Game 2 | Game 3 | Score | Winner |
 |------|---------------------|----------------------------------------|--------|--------|--------|-------|--------|
-| 1    | <p align="center"><img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran"></p> MechaCheetahs       | <img src="https://webots.cloud/images/flags/pe.svg" width="32px" title="Peru"> manuxd                                 |        |        |        |       | *#A1*  |
+| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran"> MechaCheetahs       | <img src="https://webots.cloud/images/flags/pe.svg" width="32px" title="Peru"> manuxd                                 |        |        |        |       | *#A1*  |
 | 2    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK"> Chrake Peith        | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran"> Amir Hossein Nourian                   |        |        |        |       | *#A2*  |
 | 3    | <img src="https://webots.cloud/images/flags/lu.svg" width="32px" title="Luxembourg"> Andrej Orsula       | <img src="https://webots.cloud/images/flags/ec.svg" width="32px" title="Ecuador"> GCM                                    |        |        |        |       | *#A3*  |
 | 4    | <img src="https://webots.cloud/images/flags/in.svg" width="32px" title="India"> Team Humanoid, IITK | <img src="https://webots.cloud/images/flags/de.svg" width="32px" title="Germany"> BVBDort                                |        |        |        |       | *#A4*  |
