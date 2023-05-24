@@ -3,22 +3,22 @@ May 30th, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 
 | Game | Red Player          | Blue Player                            | Game 1 | Game 2 | Game 3 | Score | Winner |
 |------|---------------------|----------------------------------------|--------|--------|--------|-------|--------|
-| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" alt="Iran"> MechaCheetahs       | <img src="https://webots.cloud/images/flags/pe.svg" width="32px" alt="Peru"> manuxd                                 |        |        |        |       | *#A1*  |
-| 2    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" alt="UK"> Chrake Peith        | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" alt="Iran"> Amir Hossein Nourian                   |        |        |        |       | *#A2*  |
-| 3    | <img src="https://webots.cloud/images/flags/lu.svg" width="32px" alt="Luxembourg"> Andrej Orsula       | <img src="https://webots.cloud/images/flags/ec.svg" width="32px" alt="Ecuador"> GCM                                    |        |        |        |       | *#A3*  |
-| 4    | <img src="https://webots.cloud/images/flags/in.svg" width="32px" alt="India"> Team Humanoid, IITK | <img src="https://webots.cloud/images/flags/de.svg" width="32px" alt="Germany"> BVBDort                                |        |        |        |       | *#A4*  |
-| 5    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" alt="UK"> HexHowells          | <img src="https://webots.cloud/images/flags/in.svg" width="32px" alt="India"> Kalash Jain                            |        |        |        |       | *#A5*  |
-| 6    | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" alt="Korea"> Yeti                | <img src="https://webots.cloud/images/flags/fr.svg" width="32px" alt="France"> IRT-Suplexupéry                        |        |        |        |       | *#A6*  |
-| 7    | KAIZEN              | pemile                                 |        |        |        |       | *#A7*  |
-| 8    | Titan               | Aditya Kameswara Rao Nandula (IIT KGP) |        |        |        |       | *#A8*  |
-| 9    | LHL-bot             | Thomas Reinhardt                       |        |        |        |       | *#A9*  |
-| 10   | xrobot              | Sagwl                                  |        |        |        |       | *#A10* |
-| 11   | El Santo Bot        | RamCharanThota                         |        |        |        |       | *#A11* |
-| 12   | Syahmi Ahmad        | LDO_unlimited_power                    |        |        |        |       | *#A12* |
-| 13   | Wrestler Zhang      | Dumul                                  |        |        |        |       | *#A13* |
-| 14   | Toddler             | Team Saitama                           |        |        |        |       | *#A14* |
-| 15   | Milo_of_Croton      | Javier Melero Deza                     |        |        |        |       | *#A15* |
-| 16   | SugarSkull          | Dangal                                 |        |        |        |       | *#A16* |
+| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran"> MechaCheetahs       | <img src="https://webots.cloud/images/flags/pe.svg" width="32px" title="Peru"> manuxd                                 |        |        |        |       | *#A1*  |
+| 2    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK"> Chrake Peith        | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran"> Amir Hossein Nourian                   |        |        |        |       | *#A2*  |
+| 3    | <img src="https://webots.cloud/images/flags/lu.svg" width="32px" title="Luxembourg"> Andrej Orsula       | <img src="https://webots.cloud/images/flags/ec.svg" width="32px" title="Ecuador"> GCM                                    |        |        |        |       | *#A3*  |
+| 4    | <img src="https://webots.cloud/images/flags/in.svg" width="32px" title="India"> Team Humanoid, IITK | <img src="https://webots.cloud/images/flags/de.svg" width="32px" title="Germany"> BVBDort                                |        |        |        |       | *#A4*  |
+| 5    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK"> HexHowells          | <img src="https://webots.cloud/images/flags/in.svg" width="32px" title="India"> Kalash Jain                            |        |        |        |       | *#A5*  |
+| 6    | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea"> Yeti                | <img src="https://webots.cloud/images/flags/fr.svg" width="32px" title="France"> IRT-Suplexupéry                        |        |        |        |       | *#A6*  |
+| 7    | <img src="https://webots.cloud/images/flags/co.svg" width="32px" title="Colombia"> KAIZEN              | <img src="https://webots.cloud/images/flags/fr.svg" width="32px" title="France"> pemile                                 |        |        |        |       | *#A7*  |
+| 8    | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China"> Titan               | <img src="https://webots.cloud/images/flags/in.svg" width="32px" title="India"> Aditya Kameswara Rao Nandula (IIT KGP) |        |        |        |       | *#A8*  |
+| 9    | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China"> LHL-bot             | <img src="https://webots.cloud/images/flags/de.svg" width="32px" title="Germany"> Thomas Reinhardt                       |        |        |        |       | *#A9*  |
+| 10   | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China"> xrobot              | <img src="https://webots.cloud/images/flags/de.svg" width="32px" title="Germany"> Sagwl                                  |        |        |        |       | *#A10* |
+| 11   | El Santo Bot        | <img src="https://webots.cloud/images/flags/in.svg" width="32px" title="India"> <img src="https://webots.cloud/images/flags/in.svg" width="32px" title="India"> RamCharanThota                         |        |        |        |       | *#A11* |
+| 12   | <img src="https://webots.cloud/images/flags/my.svg" width="32px" title="Malaysia"> Syahmi Ahmad        | <img src="https://webots.cloud/images/flags/fr.svg" width="32px" title="France"> LDO_unlimited_power                    |        |        |        |       | *#A12* |
+| 13   | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China"> Wrestler Zhang      | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea"> Dumul                                  |        |        |        |       | *#A13* |
+| 14   | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China"> Toddler             | <img src="https://webots.cloud/images/flags/in.svg" width="32px" title="India"> Team Saitama                           |        |        |        |       | *#A14* |
+| 15   | <img src="https://webots.cloud/images/flags/bd.svg" width="32px" title="Bengladesh"> Milo_of_Croton      | <img src="https://webots.cloud/images/flags/es.svg" width="32px" title="Spain"> Javier Melero Deza                     |        |        |        |       | *#A15* |
+| 16   | <img src="https://webots.cloud/images/flags/us.svg" width="32px" title="USA">SugarSkull          | <img src="https://webots.cloud/images/flags/bd.svg" width="32px" title="Bengladesh"> Dangal                                 |        |        |        |       | *#A16* |
 
 # 1/8 Finals
 May 31st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-05-31)
