@@ -3,7 +3,7 @@ May 30th, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 
 | Game | Red Player          | Blue Player                            | Game 1 | Game 2 | Game 3 | Score | Winner |
 |------|---------------------|----------------------------------------|--------|--------|--------|-------|--------|
-| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" align="middle"> MechaCheetahs       | manuxd                                 |        |        |        |       | *#A1*  |
+| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" align="center"> MechaCheetahs       | manuxd                                 |        |        |        |       | *#A1*  |
 | 2    | Chrake Peith        | Amir Hossein Nourian                   |        |        |        |       | *#A2*  |
 | 3    | Andrej Orsula       | GCM                                    |        |        |        |       | *#A3*  |
 | 4    | Team Humanoid, IITK | BVBDort                                |        |        |        |       | *#A4*  |
