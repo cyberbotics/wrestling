@@ -5,10 +5,10 @@ May 30th, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 |------|---------------------|----------------------------------------|--------|--------|--------|-------|--------|
 | 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" alt="Iran"> MechaCheetahs       | <img src="https://webots.cloud/images/flags/pe.svg" width="32px" alt="Peru"> manuxd                                 |        |        |        |       | *#A1*  |
 | 2    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" alt="UK"> Chrake Peith        | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" alt="Iran"> Amir Hossein Nourian                   |        |        |        |       | *#A2*  |
-| 3    | Andrej Orsula       | GCM                                    |        |        |        |       | *#A3*  |
-| 4    | Team Humanoid, IITK | BVBDort                                |        |        |        |       | *#A4*  |
-| 5    | HexHowells          | Kalash Jain                            |        |        |        |       | *#A5*  |
-| 6    | Yeti                | IRT-Suplexupéry                        |        |        |        |       | *#A6*  |
+| 3    | <img src="https://webots.cloud/images/flags/lu.svg" width="32px" alt="Luxembourg"> Andrej Orsula       | <img src="https://webots.cloud/images/flags/ec.svg" width="32px" alt="Ecuador"> GCM                                    |        |        |        |       | *#A3*  |
+| 4    | <img src="https://webots.cloud/images/flags/in.svg" width="32px" alt="India"> Team Humanoid, IITK | <img src="https://webots.cloud/images/flags/de.svg" width="32px" alt="Germany"> BVBDort                                |        |        |        |       | *#A4*  |
+| 5    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" alt="UK"> HexHowells          | <img src="https://webots.cloud/images/flags/in.svg" width="32px" alt="India"> Kalash Jain                            |        |        |        |       | *#A5*  |
+| 6    | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" alt="Korea"> Yeti                | <img src="https://webots.cloud/images/flags/fr.svg" width="32px" alt="France"> IRT-Suplexupéry                        |        |        |        |       | *#A6*  |
 | 7    | KAIZEN              | pemile                                 |        |        |        |       | *#A7*  |
 | 8    | Titan               | Aditya Kameswara Rao Nandula (IIT KGP) |        |        |        |       | *#A8*  |
 | 9    | LHL-bot             | Thomas Reinhardt                       |        |        |        |       | *#A9*  |
