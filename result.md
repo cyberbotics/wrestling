@@ -25,7 +25,7 @@ May 31st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Winner |
 |------|------------|-------------|--------|--------|--------|-------|--------|
-| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs | <img src="https://webots.cloud/images/flags/us.svg" width="32px" title="USA" align="top"> &nbsp; SugarSkull |        |        |        |       | *#B1*  |
+| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs | <img src="https://webots.cloud/images/flags/us.svg" width="32px" title="USA" align="top"> &nbsp; SugarSkull | [B1-1-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=B1-1-W) | [B1-2-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=B1-2-W) | | 2 - 0 | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs |
 | 2    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; Chrake Peith | <img src="https://webots.cloud/images/flags/bd.svg" width="32px" title="Bengladesh" align="top"> &nbsp; Milo_of_Croton |        |        |        |       | *#B2*  |
 | 3    | <img src="https://webots.cloud/images/flags/lu.svg" width="32px" title="Luxembourg" align="top"> &nbsp; Andrej Orsula | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China" align="top"> &nbsp; Toddler |        |        |        |       | *#B3*  |
 | 4    | <img src="https://webots.cloud/images/flags/de.svg" width="32px" title="Germany" align="top"> &nbsp; BVBDort | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China" align="top"> &nbsp; Wrestler Zhang |        |        |        |       | *#B4*  |
@@ -39,7 +39,7 @@ June 1st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Winner |
 |------|------------|-------------|--------|--------|--------|-------|--------|
-| 1    | *#B1*      | *#B8*       |        |        |        |       | *#C1*  |
+| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs | *#B8*       |        |        |        |       | *#C1*  |
 | 2    | *#B2*      | *#B7*       |        |        |        |       | *#C2*  |
 | 3    | *#B3*      | *#B6*       |        |        |        |       | *#C3*  |
 | 4    | *#B4*      | *#B5*       |        |        |        |       | *#C4*  |
