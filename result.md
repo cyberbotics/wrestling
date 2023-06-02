@@ -51,19 +51,19 @@ June 2st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Winner | Looser |
 |------|------------|-------------|--------|--------|--------|-------|--------|--------|
-| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells |        |        |        |       | *#D1*  | *#E1*  |
-| 2    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; Chrake Peith | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti |        |        |        |       | *#D2*  | *#E2*  |
+| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells | [D1-1-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D1-1-L) | [D1-2-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D1-1-W) | [D1-3-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D1-3-L) | 1 - 2 | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells  | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs |
+| 2    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; Chrake Peith | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti | [D2-1-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D2-1-W) | [D2-2-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D2-2-W) | | 2 - 0 | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; Chrake Peith | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti |
 
 ## Third Place Game
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Bronze Medal (3rd place) |
 |------|------------|-------------|--------|--------|--------|-------|--------------------------|
-| 1    | *#E1*      | *#E2*       |        |        |        |       |                        ? |
+| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti | [E1-1-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=E1-1-L) | [E1-2-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=E1-2-L) | | 0 - 2 | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti |
 
 ## Final
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Gold Medal (1st place) | Silver Medal (2nd place) |
 |------|------------|-------------|--------|--------|--------|-------|------------------------|--------------------------|
-| 1    | *#D1*      | *#D2*       |        |        |        |       |                      ? |                        ? |
+| 1    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; Chrake Peith | [F1-1-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=F1-1-L) | [F1-2-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=F1-2-L)| | 0 - 2 | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; Chrake Peith | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells |
 
 
