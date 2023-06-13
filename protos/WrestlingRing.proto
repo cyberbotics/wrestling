@@ -7,7 +7,7 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/WornBurlap.proto"
 
 PROTO WrestlingRing [
-  field SFVec3f translation 0 0 0.25
+  field SFVec3f translation 0 0 0.025
   field SFRotation rotation 0 0 1 0
   field SFString name "wrestling ring"
 ]
@@ -24,10 +24,10 @@ PROTO WrestlingRing [
         geometry IndexedFaceSet {
           coord Coordinate {
             point [
-              0.96 -0.96 0.251
-              -0.96 -0.96 0.251
-              -0.96 0.96 0.251
-              0.96 0.96 0.251
+              0.96 -0.96 0.025
+              -0.96 -0.96 0.025
+              -0.96 0.96 0.025
+              0.96 0.96 0.025
             ]
           }
           texCoord TextureCoordinate {
@@ -53,18 +53,18 @@ PROTO WrestlingRing [
         geometry IndexedFaceSet {
           coord Coordinate {
             point [
-              0.96 -0.96 0.251
-              -0.96 -0.96 0.251
-              -0.96 0.96 0.251
-              0.96 0.96 0.251
-              1 -1 0.251
-              -1 -1 0.251
-              -1 1 0.251
-              1 1 0.251
-              1 -1 0.241
-              -1 -1 0.241
-              -1 1 0.241
-              1 1 0.241
+              0.96 -0.96 0.025
+              -0.96 -0.96 0.025
+              -0.96 0.96 0.025
+              0.96 0.96 0.025
+              1 -1 0.025
+              -1 -1 0.025
+              -1 1 0.025
+              1 1 0.025
+              1 -1 0.015
+              -1 -1 0.015
+              -1 1 0.015
+              1 1 0.015
             ]
           }
           coordIndex [
@@ -86,14 +86,14 @@ PROTO WrestlingRing [
         geometry IndexedFaceSet {
           coord Coordinate {
             point [
-              1 -1 -0.25
-              -1 -1 -0.25
-              -1 1 -0.25
-              1 1 -0.25
-              1 -1 0.241
-              -1 -1 0.241
-              -1 1 0.241
-              1 1 0.241
+              1 -1 -0.025
+              -1 -1 -0.025
+              -1 1 -0.025
+              1 1 -0.025
+              1 -1 0.015
+              -1 -1 0.015
+              -1 1 0.015
+              1 1 0.015
             ]
           }
           texCoord TextureCoordinate {
@@ -127,7 +127,7 @@ PROTO WrestlingRing [
       }
     ]
     boundingObject Box {
-      size 2 2 0.5
+      size 2 2 0.05
     }
   }
 }
