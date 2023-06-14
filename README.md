@@ -1,6 +1,6 @@
 <span id="title">
 
-# ICRA 2023 Humanoid Robot Wrestling Competition
+# IROS 2023 Wrestling Competition
 
 </span>
 
@@ -30,22 +30,46 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 
 ## Important Dates
 
-| date               | description                                      |
-|--------------------|--------------------------------------------------|
-| January 16th, 2023 | registration opens and qualification games start |
-| May 23rd, 2023     | selection of the best 32 teams                   |
-| **May 30th, 2023** | **1/16 finals**                                  |
-| **May 31th, 2023** | **1/8 finals**                                   |
-| **June 1st, 2023** | **1/4 finals**                                   |
-| **June 2nd, 2023** | **semifinals, third place game and final**       |
+| date                                                                                                             | description                                      |
+|------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| June 23rd, 2023                                                                                                  | registration opens and qualification games start |
+| September 19th, 2023                                                                                             | selection of the best 32 teams                   |
+| September 26th, 2023                                                                                             | code freeze for the finals                       |
+| **October 2nd, 2023** - [4pm EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=4pm&d=2023-10-02)      | **1/16 finals**                                  |
+| **October 3rd, 2023** - [11am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=11am&d=2023-10-03)    | **1/8 finals**                                   |
+| **October 3rd, 2023** - [4:30pm EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=430pm&d=2023-10-03) | **1/4 finals**                                   |
+| **October 4th, 2023** - [11am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=11am&d=2023-10-04)    | **semifinals, third place game and final**       |
 
-The finals will take place during the [ICRA 2023](https://www.icra2023.org) conference in London and will be broadcasted online in real time.
+### Finals
+
+The finals will take place during the [IROS 2023](https://ieee-iros.org) conference in Detroit (USA) and will be broadcasted online in real time.
 Remote participation will be possible.
-The 32 best ranked participants will receive an official certificate mentionning the team name and all the team members, as described respectively in the name and description fields of their [participant.json](controllers/participant/participant.json) file.
+
+### Selection for the Finals
+
+On September 19th, at [9am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=9am&d=2023-09-19), we will select the best 32 teams from the leaderboard that will participate to the finals.
+These teams will have exactly one week of time to further improve their robot controller before their code is frozen and checked out for the finals.
+Meanwhile, other teams will not be allowed to run games any more.
+
+On September 26th, between [9am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=9am&d=2023-09-26) and [11am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=11am&d=2023-09-26), we will checkout the current version of the robot controller for each qualified participant.
+Please refrain from making any commit to your main branch during this period as it may have unexpected consequences on your controller.
+We will use exclusively this version for running all the final games from the 1/16 finals until the final.
+
+### Finals Games
+
+All the finals games will be played in sets, in a best-of-five format, which means that players need to win 3 sets to win the game (like in Grand Slams ATP tennis tournaments). Therefore a finals game will have between three and five sets and the final score will be either 3-0, 3-1 or 3-2.
+
+Here is the [result](result.md) page that will reflect in real-time the finals games, so that online competitors can follow the finals remotely.
+The **Game** columns will contain links to 3D playbacks of the sets.
+
+### Certificates
+
+The 32 best ranked participants will receive an official certificate mentionning the robot controller name, team members and organization, as described respectively in the name, team and organization fields of their [participant.json](controllers/participant/participant.json) file.
 
 ## Prize
 
-The winning team will receive [one Ether](https://www.google.com/search?q=ethereum+price) crypto-currency (priced around USD 1'674 on February 8th, 2023).
+The winning team will receive [one Ether](https://www.google.com/search?q=ethereum+price) crypto-currency (priced around USD 1'742 on June 14th, 2023) and an official IROS certificate.
+The second and third place will receive an official IROS certificate.
 
 ## Participation Conditions
 
@@ -53,7 +77,9 @@ Participation is free of charge, including the finals.
 Anyone can participate: there is absolutely no restriction on the quality and number of team members.
 A team may perfectly have only one single member.
 However, an individual cannot be a member of several teams in the [leaderboard][1].
-Any team suspected to break this rule will be removed.
+Also, sharing code privately with another team is not allowed.
+But, sharing code publicly is allowed as long as it is immediately announced on [this GitHub Discussions](https://github.com/cyberbotics/wrestling/discussions/).
+Any team suspected to break any of these rules will be removed.
 
 ## Get Started Now
 
@@ -115,7 +141,7 @@ A series of simple examples are provided using different programming languages o
 | C      | [Alice](https://github.com/cyberbotics/wrestling-alice-c "Alice plays a simple motion file.")    |
 | C++    | [Alice](https://github.com/cyberbotics/wrestling-alice-cpp "Alice plays a simple motion file.")  |
 | Java   | [Alice](https://github.com/cyberbotics/wrestling-alice-java "Alice plays a simple motion file.") |
-| ROS    | [Alice](https://github.com/cyberbotics/wrestling-alice-ros-2 "Alice plays a simple motion file."), [Bob](https://github.com/cyberbotics/wrestling-bob-ros-2 "Bob sends position commands to some motors and plays a motion file.")  |
+| ROS 2  | [Alice](https://github.com/cyberbotics/wrestling-alice-ros-2 "Alice plays a simple motion file."), [Bob](https://github.com/cyberbotics/wrestling-bob-ros-2 "Bob sends position commands to some motors and plays a motion file.")  |
 | Rust   | [Ferris](https://github.com/katharostech/icra-2023-robot-wrestling-rust-template "Ferris sends position commands to some motor.") |
 
 ### Recommendation to Competitors
