@@ -1,5 +1,7 @@
 # IROS 2023 results
 
+The results of the previous ICRA edition are still available [here](result-icra2023.md).
+
 ## 1/16 Finals
 October 2nd, 2023 - [4pm EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=4pm&d=2023-10-02)
 
