@@ -50,6 +50,7 @@ Remote participation will be possible.
 On September 19th, at [9am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=9am&d=2023-09-19), we will select the best 32 teams from the leaderboard that will participate to the finals.
 These teams will have exactly one week of time to further improve their robot controller before their code is frozen and checked out for the finals.
 Meanwhile, other teams will not be allowed to run games any more.
+
 On September 26th, between [9am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=9am&d=2023-09-26) and [11am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=11am&d=2023-09-26), we will checkout the current version of the robot controller for each qualified participant.
 Please refrain from making any commit to your main branch during this period as it may have unexpected consequences on your controller.
 We will use exclusively this version for running all the final games from the 1/16 finals until the final.
