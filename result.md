@@ -60,12 +60,12 @@ October 4th, 2023 - [11am EDT](https://dateful.com/convert/eastern-daylight-time
 
 ### Third Place Game
 
-| Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Game 4 | Game 5 | Score | Bronze Medal (3rd place) |
-|------|------------|-------------|--------|--------|--------|--------|--------|-------|--------------------------|
-| 1    | E3         | E4          |        |        |        |        |        |       |                          |
+| Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Game 4 | Game 5 | Score | 🥉 Bronze Medal (3rd place) |
+|------|------------|-------------|--------|--------|--------|--------|--------|-------|-----------------------------|
+| 1    | E3         | E4          |        |        |        |        |        |       |                             |
 
 ### Final
 
-| Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Game 4 | Game 5 | Gold Medal (1st place) | Silver Medal (2nd place) |
-|------|------------|-------------|--------|--------|--------|--------|--------|------------------------|--------------------------|
-| 1    | E1         | E2          |        |        |        |        |        |                        |                          |
+| Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Game 4 | Game 5 | 🥇 Gold Medal (1st place) | 🥈 Silver Medal (2nd place) |
+|------|------------|-------------|--------|--------|--------|--------|--------|---------------------------|------------------------------|
+| 1    | E1         | E2          |        |        |        |        |        |                           |                              |
