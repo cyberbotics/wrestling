@@ -1,4 +1,6 @@
-# 1/16 Finals
+# ICRA 2023 results
+
+## 1/16 Finals
 May 30th, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-05-30)
 
 | Game | Red Player          | Blue Player                            | Game 1 | Game 2 | Game 3 | Score | Winner |
@@ -20,7 +22,7 @@ May 30th, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 | 15   | <img src="https://webots.cloud/images/flags/bd.svg" width="32px" title="Bengladesh" align="top"> &nbsp; Milo_of_Croton | <img src="https://webots.cloud/images/flags/es.svg" width="32px" title="Spain" align="top"> &nbsp; Javier Melero Deza | [A15-1-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=A15-1-W) | [A15-2-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=A15-2-W) | | 2 - 0 | <img src="https://webots.cloud/images/flags/bd.svg" width="32px" title="Bengladesh" align="top"> &nbsp; Milo_of_Croton |
 | 16   | <img src="https://webots.cloud/images/flags/us.svg" width="32px" title="USA" align="top"> &nbsp; SugarSkull | <img src="https://webots.cloud/images/flags/bd.svg" width="32px" title="Bengladesh" align="top"> &nbsp; Dangal | [A16-1-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=A16-1-L) | [A16-2-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=A16-2-W) | [A16-3-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=A16-3-W) | 2 - 1 | <img src="https://webots.cloud/images/flags/us.svg" width="32px" title="USA" align="top"> &nbsp; SugarSkull |
 
-# 1/8 Finals
+## 1/8 Finals
 May 31st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-05-31)
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Winner |
@@ -34,7 +36,7 @@ May 31st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 | 7    | <img src="https://webots.cloud/images/flags/fr.svg" width="32px" title="France" align="top"> &nbsp; pemile | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China" align="top"> &nbsp; xrobot | [B7-1-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=B7-1-L) | [B7-2-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=B7-2-L) | | 0 - 2 | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China" align="top"> &nbsp; xrobot |
 | 8    | <img src="https://webots.cloud/images/flags/cn.svg" width="32px" title="China" align="top"> &nbsp; Titan | <img src="https://webots.cloud/images/flags/de.svg" width="32px" title="Germany" align="top"> &nbsp; Thomas Reinhardt | [B8-1-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=B8-1-L) | [B8-2-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=B8-2-L) | | 0 - 2 | <img src="https://webots.cloud/images/flags/de.svg" width="32px" title="Germany" align="top"> &nbsp; Thomas Reinhardt |
 
-# 1/4 Finals
+## 1/4 Finals
 June 1st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-06-01)
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Winner |
@@ -44,23 +46,23 @@ June 1st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?
 | 3    | <img src="https://webots.cloud/images/flags/lu.svg" width="32px" title="Luxembourg" align="top"> &nbsp; Andrej Orsula | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti | [C3-1-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=C3-1-W) | [C3-2-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=C3-2-L) | [C3-3-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=C3-3-L) | 1 - 2 | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti |
 | 4    | <img src="https://webots.cloud/images/flags/de.svg" width="32px" title="Germany" align="top"> &nbsp; BVBDort | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells | [C4-1-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=C4-1-L) | [C4-2-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=C4-2-W) | [C4-3-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=C4-3-L) | 1 - 2 | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells |
 
-# Semifinals, Third Place Game and Final
+## Semifinals, Third Place Game and Final
 June 2st, 2023 - [10am BST](https://dateful.com/convert/british-summer-time-bst?t=10&d=2023-06-01)
 
-## Semifinals
+### Semifinals
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Winner | Looser |
 |------|------------|-------------|--------|--------|--------|-------|--------|--------|
 | 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells | [D1-1-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D1-1-L) | [D1-2-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D1-1-W) | [D1-3-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D1-3-L) | 1 - 2 | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells  | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs |
 | 2    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; Chrake Peith | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti | [D2-1-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D2-1-W) | [D2-2-W](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=D2-2-W) | | 2 - 0 | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; Chrake Peith | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti |
 
-## Third Place Game
+### Third Place Game
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Bronze Medal (3rd place) |
 |------|------------|-------------|--------|--------|--------|-------|--------------------------|
 | 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti | [E1-1-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=E1-1-L) | [E1-2-L](https://webots.cloud/run?version=R2023a&url=https://github.com/cyberbotics/wrestling/blob/main/worlds/wrestling.wbt&type=competition&context=view&id=E1-2-L) | | 0 - 2 | <img src="https://webots.cloud/images/flags/kr.svg" width="32px" title="Korea" align="top"> &nbsp; Yeti |
 
-## Final
+### Final
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Score | Gold Medal (1st place) | Silver Medal (2nd place) |
 |------|------------|-------------|--------|--------|--------|-------|------------------------|--------------------------|
