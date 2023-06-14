@@ -60,13 +60,11 @@ We will use exclusively this version for running all the final games from the 1/
 All the finals games will be played in sets, in a best-of-five format, which means that players need to win 3 sets to win the game (like in Grand Slams ATP tennis tournaments). Therefore a finals game will have between three and five sets and the final score will be either 3-0, 3-1 or 3-2.
 
 Here is the [result](result.md) page that will reflect in real-time the finals games, so that online competitors can follow the finals remotely.
-The **Set** columns will contain links to 3D playbacks of the sets.
+The **Game** columns will contain links to 3D playbacks of the sets.
 
 ### Certificates
 
 The 32 best ranked participants will receive an official certificate mentionning the robot controller name, team members and organization, as described respectively in the name, team and organization fields of their [participant.json](controllers/participant/participant.json) file.
-
-
 
 ## Prize
 
