@@ -37,10 +37,6 @@ class Referee (Supervisor):
             self.max[i] = self.robot[i].getPosition()
         self.coverage = [0] * 2
         self.ko_count = [0] * 2
-        # linear motors on the side of the ring to display the coverage visually
-        self.indicator = [0] * 2
-        self.indicator[0] = self.getDevice('red indicator')
-        self.indicator[1] = self.getDevice('blue indicator')
 
     def display_time(self, minutes, seconds):
         for j in range(3):
@@ -88,7 +84,6 @@ class Referee (Supervisor):
                         coverage += box[j] * box[j]
                     coverage = math.sqrt(coverage)
                     self.coverage[i] = coverage
-                    self.indicator[i].setPosition(self.coverage[i] / 7)
                     string = '{:.3f}'.format(coverage)
                     if string != coverage_labels[i]:
                         self.setLabel(4 + i, string, 0.8, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')

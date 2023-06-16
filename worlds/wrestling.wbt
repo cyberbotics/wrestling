@@ -1,9 +1,9 @@
-#VRML_SIM R2023a utf8
+#VRML_SIM R2023b utf8
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
 EXTERNPROTO "../protos/Nao.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/Parquetry.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/master/projects/objects/toys/protos/RubberDuck.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "../protos/WrestlingPole.proto"
@@ -20,8 +20,8 @@ WorldInfo {
   basicTimeStep 20
 }
 Viewpoint {
-  orientation 0.1975910159925055 -0.3494273645930009 -0.9158920827655623 5.503346139824024
-  position -3.030133337605382 -2.309172918167 1.4465144623946802
+  orientation 0.0966777790030242 0.2930977428158367 -0.9511819595657309 0.9980754285078262
+  position -2.1768331767824125 2.7266535240475456 1.2894882243583652
   follow "wrestler_red"
   followType "Pan and Tilt Shot"
   ambientOcclusionRadius 0.2
@@ -88,5 +88,6 @@ DEF WRESTLER_BLUE Nao {
   selfCollision TRUE
 }
 WrestlingReferee {
-  translation -0.9 1.97 0.04
+  translation 0.9 -1.88 0
+  rotation 0 0 1 3.14159
 }
