@@ -118,6 +118,8 @@ You will have to read it, fix what is wrong and push the changes to your main br
 
 ## Rules
 
+*Note*: the rules might be slightly adapted to fix minor issues until September 1st, 2023. Past this date, no change will be made to rules.
+
 The rules of game are implemented in the [referee supervisor](controllers/referee/referee.py).
 They can be summarized as follow:
 
