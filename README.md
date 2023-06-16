@@ -182,7 +182,8 @@ It will run 3 docker containers:
 2. One with the controller of the red player (participant).
 3. One with the controller of the blue player (opponent).
 
-Each docker container running a player controller has 3 virtual CPU cores, 6 GB of RAM and shared access to the GPU hardware. 
+Each docker container running a player controller has [3](https://github.com/cyberbotics/wrestling/blob/0d017092f85cb989dcc0c65eb0e5a2ac18042ade/webots.yml#L9) virtual [CPU cores](https://github.com/cyberbotics/competition-record-action/blob/e820b586cf3ad70257682afb5245df9d2a5fc7c8/metascript/animation.py#L146-L147), [6 GB](https://github.com/cyberbotics/wrestling/blob/0d017092f85cb989dcc0c65eb0e5a2ac18042ade/webots.yml#L10) of [RAM](https://github.com/cyberbotics/competition-record-action/blob/e820b586cf3ad70257682afb5245df9d2a5fc7c8/metascript/animation.py#L239-L240) and shared access to the GPU hardware. However, we request that participants do not exceed 1 GB of GPU RAM usage for their robot controller. Participant exceeding this limit will be disqualified without prior notice.
+
 The runner machine configuration is the following:
 - CPU: [Intel core i7-6700K @ 4.00 Ghz](https://www.cpubenchmark.net/cpu.php?id=2565).
 - RAM: 16 GB.
