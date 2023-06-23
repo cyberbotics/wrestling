@@ -16,6 +16,7 @@
 
 import math
 import os
+import time
 from controller import Supervisor
 
 
@@ -37,10 +38,6 @@ class Referee (Supervisor):
             self.max[i] = self.robot[i].getPosition()
         self.coverage = [0] * 2
         self.ko_count = [0] * 2
-        # linear motors on the side of the ring to display the coverage visually
-        self.indicator = [0] * 2
-        self.indicator[0] = self.getDevice('red indicator')
-        self.indicator[1] = self.getDevice('blue indicator')
 
     def display_time(self, minutes, seconds):
         for j in range(3):
@@ -64,7 +61,6 @@ class Referee (Supervisor):
         self.setLabel(1, '█' * 100, 0, 0.048, 0.1, 0xffffff, 0.3, 'Lucida Console')
         self.setLabel(2, participant, 0.01, 0.003, 0.08, 0xff0000, 0, 'Arial')
         self.setLabel(3, opponent, 0.01, 0.051, 0.08, 0x0000ff, 0, 'Arial')
-        ko_labels = [''] * 2
         coverage_labels = [''] * 2
         while True:
             if time % (1000) == 0:
@@ -76,6 +72,7 @@ class Referee (Supervisor):
             box = [0] * 3
             for i in range(2):
                 position = self.robot[i].getPosition()
+                other_height = self.robot[1 if i == 0 else 0].getPosition()[2]
                 color = 0xff0000 if i == 0 else 0x0000ff
                 if abs(position[0]) < 1 and abs(position[1]) < 1:  # inside the ring
                     coverage = 0
@@ -88,21 +85,22 @@ class Referee (Supervisor):
                         coverage += box[j] * box[j]
                     coverage = math.sqrt(coverage)
                     self.coverage[i] = coverage
-                    self.indicator[i].setPosition(self.coverage[i] / 7)
                     string = '{:.3f}'.format(coverage)
                     if string != coverage_labels[i]:
                         self.setLabel(4 + i, string, 0.8, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
                     coverage_labels[i] = string
-                # position below threshold (0.9) or robot exploded (any coordinate above 1.5)
-                if position[2] < 0.9 or position[2] > 1.5 or abs(position[0]) > 1.5 or abs(position[1]) > 1.5:
+                # position of the head below threshold (0.45) or outside the stage or in the sky (likely exploded)
+                if position[2] < other_height and (position[2] < 0.45 or
+                                                   abs(position[0]) > 1 or
+                                                   abs(position[1]) > 1 or
+                                                   position[2] > 1.05):
                     self.ko_count[i] = self.ko_count[i] + time_step
-                else:
+                elif position[2] > 0.45:
                     self.ko_count[i] = 0
                 counter = 10 - self.ko_count[i] // 1000
                 string = '' if self.ko_count[i] == 0 else str(counter) if counter > 0 else 'KO'
-                if string != ko_labels[i]:
-                    self.setLabel(6 + i, string, 0.7 - len(string) * 0.01, 0.003 + 0.048 * i, 0.08, color, 0, 'Arial')
-                ko_labels[i] = string
+                ko_color = color if position[2] < other_height else 0x808080
+                self.setLabel(6 + i, string, 0.7 - len(string) * 0.01, 0.003 + 0.048 * i, 0.08, ko_color, 0, 'Arial')
 
             if self.step(time_step) == -1 or time > game_duration or self.ko_count[0] > 10000 or self.ko_count[1] > 10000:
                 break
@@ -135,6 +133,8 @@ class Referee (Supervisor):
 CI = os.environ.get("CI")
 referee = Referee()
 referee.init()
+if CI:
+    time.sleep(3)  # leave some time for extern controllers to start-up and connect
 referee.run(CI)
 if CI:
     referee.simulationSetMode(referee.SIMULATION_MODE_PAUSE)
