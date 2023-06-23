@@ -16,6 +16,7 @@
 
 import math
 import os
+import time
 from controller import Supervisor
 
 
@@ -132,6 +133,8 @@ class Referee (Supervisor):
 CI = os.environ.get("CI")
 referee = Referee()
 referee.init()
+if CI:
+    time.sleep(3)  # leave some time for extern controllers to start-up and connect
 referee.run(CI)
 if CI:
     referee.simulationSetMode(referee.SIMULATION_MODE_PAUSE)
