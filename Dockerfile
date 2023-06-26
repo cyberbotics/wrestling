@@ -1,4 +1,4 @@
-FROM benjamindeleze/webots-test:R2023b-cloud
+FROM benjamindeleze/webots-test:R2023b
 # FROM cyberbotics/webots.cloud:R2023b
 
 # Copy all the competition files into a project folder
