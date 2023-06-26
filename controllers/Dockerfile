@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     && rm -rf /var/lib/apt/lists/*
 RUN pip3 install --upgrade pip && \
-    pip3 install --no-cache-dir \
+    pip3 install --root-user-action=ignore --no-cache-dir \
     numpy \
     opencv-python \
     scipy \
