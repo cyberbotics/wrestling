@@ -1,4 +1,4 @@
-#VRML_SIM R2023a utf8
+#VRML_SIM R2023b utf8
 # license: Apache License 2.0
 # license url: http://www.apache.org/licenses/LICENSE-2.0
 # A wrestling ring pole for the NAO robots
@@ -16,7 +16,7 @@ PROTO WrestlingPole [
     rotation IS rotation
     name IS name
     children [
-      DEF BASE Transform {
+      DEF BASE Pose {
         translation 0 0 -0.22
         children [
           Shape {
