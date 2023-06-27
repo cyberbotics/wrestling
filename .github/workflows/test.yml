@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: Send a repository dispatch event
         run: |
-          curl -s -X POST -F 'organizer=cyberbotics/wrestling' -F'participant=${{ github.repository }}' -F'opponent=${{ github.event.inputs.opponent }}' -F'token=${{ github.token }}' https://webots.cloud/run_competition.php
+          curl -s -X POST -F 'organizer=cyberbotics/wrestling' -F'participant=${{ github.repository }}' -F'opponent=${{ github.event.inputs.opponent }}' -F'token=${{ github.token }}' https://webots.cloud/run_competition2.php
