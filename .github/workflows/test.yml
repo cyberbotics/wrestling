@@ -5,7 +5,7 @@ name: Trigger Test Game
 on:
   workflow_dispatch:
     inputs:
-      opponent_name:
+      opponent:
         description: 'Opponent'
         required: true
         default: 'Alice (Python)'
