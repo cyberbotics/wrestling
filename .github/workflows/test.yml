@@ -1,0 +1,14 @@
+# Triggers a run action on the repository of the organizer to run a test game against a specified opponent (has no impact on the ranking)
+
+name: Trigger Test Game
+
+on:
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send a repository dispatch event
+        run: |
+          curl -s -X POST -F 'organizer=cyberbotics/wrestling' -F'participant=${{ github.repository }}' -F'token=${{ github.token }}' https://webots.cloud/run_competition.php
