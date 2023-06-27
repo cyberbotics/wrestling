@@ -4,11 +4,15 @@ name: Trigger Test Game
 
 on:
   workflow_dispatch:
-
+    inputs:
+      opponent_name:
+        description: 'Opponent'
+        required: true
+        default: 'Alice (Python)'
 jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
       - name: Send a repository dispatch event
         run: |
-          curl -s -X POST -F 'organizer=cyberbotics/wrestling' -F'participant=${{ github.repository }}' -F'token=${{ github.token }}' https://webots.cloud/run_competition.php
+          curl -s -X POST -F 'organizer=cyberbotics/wrestling' -F'participant=${{ github.repository }}' -F'opponent=${{ github.event.inputs.opponent }}' -F'token=${{ github.token }}' https://webots.cloud/run_competition.php
