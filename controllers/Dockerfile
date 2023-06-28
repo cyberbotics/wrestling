@@ -1,4 +1,4 @@
-FROM cyberbotics/webots.cloud:R2023b-ubuntu22.04
+FROM cyberbotics/webots:R2023b-ubuntu22.04
 
 # Additional dependencies for the utils folder
 RUN apt-get update && apt-get install -y \
