@@ -57,6 +57,7 @@ jobs:
           participant_repo_id: ${{ env.PARTICIPANT_REPO_ID }}
           participant_repo_name: ${{github.event.client_payload.repository}}
           participant_repo_private: ${{env.PARTICIPANT_REPO_PRIVATE}}
+          opponent_repo_name: ${{github.event.client_payload.opponent}}
           log_url: ${{ env.LOG_URL }}
           repo_token: ${{ secrets.REPO_TOKEN }}
           upload_performance: true
