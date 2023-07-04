@@ -47,7 +47,7 @@ Remote participation will be possible.
 
 ### Selection for the Finals
 
-On September 19th, at [9am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=9am&d=2023-09-19), we will select the best 32 teams from the leaderboard that will participate to the finals.
+On September 19th, at [9am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=9am&d=2023-09-19), we will select the best 32 teams from the [leader board][1] that will participate to the finals.
 These teams will have exactly one week of time to further improve their robot controller before their code is frozen and checked out for the finals.
 Meanwhile, other teams will not be allowed to run games any more.
 
@@ -112,7 +112,7 @@ When you found the organizer, add him to the repository.
 
 You can now edit your [participant.json](../../edit/main/controllers/participant/participant.json) file to set your name, description and country information and also modify your [main robot controller file](../../edit/main/controllers/participant/participant.py) or create new files in this folder and push the modification to the main branch of your repository.
 A series of automated actions will take place in a few seconds.
-If everything went well, your repository should appear after some time in the [leaderboard][1] of the competition.
+If everything went well, your repository should appear after some time in the [leader board][1] of the competition.
 If there was a problem, an [issue](../../issues) will be open automatically on your repository by the organizer.
 You will have to read it, fix what is wrong and push the changes to your main branch to re-run the automated verification.
 
@@ -149,8 +149,8 @@ A series of simple examples are provided using different programming languages o
 ### Recommendation to Competitors
 
 The earlier you start working on the competition, the better.
-The ranking algorithm allows a very good robot controller to climp-up to the top of the leaderboard in one day.
-However, in practice, it is recommended to enter the leaderboard rankings as early as possible.
+The ranking algorithm allows a very good robot controller to climp-up to the top of the [leader board][1] in one day.
+However, in practice, it is recommended to enter the [leader board][1] rankings as early as possible.
 This allows you to compare your robot controller to others and have time to improve its performance.
 
 ### Include Dependencies in your Docker Container
@@ -161,10 +161,10 @@ Your controller is run in a [Docker container](https://www.docker.com/resources/
 
 Each time you push a commit on your main branch, a series of games is started on the runner machine.
 If you are ranked number 1, no game will take place.
-Otherwise, you will first play a game against the competitor ranked just above you in the leaderboard.
-If you loose, nothing will be changed in the leaderboard ranking and no further game will be played.
-Otherwise, you will swap your position in the leaderboard with the competitor just above you and you will play another game with the competitor just above your new position.
-This will be repeated as long as you win until you reach the first rank of the leaderboard.
+Otherwise, you will first play a game against the competitor ranked just above you in the [leader board][1].
+If you loose, nothing will be changed in the [leader board][1] ranking and no further game will be played.
+Otherwise, you will swap your position in the [leader board][1] with the competitor just above you and you will play another game with the competitor just above your new position.
+This will be repeated as long as you win until you reach the first rank of the [leader board][1].
 
 ### Checking the Log File of an Evaluation Run
 
@@ -172,6 +172,13 @@ When there is a problem with your repository, an issue is opened automatically o
 However, if your controller crashes for some reason, no error will be reported to you, but the animation of your robot will show your robot not moving at all (and your robot will likely loose the game).
 It that case, you should check the log file of the evaluation run to understand why your controller crashed.
 All the log files are available on https://github.com/cyberbotics/wrestling/actions
+
+### Friendly Test Games
+
+It is possible for the participants to start a friendly test game against another participant of their choice.
+This can be achieved from the [Actions](../../actions) tab of the participant repository: select the [Trigger Test Game](../../actions/workflows/test.yml) action and click the <kbd>Run workflow</kbd> button.
+Enter the name of your opponent as it appears in the [leader board][1] and click the green <kbd>Run workflow</kbd> button.
+Once complete, friendly test games can be viewed from the `Test` buttons in the [leader board][1].
 
 ### Runner Machine Configuration
 
@@ -189,4 +196,4 @@ The runner machine configuration is the following:
 - RAM: 16 GB.
 - GPU: [NVIDIA GeForce GTX 1060 3 GB](https://www.videocardbenchmark.net/gpu.php?id=3566).
 
-[1]: https://webots.cloud/run?version=R2023b&url=https%3A%2F%2Fgithub.com%2Fcyberbotics%2Fwrestling%2Fblob%2Fmain%2Fworlds%2Fwrestling.wbt&type=competition "Leaderboard"
+[1]: https://webots.cloud/run?version=R2023b&url=https%3A%2F%2Fgithub.com%2Fcyberbotics%2Fwrestling%2Fblob%2Fmain%2Fworlds%2Fwrestling.wbt&type=competition "Leader board"
