@@ -197,3 +197,19 @@ The runner machine configuration is the following:
 - GPU: [NVIDIA GeForce GTX 1060 3 GB](https://www.videocardbenchmark.net/gpu.php?id=3566).
 
 [1]: https://webots.cloud/run?version=R2023b&url=https%3A%2F%2Fgithub.com%2Fcyberbotics%2Fwrestling%2Fblob%2Fmain%2Fworlds%2Fwrestling.wbt&type=competition "Leader board"
+
+## Acknowledgements
+
+a href="https://opendr.eu/">
+  <img src="https://opendr.eu/wp-content/uploads/2020/01/logo-300x125.png"
+       alt="opendr_logo" height="60" >
+</a></br>
+
+Supported by OpenDR - Open Deep Learning Toolkit for Robotics.
+More information: <a href="https://opendr.eu/">opendr.eu</a>
+
+<img src="https://opendr.csd.auth.gr/wp-content/uploads/2019/12/Flag_of_Europe-300x200.png"
+     alt="eu_flag" height="45" align="left" >
+
+This project has received funding from the European Union’s Horizon 2020
+research and innovation programme under grant agreement no. 871449.
