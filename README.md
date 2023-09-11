@@ -200,7 +200,7 @@ The runner machine configuration is the following:
 
 ## Acknowledgements
 
-a href="https://opendr.eu/">
+<a href="https://opendr.eu/">
   <img src="https://opendr.eu/wp-content/uploads/2020/01/logo-300x125.png"
        alt="opendr_logo" height="60" >
 </a></br>
