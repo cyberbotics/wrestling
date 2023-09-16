@@ -72,7 +72,6 @@ DEF WRESTLER_RED Nao {
   name "participant"
   controller "participant"
   window "competition_description"
-  supervisor TRUE
   synchronization FALSE
   selfCollision TRUE
 }
