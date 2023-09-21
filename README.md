@@ -34,7 +34,7 @@ Being spectacular and easy to get started with, this competition aims at gatheri
 |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | June 23rd, 2023                                                                                                  | registration opens and qualification games start |
 | September 19th, 2023                                                                                             | selection of the best 32 teams                   |
-| September 26th, 2023                                                                                             | code freeze for the finals                       |
+| September 26th, 2023 - [3pm CEST](https://dateful.com/time-zone-converter?t=15&d=2023-09-26&tz2=Central-European-Summer-Time-CEST)                                                                                            | code freeze for the finals                       |
 | **October 2nd, 2023** - [4pm EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=4pm&d=2023-10-02)      | **1/16 finals**                                  |
 | **October 3rd, 2023** - [11am EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=11am&d=2023-10-03)    | **1/8 finals**                                   |
 | **October 3rd, 2023** - [4:30pm EDT](https://dateful.com/convert/eastern-daylight-time-edt?t=430pm&d=2023-10-03) | **1/4 finals**                                   |
