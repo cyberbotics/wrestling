@@ -59,7 +59,7 @@ We will use exclusively this version for running all the final games from the 1/
 
 All the finals games will be played in sets, in a best-of-five format, which means that players need to win 3 sets to win the game (like in Grand Slams ATP tennis tournaments). Therefore a finals game will have between three and five sets and the final score will be either 3-0, 3-1 or 3-2.
 
-Here is the [result](result.md) page that will reflect in real-time the finals games, so that online competitors can follow the finals remotely.
+Here is the [result](result-iros2023.md) page that will reflect in real-time the finals games, so that online competitors can follow the finals remotely.
 The **Game** columns will contain links to 3D playbacks of the sets.
 
 ### Certificates
