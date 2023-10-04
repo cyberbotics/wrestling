@@ -60,12 +60,12 @@ October 4th, 2023
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Game 4 | Game 5 | Score | Bronze Medal (3rd place) |
 |------|------------|-------------|--------|--------|--------|--------|--------|-------|--------------------------|
-| 1    | D3 | D4 | [E1-1-?](https://webots.cloud/run?version=R2023b&url=https://github.com/cyberbotics/wrestling/blob/IROS2023/worlds/wrestling.wbt&type=competition&context=view&id=IROS2023-E1-1-?) | [E1-2-?](https://webots.cloud/run?version=R2023b&url=https://github.com/cyberbotics/wrestling/blob/IROS2023/worlds/wrestling.wbt&type=competition&context=view&id=IROS2023-E1-2-?) | | | | ? - ? | E1 |
+| 1    | <img src="https://webots.cloud/images/flags/gb.svg" width="32px" title="UK" align="top"> &nbsp; HexHowells | D4 | [E1-1-?](https://webots.cloud/run?version=R2023b&url=https://github.com/cyberbotics/wrestling/blob/IROS2023/worlds/wrestling.wbt&type=competition&context=view&id=IROS2023-E1-1-?) | [E1-2-?](https://webots.cloud/run?version=R2023b&url=https://github.com/cyberbotics/wrestling/blob/IROS2023/worlds/wrestling.wbt&type=competition&context=view&id=IROS2023-E1-2-?) | | | | ? - ? | E1 |
 
 ### Final
 
 | Game | Red Player | Blue Player | Game 1 | Game 2 | Game 3 | Game 4 | Game 5 | Score | Gold Medal (1st place) | Silver Medal (2nd place) |
 |------|------------|-------------|--------|--------|--------|--------|--------|-------|------------------------|--------------------------|
-| 1    | D1 | D2 | [F1-1-?](https://webots.cloud/run?version=R2023b&url=https://github.com/cyberbotics/wrestling/blob/IROS2023/worlds/wrestling.wbt&type=competition&context=view&id=IROS2023-F1-1-?) | [F1-2-?](https://webots.cloud/run?version=R2023b&url=https://github.com/cyberbotics/wrestling/blob/IROS2023/worlds/wrestling.wbt&type=competition&context=view&id=IROS2023-F1-2-?) | | | | ? - ? | F1 | F2 |
+| 1    | <img src="https://webots.cloud/images/flags/ir.svg" width="32px" title="Iran" align="top"> &nbsp; MechaCheetahs | D2 | [F1-1-?](https://webots.cloud/run?version=R2023b&url=https://github.com/cyberbotics/wrestling/blob/IROS2023/worlds/wrestling.wbt&type=competition&context=view&id=IROS2023-F1-1-?) | [F1-2-?](https://webots.cloud/run?version=R2023b&url=https://github.com/cyberbotics/wrestling/blob/IROS2023/worlds/wrestling.wbt&type=competition&context=view&id=IROS2023-F1-2-?) | | | | ? - ? | F1 | F2 |
 
 
